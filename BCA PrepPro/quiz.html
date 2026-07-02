@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BCA Quiz | BCAHub</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+🎓 BCAHub
+</div>
+
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+
+<a href="notes.html">Notes</a>
+
+<a href="roadmap.html">Roadmap</a>
+
+</div>
+
+<button id="theme-toggle" class="theme-btn">
+🌙
+</button>
+
+</nav>
+
+<div class="breadcrumb">
+
+<a href="index.html">🏠 Home</a>
+
+>
+
+<a href="semester1.html">Semester 1</a>
+
+>
+
+<span class="active">Practice Quiz</span>
+
+</div>
+
+<div class="container">
+
+<h1>🧠 Practice Quiz</h1>
+
+<p>Select your subject and start practicing.</p>
+
+<div id="subjectContainer">
+
+<a href="#" class="card">
+<h2>💻 Computer Fundamentals</h2>
+<p>25 MCQs</p>
+</a>
+
+<a href="#" class="card">
+<h2>👨‍💻 Programming in C</h2>
+<p>25 MCQs</p>
+</a>
+
+<a href="#" class="card">
+<h2>📐 Mathematics-I</h2>
+<p>25 MCQs</p>
+</a>
+
+<a href="#" class="card">
+<h2>🗣 Communication Skills</h2>
+<p>25 MCQs</p>
+</a>
+
+</div>
+
+<br><br>
+
+<div class="card">
+
+<h2>Question 1</h2>
+
+<p>Who is known as the Father of Computer?</p>
+
+<label>
+
+<input type="radio" name="q1">
+
+Charles Babbage
+
+</label>
+
+<br><br>
+
+<label>
+
+<input type="radio" name="q1">
+
+Bill Gates
+
+</label>
+
+<br><br>
+
+<label>
+
+<input type="radio" name="q1">
+
+Steve Jobs
+
+</label>
+
+<br><br>
+
+<label>
+
+<input type="radio" name="q1">
+
+Dennis Ritchie
+
+</label>
+
+<br><br>
+
+<button class="download-btn" onclick="checkQuiz()">
+
+Submit
+
+</button>
+
+<h2 id="result"></h2>
+
+</div>
+
+</div>
+
+<footer class="footer">
+
+<h2>🎓 BCAHub</h2>
+
+<p>Your Complete Learning Partner</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+
+function checkQuiz(){
+
+let ans=document.getElementsByName("q1");
+
+if(ans[0].checked){
+
+document.getElementById("result").innerHTML="✅ Correct Answer";
+
+document.getElementById("result").style.color="green";
+
+}
+
+else{
+
+document.getElementById("result").innerHTML="❌ Wrong Answer";
+
+document.getElementById("result").style.color="red";
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>

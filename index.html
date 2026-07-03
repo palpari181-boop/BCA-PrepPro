@@ -5,6 +5,10 @@
   <title>BCA Learning App</title>
   <link rel="icon" type="image/png" href="assets/images/logo.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  
+
+  <meta name="theme-color" content="#4F46E5">
 </head>
 <body>
   <!-- ===========================
@@ -455,5 +459,12 @@ Have questions or suggestions? We'd love to hear from you!
 
 </footer>
 <script src="script.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register("service-worker.js");
+      });
+    }
+  </script>
 </body>
 </html>

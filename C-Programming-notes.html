@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>C Programming Notes</title>
+
+<style>
+body{
+  font-family: Arial;
+  margin:0;
+  background:#f4f6ff;
+}
+
+header{
+  background:linear-gradient(135deg,#6a11cb,#2575fc);
+  color:white;
+  text-align:center;
+  padding:20px;
+  font-size:22px;
+  font-weight:bold;
+}
+
+.chapter{
+  background:white;
+  margin:15px;
+  padding:20px;
+  border-radius:14px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.1);
+  border-left:6px solid #6a11cb;
+}
+
+.chapter h2{
+  color:#6a11cb;
+}
+
+.highlight{
+  background:#f0f3ff;
+  padding:8px;
+  border-radius:6px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+💻 C Programming Notes (BCA Semester 1 – Detailed Version)
+</header>
+
+<!-- CHAPTER 1 -->
+<div class="chapter">
+<h2>Chapter 1: Introduction to C Language</h2>
+
+<p>
+C is a powerful, general-purpose programming language developed by Dennis Ritchie in 1972 at Bell Labs.
+It is one of the most widely used programming languages and forms the foundation of many modern languages like C++, Java, and Python.
+</p>
+
+<p>
+C language is known for its simplicity, efficiency, and flexibility. It is used for system programming, application development, embedded systems, and operating systems.
+</p>
+
+<p>
+<b>Definition:</b><br>
+C is a structured, procedural programming language used to develop efficient programs with low-level memory access.
+</p>
+
+<p>
+<b>Features of C Language:</b><br>
+✔ Simple and easy to learn<br>
+✔ Fast execution speed<br>
+✔ Portable (machine independent)<br>
+✔ Structured programming language<br>
+✔ Supports low-level memory manipulation using pointers<br>
+✔ Rich set of built-in functions
+</p>
+
+<p>
+<b>Why C is called Middle-Level Language?</b><br>
+C is called a middle-level language because it combines features of both high-level languages (like easy syntax) and low-level languages (like memory access).
+</p>
+
+<p>
+<b>Applications of C:</b><br>
+• Operating Systems (Unix, Linux)<br>
+• Embedded Systems (cars, machines)<br>
+• Compilers and interpreters<br>
+• Game development<br>
+• Database systems
+</p>
+
+<p class="highlight">
+👉 Important: C is the base of almost all programming languages, so it is very important for BCA students.
+</p>
+
+</div>
+
+<!-- CHAPTER 2 -->
+<div class="chapter">
+<h2>Chapter 2: Structure of a C Program</h2>
+
+<p>
+A C program is a set of instructions written in a specific structure that compiler can understand.
+Every C program must contain a main() function.
+</p>
+
+<p>
+<b>General Structure of C Program:</b><br>
+1. Documentation Section (comments)<br>
+2. Link Section (#include)<br>
+3. Definition Section (#define)<br>
+4. Global Declaration<br>
+5. main() Function<br>
+6. Sub Functions
+</p>
+
+<p>
+<b>Example Program:</b>
+</p>
+
+<p class="highlight">
+#include &lt;stdio.h&gt;<br>
+int main() {<br>
+&nbsp;&nbsp;printf("Hello World");<br>
+&nbsp;&nbsp;return 0;<br>
+}
+</p>
+
+<p>
+<b>Explanation:</b><br>
+• #include &lt;stdio.h&gt; → standard input/output library<br>
+• main() → execution starts here<br>
+• printf() → displays output on screen<br>
+• return 0 → program ends successfully
+</p>
+
+</div>
+
+<!-- CHAPTER 3 -->
+<div class="chapter">
+<h2>Chapter 3: Tokens in C Language</h2>
+
+<p>
+Tokens are the smallest units in a C program. A program is made up of different tokens.
+</p>
+
+<p>
+<b>Types of Tokens:</b><br>
+✔ Keywords<br>
+✔ Identifiers<br>
+✔ Constants<br>
+✔ Strings<br>
+✔ Operators
+</p>
+
+<p>
+<b>1. Keywords:</b><br>
+Keywords are reserved words in C language that have predefined meaning.<br>
+Example: int, float, if, else, return, while
+</p>
+
+<p>
+<b>2. Identifiers:</b><br>
+Identifiers are names given to variables, functions, arrays etc.
+Rules:<br>
+• Must start with alphabet or underscore<br>
+• Cannot use keywords<br>
+• Case sensitive
+</p>
+
+<p>
+<b>3. Constants:</b><br>
+Fixed values that do not change during program execution.
+Example: 10, 3.14, 'A'
+</p>
+
+<p>
+<b>4. Operators:</b><br>
+Symbols used to perform operations like +, -, *, /, %
+</p>
+
+</div>
+
+</body>
+</html>
+
+<div class="chapter">
+<h2>Chapter 4: Variables and Data Types (Detailed)</h2>
+
+<p>
+A variable is a named memory location used to store data that can be changed during program execution.
+Each variable in C must have a specific data type.
+</p>
+
+<p>
+<b>Rules for Naming Variables:</b><br>
+✔ Must start with alphabet or underscore (_)<br>
+✔ Cannot start with digit<br>
+✔ Cannot use keywords (like int, float)<br>
+✔ Case sensitive (A and a are different)<br>
+✔ No special characters allowed except underscore
+</p>
+
+<p>
+<b>Definition Example:</b><br>
+int a = 10;<br>
+float b = 5.5;<br>
+char c = 'A';
+</p>
+
+<p>
+<b>Data Types in C:</b>
+</p>
+
+<p>
+<b>1. int (Integer):</b><br>
+Used to store whole numbers.<br>
+Example: 10, -5, 100<br>
+Memory: 2 or 4 bytes (depends on system)
+</p>
+
+<p>
+<b>2. float:</b><br>
+Used to store decimal numbers.<br>
+Example: 3.14, 2.5<br>
+Memory: 4 bytes
+</p>
+
+<p>
+<b>3. double:</b><br>
+Used for large decimal values with higher precision.<br>
+Memory: 8 bytes
+</p>
+
+<p>
+<b>4. char:</b><br>
+Used to store single character.<br>
+Example: 'A', 'b', '9'<br>
+Memory: 1 byte
+</p>
+
+<p>
+<b>Why Data Types are Important?</b><br>
+Data types tell the compiler how much memory to allocate and what type of data will be stored.
+</p>
+
+<p>
+<b>Type Conversion:</b><br>
+• Implicit: Automatically done by compiler<br>
+• Explicit: Manually done by programmer using type casting
+</p>
+
+<p>
+Example:<br>
+int a = 10;<br>
+float b = (float)a;
+</p>
+</div>
+
+<!-- ================= CHAPTER 5 ================= -->
+<div class="chapter">
+<h2>Chapter 5: Input and Output Functions</h2>
+
+<p>
+C language uses standard input and output functions to interact with the user.
+</p>
+
+<p>
+<b>1. printf() Function:</b><br>
+Used to display output on screen.
+</p>
+
+<p>
+Example:<br>
+printf("Hello World");
+</p>
+
+<p>
+<b>2. scanf() Function:</b><br>
+Used to take input from user.
+</p>
+
+<p>
+Example:<br>
+int a;<br>
+scanf("%d", &a);
+</p>
+
+<p>
+<b>Important Format Specifiers:</b>
+</p>
+
+<p>
+✔ %d → integer<br>
+✔ %f → float<br>
+✔ %lf → double<br>
+✔ %c → character<br>
+✔ %s → string
+</p>
+
+<p>
+<b>Example Program:</b>
+</p>
+
+<p>
+int a;<br>
+float b;<br>
+char c;<br><br>
+
+scanf("%d %f %c", &a, &b, &c);<br>
+printf("%d %f %c", a, b, c);
+</p>
+
+<p>
+<b>Important Points:</b><br>
+✔ & is used in scanf to give address<br>
+✔ printf does not need &<br>
+✔ Format specifier must match data type
+</p>
+</div>
+
+<!-- ================= CHAPTER 6 ================= -->
+<div class="chapter">
+<h2>Chapter 6: Operators in C (Detailed)</h2>
+
+<p>
+Operators are special symbols used to perform operations on variables and values.
+C language provides many types of operators used for arithmetic, comparison, logic and assignment.
+</p>
+
+<p>
+<b>Types of Operators in C:</b>
+</p>
+
+<p>
+<b>1. Arithmetic Operators:</b><br>
+Used for mathematical calculations.<br>
++ (Addition), - (Subtraction), * (Multiplication), / (Division), % (Modulus)
+</p>
+
+<p>
+Example:<br>
+int a = 10, b = 5;<br>
+a + b = 15<br>
+a - b = 5
+</p>
+
+<p>
+<b>2. Relational Operators:</b><br>
+Used to compare two values. Result is always true (1) or false (0).<br>
+==, !=, >, <, >=, <=
+</p>
+
+<p>
+Example:<br>
+10 > 5 → true (1)<br>
+10 == 5 → false (0)
+</p>
+
+<p>
+<b>3. Logical Operators:</b><br>
+Used to combine multiple conditions.<br>
+&& (AND), || (OR), ! (NOT)
+</p>
+
+<p>
+Example:<br>
+(10 > 5 && 5 < 2) → false
+</p>
+
+<p>
+<b>4. Assignment Operators:</b><br>
+Used to assign values.<br>
+=, +=, -=, *=, /=, %=
+</p>
+
+<p>
+Example:<br>
+a += 5 → a = a + 5
+</p>
+
+<p>
+<b>5. Increment/Decrement Operators:</b><br>
+++ (increase by 1), -- (decrease by 1)
+</p>
+
+<p>
+Example:<br>
+a++ → post increment<br>
+++a → pre increment
+</p>
+
+<p>
+<b>Important Note:</b><br>
+Operators are very important for decision making and loops in C programming.
+</p>
+</div>
+
+<!-- ================= CHAPTER 7 ================= -->
+<div class="chapter">
+<h2>Chapter 7: Control Statements in C</h2>
+
+<p>
+Control statements are used to control the flow of execution of a program.
+They decide which part of code will execute and when.
+</p>
+
+<p>
+<b>Types of Control Statements:</b>
+</p>
+
+<p>
+<b>1. Conditional Statements:</b><br>
+Used for decision making.
+</p>
+
+<p>
+<b>if statement:</b><br>
+Executes block if condition is true.
+</p>
+
+<p>
+Example:<br>
+if(a > b) {<br>
+&nbsp;&nbsp;printf("A is greater");<br>
+}
+</p>
+
+<p>
+<b>if-else statement:</b><br>
+Executes one block if true, another if false.
+</p>
+
+<p>
+<b>Nested if:</b><br>
+if inside another if.
+</p>
+
+<p>
+<b>switch statement:</b><br>
+Used when multiple conditions are present.
+</p>
+
+<p>
+Example:<br>
+switch(choice) {<br>
+case 1: printf("One"); break;<br>
+case 2: printf("Two"); break;<br>
+default: printf("Invalid");<br>
+}
+</p>
+
+<p>
+<b>2. Looping Statements:</b><br>
+Used to repeat a block of code multiple times.
+</p>
+
+<p>
+<b>Types of Loops:</b>
+</p>
+
+<p>
+<b>1. for loop:</b><br>
+Used when number of iterations is known.
+</p>
+
+<p>
+Example:<br>
+for(int i=1; i<=5; i++) {<br>
+&nbsp;&nbsp;printf("%d", i);<br>
+}
+</p>
+
+<p>
+<b>2. while loop:</b><br>
+Entry-controlled loop (condition checked first).
+</p>
+
+<p>
+<b>3. do-while loop:</b><br>
+Exit-controlled loop (runs at least once).
+</p>
+
+<p>
+Example:<br>
+do {<br>
+&nbsp;&nbsp;printf("Hello");<br>
+} while(condition);
+</p>
+
+<p>
+<b>Important Difference:</b><br>
+• for loop → fixed iteration<br>
+• while loop → condition based<br>
+• do-while → executes at least once
+</p>
+
+</div>
+
+<!-- ================= CHAPTER 8 ================= -->
+<div class="chapter">
+<h2>Chapter 8: Functions in C (Detailed)</h2>
+
+<p>
+A function is a block of code that performs a specific task and can be reused multiple times in a program.
+Functions help in reducing code repetition and improving program structure.
+</p>
+
+<p>
+<b>Types of Functions:</b>
+</p>
+
+<p>
+<b>1. Library Functions:</b><br>
+These are pre-defined functions provided by C library.<br>
+Example: printf(), scanf(), strlen(), sqrt()
+</p>
+
+<p>
+<b>2. User-defined Functions:</b><br>
+Functions created by the programmer according to requirement.
+</p>
+
+<p>
+<b>Structure of Function:</b><br>
+return_type function_name(parameters) {<br>
+&nbsp;&nbsp;// body of function<br>
+}
+</p>
+
+<p>
+<b>Example:</b><br>
+int add(int a, int b) {<br>
+&nbsp;&nbsp;return a + b;<br>
+}
+</p>
+
+<p>
+<b>Advantages of Functions:</b><br>
+✔ Code reusability<br>
+✔ Easy debugging<br>
+✔ Better program structure<br>
+✔ Saves time and effort
+</p>
+
+<p>
+<b>Types based on arguments and return value:</b>
+</p>
+
+<p>
+1. No argument, no return value<br>
+2. No argument, return value<br>
+3. Argument, no return value<br>
+4. Argument, return value
+</p>
+
+<p>
+<b>Recursion:</b><br>
+When a function calls itself is called recursion.
+</p>
+
+<p>
+Example:<br>
+factorial(n) = n * factorial(n-1)
+</p>
+</div>
+
+<!-- ================= CHAPTER 9 ================= -->
+<div class="chapter">
+<h2>Chapter 9: Arrays in C</h2>
+
+<p>
+An array is a collection of similar data elements stored in continuous memory locations.
+It is used to store multiple values in a single variable.
+</p>
+
+<p>
+<b>Why Arrays are used?</b><br>
+Instead of creating multiple variables, arrays help store data efficiently.
+</p>
+
+<p>
+<b>Types of Arrays:</b>
+</p>
+
+<p>
+<b>1. One Dimensional Array (1D):</b><br>
+Used to store list of elements.
+</p>
+
+<p>
+Example:<br>
+int a[5] = {10, 20, 30, 40, 50};
+</p>
+
+<p>
+<b>2. Two Dimensional Array (2D):</b><br>
+Used to store data in matrix form.
+</p>
+
+<p>
+Example:<br>
+int a[2][2] = { {1,2}, {3,4} };
+</p>
+
+<p>
+<b>Advantages of Arrays:</b><br>
+✔ Easy to store multiple values<br>
+✔ Easy to access elements using index<br>
+✔ Efficient memory usage
+</p>
+</div>
+
+<!-- ================= CHAPTER 10 ================= -->
+<div class="chapter">
+<h2>Chapter 10: Strings in C (Basic)</h2>
+
+<p>
+A string is a collection of characters terminated by a null character '\0'.
+</p>
+
+<p>
+Example:<br>
+char name[] = "BCA";
+</p>
+
+<p>
+<b>String Functions:</b>
+</p>
+
+<p>
+• strlen() → length of string<br>
+• strcpy() → copy string<br>
+• strcat() → concatenate strings<br>
+• strcmp() → compare strings
+</p>
+
+<p>
+<b>Example:</b><br>
+char a[10] = "Hello";<br>
+char b[10] = "World";<br>
+strcat(a, b);
+</p>
+
+<p>
+<b>Important Note:</b><br>
+Strings always end with '\0' null character.
+</p>
+
+</div>
+
+<!-- ================= CHAPTER 11 ================= -->
+<div class="chapter">
+<h2>Chapter 11: Pointers in C (Detailed)</h2>
+
+<p>
+A pointer is a variable that stores the memory address of another variable.
+Pointers are one of the most powerful features of C language because they allow direct memory access.
+</p>
+
+<p>
+<b>Why Pointers are used?</b><br>
+✔ To access memory directly<br>
+✔ To improve program efficiency<br>
+✔ Used in dynamic memory allocation<br>
+✔ Used in arrays and functions
+</p>
+
+<p>
+<b>Pointer Declaration:</b><br>
+datatype *pointer_name;
+</p>
+
+<p>
+Example:<br>
+int a = 10;<br>
+int *p = &a;
+</p>
+
+<p>
+Here:<br>
+• &a → gives address of variable a<br>
+• *p → gives value at that address
+</p>
+
+<p>
+<b>Important Pointer Operators:</b><br>
+• & → Address operator<br>
+• * → Value at address (dereference operator)
+</p>
+
+<p>
+<b>Example Program:</b><br>
+int a = 10;<br>
+int *p = &a;<br>
+printf("%d", *p);
+</p>
+
+<p>
+<b>Advantages of Pointers:</b><br>
+✔ Faster execution<br>
+✔ Memory efficiency<br>
+✔ Used in data structures<br>
+✔ Dynamic memory handling
+</p>
+
+<p>
+<b>Disadvantages:</b><br>
+• Complex to understand<br>
+• Risk of memory errors
+</p>
+</div>
+
+<!-- ================= CHAPTER 12 ================= -->
+<div class="chapter">
+<h2>Chapter 12: File Handling in C (Basic)</h2>
+
+<p>
+File handling is used to store data permanently in files on a computer.
+Unlike variables, file data remains stored even after program ends.
+</p>
+
+<p>
+<b>Types of Files:</b><br>
+• Text Files (.txt)<br>
+• Binary Files (.bin)
+</p>
+
+<p>
+<b>File Operations:</b><br>
+✔ Create a file<br>
+✔ Open a file<br>
+✔ Read from file<br>
+✔ Write to file<br>
+✔ Close a file
+</p>
+
+<p>
+<b>File Pointer:</b><br>
+FILE *fp;
+</p>
+
+<p>
+<b>Common Functions:</b>
+</p>
+
+<p>
+• fopen() → open file<br>
+• fclose() → close file<br>
+• fprintf() → write to file<br>
+• fscanf() → read from file<br>
+• fgetc() → read character<br>
+• fputc() → write character
+</p>
+
+<p>
+<b>Example:</b><br>
+FILE *fp;<br>
+fp = fopen("data.txt", "w");<br>
+fprintf(fp, "Hello World");<br>
+fclose(fp);
+</p>
+
+</div>
+
+<!-- ================= FINAL REVISION ================= -->
+<div class="chapter">
+<h2>📌 Final Revision Sheet (Important Points)</h2>
+
+<p>
+✔ C is a structured programming language<br>
+✔ main() function is the entry point<br>
+✔ Variables store data in memory<br>
+✔ Operators perform operations<br>
+✔ Control statements control flow<br>
+✔ Loops repeat execution<br>
+✔ Functions improve reusability<br>
+✔ Arrays store multiple values<br>
+✔ Strings are character arrays<br>
+✔ Pointers store addresses<br>
+✔ Files store permanent data
+</p>
+</div>
+
+<!-- ================= IMPORTANT QUESTIONS ================= -->
+<div class="chapter">
+<h2>📌 Important Exam Questions</h2>
+
+<p>
+1. What is C language? Explain its features.<br>
+2. Explain different data types in C.<br>
+3. What are operators? Explain types.<br>
+4. Write difference between while and for loop.<br>
+5. What is function? Explain types.<br>
+6. What is array? Explain 1D and 2D arrays.<br>
+7. What is pointer? Explain with example.<br>
+8. What is file handling in C?<br>
+</p>
+
+<p>
+📌 These questions are most expected in exams.
+</p>
+
+</div>

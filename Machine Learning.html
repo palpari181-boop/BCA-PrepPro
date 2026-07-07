@@ -1,0 +1,1410 @@
+<!-- ===================================================== -->
+<!-- CHAPTER 1 : INTRODUCTION TO MACHINE LEARNING -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>🤖 Chapter 1 : Introduction to Machine Learning</h2>
+
+<div class="highlight-box">
+
+<h3>📖 Introduction</h3>
+
+<p>
+Machine Learning (ML) is a branch of Artificial Intelligence (AI) that enables
+computers to learn from data and improve their performance without being
+explicitly programmed. Instead of following fixed instructions, Machine
+Learning algorithms identify patterns in data, make predictions and improve
+their accuracy through experience. ML is widely used in healthcare, banking,
+e-commerce, robotics and many other industries.
+</p>
+
+</div>
+
+<hr>
+
+<h2>📚 Definition of Machine Learning</h2>
+
+<p>
+Machine Learning is a field of Artificial Intelligence that develops algorithms
+and models capable of learning from data, recognizing patterns and making
+decisions or predictions with minimal human intervention.
+</p>
+
+<hr>
+
+<h2>⭐ Features of Machine Learning</h2>
+
+<ul>
+
+<li>✔ Learns automatically from data.</li>
+
+<li>✔ Improves accuracy with experience.</li>
+
+<li>✔ Identifies hidden patterns.</li>
+
+<li>✔ Supports prediction and decision-making.</li>
+
+<li>✔ Handles large amounts of data efficiently.</li>
+
+<li>✔ Reduces manual programming effort.</li>
+
+</ul>
+
+<hr>
+
+<h2>🎯 Objectives of Machine Learning</h2>
+
+<ul>
+
+<li>✔ Build intelligent systems.</li>
+
+<li>✔ Automate decision-making.</li>
+
+<li>✔ Predict future outcomes.</li>
+
+<li>✔ Analyze large datasets efficiently.</li>
+
+<li>✔ Improve accuracy and performance over time.</li>
+
+</ul>
+
+<hr>
+
+<h2>📂 Types of Machine Learning</h2>
+
+<table class="notes-table">
+
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>Supervised Learning</td>
+<td>Uses labeled data to train models for prediction and classification.</td>
+</tr>
+
+<tr>
+<td>Unsupervised Learning</td>
+<td>Finds hidden patterns and groups in unlabeled data.</td>
+</tr>
+
+<tr>
+<td>Reinforcement Learning</td>
+<td>Learns through rewards and penalties by interacting with the environment.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🌍 Applications of Machine Learning</h2>
+
+<ul>
+
+<li>✔ Image Recognition</li>
+
+<li>✔ Speech Recognition</li>
+
+<li>✔ Recommendation Systems</li>
+
+<li>✔ Fraud Detection</li>
+
+<li>✔ Medical Diagnosis</li>
+
+<li>✔ Self-Driving Cars</li>
+
+<li>✔ Chatbots and Virtual Assistants</li>
+
+</ul>
+
+<hr>
+
+<h2>🛠 Popular Machine Learning Tools</h2>
+
+<table class="notes-table">
+
+<tr>
+<th>Tool</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td>Python</td>
+<td>Programming language for ML development.</td>
+</tr>
+
+<tr>
+<td>Scikit-learn</td>
+<td>Machine Learning algorithms and model building.</td>
+</tr>
+
+<tr>
+<td>TensorFlow</td>
+<td>Deep Learning framework.</td>
+</tr>
+
+<tr>
+<td>Keras</td>
+<td>High-level API for neural networks.</td>
+</tr>
+
+<tr>
+<td>Jupyter Notebook</td>
+<td>Interactive coding and data analysis environment.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>⭐ Advantages of Machine Learning</h2>
+
+<ul>
+
+<li>✔ Automates complex tasks.</li>
+
+<li>✔ Improves prediction accuracy.</li>
+
+<li>✔ Handles large datasets efficiently.</li>
+
+<li>✔ Supports data-driven decisions.</li>
+
+<li>✔ Continuously improves with more data.</li>
+
+</ul>
+
+<hr>
+
+<h2>❌ Disadvantages of Machine Learning</h2>
+
+<ul>
+
+<li>❌ Requires large amounts of quality data.</li>
+
+<li>❌ High computational cost.</li>
+
+<li>❌ Time-consuming model training.</li>
+
+<li>❌ Results depend on data quality.</li>
+
+</ul>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>Define Machine Learning.</li>
+
+<li>Explain the features of Machine Learning.</li>
+
+<li>Describe the objectives of Machine Learning.</li>
+
+<li>Explain the types of Machine Learning.</li>
+
+<li>Write the applications of Machine Learning.</li>
+
+<li>State the advantages and disadvantages of Machine Learning.</li>
+
+</ol>
+
+<hr>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Revision</h3>
+
+<p>
+
+✔ Machine Learning is a branch of Artificial Intelligence.<br>
+
+✔ Types → Supervised, Unsupervised and Reinforcement Learning.<br>
+
+✔ Popular Tools → Python, Scikit-learn, TensorFlow, Keras and Jupyter Notebook.<br>
+
+✔ Applications → Healthcare, Banking, Robotics, E-Commerce and Self-Driving Cars.<br>
+
+✔ Machine Learning enables computers to learn from data and make intelligent predictions.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 2 : DATA PREPROCESSING & FEATURE ENGINEERING -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>🧹 Chapter 2 : Data Preprocessing & Feature Engineering</h2>
+
+<div class="highlight-box">
+
+<h3>📖 Introduction</h3>
+
+<p>
+Data Preprocessing and Feature Engineering are essential steps in Machine
+Learning. Raw data often contains missing values, duplicate records,
+inconsistent formats and unnecessary information. Before training a Machine
+Learning model, the data must be cleaned and transformed into a suitable
+format. Feature Engineering improves the quality of input data by selecting
+and creating useful features that increase model accuracy.
+</p>
+
+</div>
+
+<hr>
+
+<h2>📚 Definition of Data Preprocessing</h2>
+
+<p>
+Data Preprocessing is the process of cleaning, organizing and transforming
+raw data into a structured format suitable for Machine Learning algorithms.
+It improves data quality and helps models produce accurate results.
+</p>
+
+<hr>
+
+<h2>⭐ Steps of Data Preprocessing</h2>
+
+<ol>
+
+<li>Data Collection</li>
+
+<li>Data Cleaning</li>
+
+<li>Handling Missing Values</li>
+
+<li>Removing Duplicate Data</li>
+
+<li>Data Transformation</li>
+
+<li>Feature Scaling</li>
+
+<li>Splitting Data into Training and Testing Sets</li>
+
+</ol>
+
+<hr>
+
+<h2>🧹 Data Cleaning</h2>
+
+<p>
+Data Cleaning removes errors, duplicate records and inconsistent values from
+the dataset. It ensures that the data is accurate, complete and reliable for
+analysis and model training.
+</p>
+
+<hr>
+
+<h2>📊 Feature Engineering</h2>
+
+<p>
+Feature Engineering is the process of selecting, modifying or creating new
+features from existing data to improve the performance of Machine Learning
+models.
+</p>
+
+<hr>
+
+<h2>⚙ Feature Scaling Techniques</h2>
+
+<table class="notes-table">
+
+<tr>
+<th>Technique</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>Normalization</td>
+<td>Scales values to a range between 0 and 1.</td>
+</tr>
+
+<tr>
+<td>Standardization</td>
+<td>Transforms data to have a mean of 0 and standard deviation of 1.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>📂 Training Data and Testing Data</h2>
+
+<table class="notes-table">
+
+<tr>
+<th>Dataset</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>Training Data</td>
+<td>Used to train the Machine Learning model.</td>
+</tr>
+
+<tr>
+<td>Testing Data</td>
+<td>Used to evaluate the performance of the trained model.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🛠 Common Python Libraries</h2>
+
+<table class="notes-table">
+
+<tr>
+<th>Library</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td>NumPy</td>
+<td>Numerical computations.</td>
+</tr>
+
+<tr>
+<td>Pandas</td>
+<td>Data manipulation and preprocessing.</td>
+</tr>
+
+<tr>
+<td>Scikit-learn</td>
+<td>Feature scaling and dataset splitting.</td>
+</tr>
+
+<tr>
+<td>Matplotlib</td>
+<td>Data visualization.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🌍 Applications</h2>
+
+<ul>
+
+<li>✔ Data Analysis</li>
+
+<li>✔ Fraud Detection</li>
+
+<li>✔ Medical Diagnosis</li>
+
+<li>✔ Recommendation Systems</li>
+
+<li>✔ Sales Forecasting</li>
+
+<li>✔ Image Recognition</li>
+
+</ul>
+
+<hr>
+
+<h2>⭐ Advantages</h2>
+
+<ul>
+
+<li>✔ Improves data quality.</li>
+
+<li>✔ Increases model accuracy.</li>
+
+<li>✔ Reduces noise in datasets.</li>
+
+<li>✔ Speeds up model training.</li>
+
+<li>✔ Produces reliable predictions.</li>
+
+</ul>
+
+<hr>
+
+<h2>❌ Disadvantages</h2>
+
+<ul>
+
+<li>❌ Time-consuming process.</li>
+
+<li>❌ Requires domain knowledge.</li>
+
+<li>❌ Incorrect preprocessing may reduce accuracy.</li>
+
+<li>❌ Large datasets require high computational resources.</li>
+
+</ul>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>Define Data Preprocessing.</li>
+
+<li>Explain the steps of Data Preprocessing.</li>
+
+<li>What is Feature Engineering?</li>
+
+<li>Differentiate between Training Data and Testing Data.</li>
+
+<li>Explain Normalization and Standardization.</li>
+
+<li>Write the advantages and disadvantages of Data Preprocessing.</li>
+
+</ol>
+
+<hr>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Revision</h3>
+
+<p>
+
+✔ Data Preprocessing prepares raw data for Machine Learning.<br>
+
+✔ Steps → Collection, Cleaning, Transformation, Scaling and Data Splitting.<br>
+
+✔ Feature Engineering improves model performance.<br>
+
+✔ Feature Scaling includes Normalization and Standardization.<br>
+
+✔ Training Data builds the model, while Testing Data evaluates it.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 3 : SUPERVISED LEARNING -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>📘 Chapter 3 : Supervised Learning</h2>
+
+<div class="highlight-box">
+
+<h3>📖 Introduction</h3>
+
+<p>
+Supervised Learning is one of the most widely used Machine Learning
+techniques. In this method, the model is trained using labeled data,
+where both the input and the correct output are already known. The goal
+is to learn the relationship between inputs and outputs so that the model
+can accurately predict results for new data.
+</p>
+
+</div>
+
+<hr>
+
+<h2>📚 Definition of Supervised Learning</h2>
+
+<p>
+Supervised Learning is a Machine Learning technique in which a model is
+trained using labeled data to predict outputs for new and unseen data.
+It is mainly used for classification and regression problems.
+</p>
+
+<hr>
+
+<h2>⭐ Characteristics of Supervised Learning</h2>
+
+<ul>
+
+<li>✔ Uses labeled training data.</li>
+
+<li>✔ Learns from input-output pairs.</li>
+
+<li>✔ Predicts outputs for new data.</li>
+
+<li>✔ Provides high accuracy with quality data.</li>
+
+<li>✔ Widely used in prediction and classification tasks.</li>
+
+</ul>
+
+<hr>
+
+<h2>📂 Types of Supervised Learning</h2>
+
+<table class="notes-table">
+
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>Classification</td>
+<td>Predicts categories or class labels such as Spam or Not Spam.</td>
+</tr>
+
+<tr>
+<td>Regression</td>
+<td>Predicts continuous numerical values such as house prices or temperatures.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🧠 Common Supervised Learning Algorithms</h2>
+
+<table class="notes-table">
+
+<tr>
+<th>Algorithm</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td>Linear Regression</td>
+<td>Predicts continuous numerical values.</td>
+</tr>
+
+<tr>
+<td>Logistic Regression</td>
+<td>Performs binary classification tasks.</td>
+</tr>
+
+<tr>
+<td>Decision Tree</td>
+<td>Makes decisions using a tree-like structure.</td>
+</tr>
+
+<tr>
+<td>K-Nearest Neighbors (KNN)</td>
+<td>Classifies data based on nearest neighbors.</td>
+</tr>
+
+<tr>
+<td>Naive Bayes</td>
+<td>Uses probability for classification.</td>
+</tr>
+
+<tr>
+<td>Support Vector Machine (SVM)</td>
+<td>Separates data into different classes using optimal boundaries.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>⚙ Working Process</h2>
+
+<ol>
+
+<li>Collect labeled data.</li>
+
+<li>Preprocess the dataset.</li>
+
+<li>Select a suitable algorithm.</li>
+
+<li>Train the Machine Learning model.</li>
+
+<li>Test and evaluate the model.</li>
+
+<li>Use the trained model for prediction.</li>
+
+</ol>
+
+<hr>
+
+<h2>🌍 Applications of Supervised Learning</h2>
+
+<ul>
+
+<li>✔ Email Spam Detection</li>
+
+<li>✔ Weather Forecasting</li>
+
+<li>✔ Medical Diagnosis</li>
+
+<li>✔ Credit Risk Analysis</li>
+
+<li>✔ House Price Prediction</li>
+
+<li>✔ Face Recognition</li>
+
+<li>✔ Customer Churn Prediction</li>
+
+</ul>
+
+<hr>
+
+<h2>⭐ Advantages</h2>
+
+<ul>
+
+<li>✔ High prediction accuracy with quality data.</li>
+
+<li>✔ Easy to evaluate model performance.</li>
+
+<li>✔ Suitable for classification and regression tasks.</li>
+
+<li>✔ Supports business decision-making.</li>
+
+<li>✔ Well-established algorithms are available.</li>
+
+</ul>
+
+<hr>
+
+<h2>❌ Disadvantages</h2>
+
+<ul>
+
+<li>❌ Requires labeled training data.</li>
+
+<li>❌ Data labeling is time-consuming.</li>
+
+<li>❌ Performance depends on data quality.</li>
+
+<li>❌ May overfit if not properly trained.</li>
+
+</ul>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>Define Supervised Learning.</li>
+
+<li>Differentiate between Classification and Regression.</li>
+
+<li>Explain the working process of Supervised Learning.</li>
+
+<li>Describe any four Supervised Learning algorithms.</li>
+
+<li>Write the applications of Supervised Learning.</li>
+
+<li>State the advantages and disadvantages of Supervised Learning.</li>
+
+</ol>
+
+<hr>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Revision</h3>
+
+<p>
+
+✔ Supervised Learning uses labeled data.<br>
+
+✔ Main Types → Classification and Regression.<br>
+
+✔ Popular Algorithms → Linear Regression, Logistic Regression, Decision Tree, KNN, Naive Bayes and SVM.<br>
+
+✔ Applications → Spam Detection, Medical Diagnosis, Weather Forecasting and House Price Prediction.<br>
+
+✔ It is one of the most widely used Machine Learning techniques.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 4 : UNSUPERVISED LEARNING -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>🧩 Chapter 4 : Unsupervised Learning</h2>
+
+<div class="highlight-box">
+
+<h3>📖 Introduction</h3>
+
+<p>
+Unsupervised Learning is a Machine Learning technique in which the model
+learns from unlabeled data. Unlike Supervised Learning, there are no
+predefined output labels. The algorithm automatically identifies hidden
+patterns, relationships and groups within the dataset. It is mainly used
+for clustering, association analysis and dimensionality reduction.
+</p>
+
+</div>
+
+<hr>
+
+<h2>📚 Definition of Unsupervised Learning</h2>
+
+<p>
+Unsupervised Learning is a Machine Learning method that analyzes unlabeled
+data to discover hidden structures, patterns and relationships without
+using predefined output values.
+</p>
+
+<hr>
+
+<h2>⭐ Characteristics of Unsupervised Learning</h2>
+
+<ul>
+
+<li>✔ Uses unlabeled data.</li>
+
+<li>✔ Discovers hidden patterns automatically.</li>
+
+<li>✔ Groups similar data together.</li>
+
+<li>✔ Does not require predefined outputs.</li>
+
+<li>✔ Useful for exploratory data analysis.</li>
+
+</ul>
+
+<hr>
+
+<h2>📂 Types of Unsupervised Learning</h2>
+
+<table class="notes-table">
+
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>Clustering</td>
+<td>Groups similar data points into clusters.</td>
+</tr>
+
+<tr>
+<td>Association</td>
+<td>Finds relationships and associations between data items.</td>
+</tr>
+
+<tr>
+<td>Dimensionality Reduction</td>
+<td>Reduces the number of features while preserving important information.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🧠 Common Unsupervised Learning Algorithms</h2>
+
+<table class="notes-table">
+
+<tr>
+<th>Algorithm</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td>K-Means Clustering</td>
+<td>Divides data into K different clusters.</td>
+</tr>
+
+<tr>
+<td>Hierarchical Clustering</td>
+<td>Creates a hierarchy of clusters using a tree structure.</td>
+</tr>
+
+<tr>
+<td>DBSCAN</td>
+<td>Finds clusters based on data density.</td>
+</tr>
+
+<tr>
+<td>Apriori Algorithm</td>
+<td>Discovers association rules among items.</td>
+</tr>
+
+<tr>
+<td>Principal Component Analysis (PCA)</td>
+<td>Reduces dataset dimensions while retaining important features.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>⚙ Working Process</h2>
+
+<ol>
+
+<li>Collect unlabeled data.</li>
+
+<li>Preprocess and clean the dataset.</li>
+
+<li>Select an appropriate algorithm.</li>
+
+<li>Train the model on the dataset.</li>
+
+<li>Identify patterns or clusters.</li>
+
+<li>Analyze and interpret the results.</li>
+
+</ol>
+
+<hr>
+
+<h2>🌍 Applications of Unsupervised Learning</h2>
+
+<ul>
+
+<li>✔ Customer Segmentation</li>
+
+<li>✔ Market Basket Analysis</li>
+
+<li>✔ Fraud Detection</li>
+
+<li>✔ Image Compression</li>
+
+<li>✔ Recommendation Systems</li>
+
+<li>✔ Social Network Analysis</li>
+
+<li>✔ Biological Data Analysis</li>
+
+</ul>
+
+<hr>
+
+<h2>⭐ Advantages</h2>
+
+<ul>
+
+<li>✔ Does not require labeled data.</li>
+
+<li>✔ Discovers hidden relationships.</li>
+
+<li>✔ Helps understand large datasets.</li>
+
+<li>✔ Useful for data exploration.</li>
+
+<li>✔ Supports feature reduction.</li>
+
+</ul>
+
+<hr>
+
+<h2>❌ Disadvantages</h2>
+
+<ul>
+
+<li>❌ Results may be difficult to interpret.</li>
+
+<li>❌ Lower accuracy than supervised learning in some cases.</li>
+
+<li>❌ Choosing the correct algorithm can be challenging.</li>
+
+<li>❌ Performance depends on data quality.</li>
+
+</ul>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>Define Unsupervised Learning.</li>
+
+<li>Explain the characteristics of Unsupervised Learning.</li>
+
+<li>Describe the types of Unsupervised Learning.</li>
+
+<li>Explain K-Means Clustering and Hierarchical Clustering.</li>
+
+<li>Write the applications of Unsupervised Learning.</li>
+
+<li>State the advantages and disadvantages of Unsupervised Learning.</li>
+
+</ol>
+
+<hr>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Revision</h3>
+
+<p>
+
+✔ Unsupervised Learning works with unlabeled data.<br>
+
+✔ Main Types → Clustering, Association and Dimensionality Reduction.<br>
+
+✔ Popular Algorithms → K-Means, Hierarchical Clustering, DBSCAN, Apriori and PCA.<br>
+
+✔ Applications → Customer Segmentation, Fraud Detection and Recommendation Systems.<br>
+
+✔ It is mainly used to discover hidden patterns in data.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 5 : REINFORCEMENT LEARNING & MODEL EVALUATION -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>🎮 Chapter 5 : Reinforcement Learning & Model Evaluation</h2>
+
+<div class="highlight-box">
+
+<h3>📖 Introduction</h3>
+
+<p>
+Reinforcement Learning is a Machine Learning technique in which an agent
+learns by interacting with its environment. The agent receives rewards
+for correct actions and penalties for incorrect actions. Model Evaluation
+is the process of measuring the performance of a Machine Learning model
+using different evaluation metrics to determine its accuracy and reliability.
+</p>
+
+</div>
+
+<hr>
+
+<h2>📚 Definition of Reinforcement Learning</h2>
+
+<p>
+Reinforcement Learning (RL) is a Machine Learning approach where an agent
+learns the best actions by continuously interacting with the environment
+and maximizing cumulative rewards.
+</p>
+
+<hr>
+
+<h2>⭐ Components of Reinforcement Learning</h2>
+
+<table class="notes-table">
+
+<tr>
+<th>Component</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>Agent</td>
+<td>The learner that performs actions.</td>
+</tr>
+
+<tr>
+<td>Environment</td>
+<td>The surrounding system in which the agent operates.</td>
+</tr>
+
+<tr>
+<td>State</td>
+<td>The current situation of the environment.</td>
+</tr>
+
+<tr>
+<td>Action</td>
+<td>The task performed by the agent.</td>
+</tr>
+
+<tr>
+<td>Reward</td>
+<td>Feedback received after performing an action.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>⚙ Working Process of Reinforcement Learning</h2>
+
+<ol>
+
+<li>The agent observes the current state.</li>
+
+<li>The agent selects an action.</li>
+
+<li>The environment responds to the action.</li>
+
+<li>A reward or penalty is received.</li>
+
+<li>The agent updates its strategy.</li>
+
+<li>The process repeats until the optimal policy is learned.</li>
+
+</ol>
+
+<hr>
+
+<h2>📊 Model Evaluation</h2>
+
+<p>
+Model Evaluation is the process of testing a Machine Learning model to
+measure its performance on unseen data. It helps determine whether the
+model makes accurate and reliable predictions.
+</p>
+
+<hr>
+
+<h2>📈 Evaluation Metrics</h2>
+
+<table class="notes-table">
+
+<tr>
+<th>Metric</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>Accuracy</td>
+<td>Percentage of correct predictions.</td>
+</tr>
+
+<tr>
+<td>Precision</td>
+<td>Measures the correctness of positive predictions.</td>
+</tr>
+
+<tr>
+<td>Recall</td>
+<td>Measures how many actual positive cases are identified.</td>
+</tr>
+
+<tr>
+<td>F1-Score</td>
+<td>Balanced measure of Precision and Recall.</td>
+</tr>
+
+<tr>
+<td>Confusion Matrix</td>
+<td>Displays correct and incorrect predictions in a table.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🌍 Applications of Reinforcement Learning</h2>
+
+<ul>
+
+<li>✔ Robotics</li>
+
+<li>✔ Self-Driving Cars</li>
+
+<li>✔ Game Playing (Chess, Go)</li>
+
+<li>✔ Recommendation Systems</li>
+
+<li>✔ Resource Management</li>
+
+<li>✔ Financial Trading</li>
+
+<li>✔ Smart Traffic Control</li>
+
+</ul>
+
+<hr>
+
+<h2>⭐ Advantages</h2>
+
+<ul>
+
+<li>✔ Learns through experience.</li>
+
+<li>✔ Suitable for complex decision-making.</li>
+
+<li>✔ Improves performance over time.</li>
+
+<li>✔ Handles dynamic environments.</li>
+
+<li>✔ Supports automation in intelligent systems.</li>
+
+</ul>
+
+<hr>
+
+<h2>❌ Disadvantages</h2>
+
+<ul>
+
+<li>❌ Requires large amounts of training time.</li>
+
+<li>❌ High computational cost.</li>
+
+<li>❌ Designing reward functions can be difficult.</li>
+
+<li>❌ May perform poorly with insufficient exploration.</li>
+
+</ul>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>Define Reinforcement Learning.</li>
+
+<li>Explain the components of Reinforcement Learning.</li>
+
+<li>Describe the working process of Reinforcement Learning.</li>
+
+<li>What is Model Evaluation?</li>
+
+<li>Explain Accuracy, Precision, Recall and F1-Score.</li>
+
+<li>Write the applications of Reinforcement Learning.</li>
+
+<li>State the advantages and disadvantages of Reinforcement Learning.</li>
+
+</ol>
+
+<hr>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Revision</h3>
+
+<p>
+
+✔ Reinforcement Learning learns using rewards and penalties.<br>
+
+✔ Main Components → Agent, Environment, State, Action and Reward.<br>
+
+✔ Model Evaluation measures model performance.<br>
+
+✔ Common Metrics → Accuracy, Precision, Recall, F1-Score and Confusion Matrix.<br>
+
+✔ Applications → Robotics, Self-Driving Cars, Games and Recommendation Systems.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 6 : APPLICATIONS, CHALLENGES & FUTURE OF MACHINE LEARNING -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>🚀 Chapter 6 : Applications, Challenges & Future of Machine Learning</h2>
+
+<div class="highlight-box">
+
+<h3>📖 Introduction</h3>
+
+<p>
+Machine Learning has become one of the fastest-growing technologies in the
+modern world. It enables computers to analyze data, identify patterns and
+make intelligent decisions without explicit programming. Machine Learning is
+widely used in healthcare, finance, education, e-commerce, transportation and
+many other industries. As Artificial Intelligence continues to evolve, the
+future of Machine Learning is becoming more advanced and impactful.
+</p>
+
+</div>
+
+<hr>
+
+<h2>📚 Applications of Machine Learning</h2>
+
+<p>
+Machine Learning is applied in many real-world fields to automate tasks,
+improve accuracy and support better decision-making.
+</p>
+
+<table class="notes-table">
+
+<tr>
+<th>Application</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>Healthcare</td>
+<td>Disease prediction, medical imaging and patient monitoring.</td>
+</tr>
+
+<tr>
+<td>Banking & Finance</td>
+<td>Fraud detection, credit scoring and risk analysis.</td>
+</tr>
+
+<tr>
+<td>E-Commerce</td>
+<td>Product recommendations and customer behavior analysis.</td>
+</tr>
+
+<tr>
+<td>Education</td>
+<td>Personalized learning and student performance analysis.</td>
+</tr>
+
+<tr>
+<td>Transportation</td>
+<td>Self-driving vehicles and traffic management.</td>
+</tr>
+
+<tr>
+<td>Agriculture</td>
+<td>Crop monitoring and yield prediction.</td>
+</tr>
+
+<tr>
+<td>Cyber Security</td>
+<td>Threat detection and malware identification.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>⚠ Challenges of Machine Learning</h2>
+
+<ul>
+
+<li>✔ Availability of high-quality data.</li>
+
+<li>✔ Data privacy and security issues.</li>
+
+<li>✔ High computational requirements.</li>
+
+<li>✔ Model bias and fairness concerns.</li>
+
+<li>✔ Lack of interpretability in complex models.</li>
+
+<li>✔ Need for skilled professionals.</li>
+
+</ul>
+
+<hr>
+
+<h2>🌍 Future Trends in Machine Learning</h2>
+
+<ul>
+
+<li>✔ Explainable Artificial Intelligence (XAI).</li>
+
+<li>✔ Deep Learning advancements.</li>
+
+<li>✔ AutoML (Automated Machine Learning).</li>
+
+<li>✔ Edge AI and IoT integration.</li>
+
+<li>✔ Generative AI applications.</li>
+
+<li>✔ Cloud-based Machine Learning platforms.</li>
+
+<li>✔ AI-powered Robotics.</li>
+
+</ul>
+
+<hr>
+
+<h2>📈 Impact of Machine Learning</h2>
+
+<p>
+Machine Learning has transformed the way organizations solve problems and
+make decisions. It improves productivity, reduces operational costs,
+enhances customer experience and enables automation in various industries.
+ML also plays an important role in scientific research, smart cities and
+digital transformation.
+</p>
+
+<hr>
+
+<h2>⭐ Advantages of Machine Learning</h2>
+
+<ul>
+
+<li>✔ Automates repetitive tasks.</li>
+
+<li>✔ Improves prediction accuracy.</li>
+
+<li>✔ Supports faster decision-making.</li>
+
+<li>✔ Handles large datasets efficiently.</li>
+
+<li>✔ Enhances business productivity.</li>
+
+<li>✔ Enables intelligent automation.</li>
+
+</ul>
+
+<hr>
+
+<h2>❌ Disadvantages of Machine Learning</h2>
+
+<ul>
+
+<li>❌ Requires large volumes of quality data.</li>
+
+<li>❌ High development and maintenance cost.</li>
+
+<li>❌ Models may produce biased results.</li>
+
+<li>❌ Training complex models takes significant time.</li>
+
+</ul>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>Explain the applications of Machine Learning.</li>
+
+<li>Discuss the challenges of Machine Learning.</li>
+
+<li>Write the future trends in Machine Learning.</li>
+
+<li>Explain the impact of Machine Learning on society and business.</li>
+
+<li>State the advantages and disadvantages of Machine Learning.</li>
+
+<li>What is Explainable AI (XAI)? Why is it important?</li>
+
+</ol>
+
+<hr>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Revision</h3>
+
+<p>
+
+✔ Machine Learning is used in Healthcare, Banking, E-Commerce, Education and Transportation.<br>
+
+✔ Major Challenges → Data Quality, Privacy, Bias, Cost and Explainability.<br>
+
+✔ Future Trends → XAI, Deep Learning, AutoML, Edge AI, Generative AI and Cloud ML.<br>
+
+✔ Machine Learning improves efficiency, automation and intelligent decision-making.<br>
+
+✔ It is one of the most important technologies driving the future of Artificial Intelligence.
+
+</p>
+
+</div>
+
+</div>

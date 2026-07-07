@@ -249,3 +249,44 @@ console.log("Service Worker Registered");
 });
 
 }
+
+function saveSubject(){
+
+const title="Full Stack Development";
+
+const content=document.getElementById("subjectNotes").innerHTML;
+
+let notes=JSON.parse(localStorage.getItem("savedNotes")) || [];
+
+const exists=notes.find(note=>note.title===title);
+
+if(exists){
+
+alert("Already Saved");
+
+return;
+
+}
+
+notes.push({
+
+title,
+
+content
+
+});
+
+localStorage.setItem("savedNotes",JSON.stringify(notes));
+
+alert("Full Stack Notes Saved Successfully ⭐");
+
+}
+function toggleProfile(){
+    document.getElementById("profileDropdown")
+    .classList.toggle("active");
+}
+
+function logout(){
+    alert("Logout Successfully");
+}
+

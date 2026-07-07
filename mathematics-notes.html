@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BCA Maths Detailed Notes</title>
+
+<style>
+body{
+  font-family: Arial;
+  margin:0;
+  background:#f5f7ff;
+}
+
+header{
+  background:linear-gradient(135deg,#4e54c8,#8f94fb);
+  color:white;
+  text-align:center;
+  padding:20px;
+  font-size:22px;
+  font-weight:bold;
+}
+
+.chapter{
+  background:white;
+  margin:15px;
+  padding:18px;
+  border-radius:12px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.chapter h2{
+  color:#4e54c8;
+}
+
+.chapter p{
+  line-height:1.7;
+  font-size:14px;
+  color:#333;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+📘 BCA Semester 1 Mathematics Notes (Detailed Version)
+</header>
+
+<!-- ================= CHAPTER 1 ================= -->
+<div class="chapter">
+<h2>Chapter 1: Set Theory (Complete Detailed Notes)</h2>
+
+<p>
+A set is a well-defined collection of distinct objects. These objects are called elements of the set.
+A set is usually represented using capital letters like A, B, C etc.
+Example: A = {1, 2, 3, 4, 5}
+</p>
+
+<p>
+<b>Representation of Sets:</b><br>
+1. Roster Form: A = {1,2,3,4}<br>
+2. Set Builder Form: A = {x : x is natural number less than 5}
+</p>
+
+<p>
+<b>Types of Sets:</b><br>
+• Empty Set (∅): No elements present<br>
+• Finite Set: Limited number of elements<br>
+• Infinite Set: Unlimited elements<br>
+• Singleton Set: Only one element<br>
+• Equal Sets: Same elements<br>
+• Subset: A ⊆ B means all elements of A are in B
+</p>
+
+<p>
+<b>Universal Set:</b> A set that contains all possible elements under discussion.
+</p>
+
+<p>
+<b>Operations on Sets:</b><br>
+• Union (A ∪ B): All elements in A and B<br>
+• Intersection (A ∩ B): Common elements<br>
+• Difference (A − B): Elements in A but not in B<br>
+• Complement (A’): Elements not in A (in universal set)
+</p>
+
+<p>
+<b>Laws of Sets:</b><br>
+• Commutative Law: A ∪ B = B ∪ A<br>
+• Associative Law: (A ∪ B) ∪ C = A ∪ (B ∪ C)<br>
+• Distributive Law: A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C)
+</p>
+
+<p>
+<b>De Morgan’s Laws:</b><br>
+(A ∪ B)’ = A’ ∩ B’<br>
+(A ∩ B)’ = A’ ∪ B’
+</p>
+</div>
+
+<!-- ================= CHAPTER 2 ================= -->
+<div class="chapter">
+<h2>Chapter 2: Relations & Functions (Detailed Notes)</h2>
+
+<p>
+A relation is a subset of Cartesian product of two sets.
+If A and B are two sets then R ⊆ A × B.
+</p>
+
+<p>
+Example:
+A = {1,2}, B = {3,4}
+R = {(1,3), (2,4)}
+</p>
+
+<p>
+<b>Types of Relations:</b><br>
+• Reflexive: (a,a) must exist for all a ∈ A<br>
+• Symmetric: If (a,b) ∈ R then (b,a) ∈ R<br>
+• Transitive: If (a,b) and (b,c) then (a,c)<br>
+• Equivalence Relation: Reflexive + Symmetric + Transitive
+</p>
+
+<p>
+<b>Function:</b><br>
+A function is a relation in which every input has exactly one output.
+Notation: f(x) = y
+</p>
+
+<p>
+<b>Types of Functions:</b><br>
+• One-One (Injective): Different inputs → different outputs<br>
+• Onto (Surjective): Every output has input<br>
+• Into: Some outputs are unused<br>
+• Bijective: Both One-One and Onto
+</p>
+
+<p>
+<b>Important Terms:</b><br>
+Domain: Set of input values<br>
+Codomain: Possible output values<br>
+Range: Actual output values
+</p>
+</div>
+
+</body>
+</html>
+
+<!-- ================= CHAPTER 3 ================= -->
+<div class="chapter">
+<h2>Chapter 3: Matrices (Complete Detailed Notes)</h2>
+
+<p>
+A matrix is a rectangular arrangement of numbers, symbols, or expressions arranged in rows and columns.
+If a matrix has m rows and n columns, it is called an m × n matrix.
+</p>
+
+<p>
+Example:
+A = [ 1  2  3
+      4  5  6 ]
+This is a 2 × 3 matrix.
+</p>
+
+<p>
+<b>Notation:</b> A = [aᵢⱼ] where i = row number and j = column number
+</p>
+
+<p>
+<b>Types of Matrices:</b><br>
+• Row Matrix: Only one row<br>
+• Column Matrix: Only one column<br>
+• Square Matrix: Same rows and columns (n × n)<br>
+• Rectangular Matrix: m × n where m ≠ n<br>
+• Zero Matrix: All elements are 0<br>
+• Diagonal Matrix: Non-diagonal elements are 0<br>
+• Identity Matrix (I): Diagonal elements = 1
+</p>
+
+<p>
+<b>Matrix Operations:</b><br>
+1. Addition: Only same order matrices can be added<br>
+2. Subtraction: Same rule as addition<br>
+3. Scalar Multiplication: Multiply each element by constant<br>
+4. Matrix Multiplication: Row × Column rule
+</p>
+
+<p>
+<b>Important Rule of Multiplication:</b><br>
+If A is m×n and B is n×p then AB is possible and result is m×p matrix.
+</p>
+
+<p>
+<b>Transpose of Matrix:</b><br>
+Transpose of A (Aᵀ) is obtained by converting rows into columns.
+</p>
+
+<p>
+Example:
+A = [1 2 3
+     4 5 6]
+
+Aᵀ = [1 4
+      2 5
+      3 6]
+</p>
+
+<p>
+<b>Symmetric Matrix:</b> Aᵀ = A<br>
+<b>Skew Symmetric Matrix:</b> Aᵀ = -A
+</p>
+
+<p>
+<b>Inverse of Matrix:</b><br>
+A⁻¹ exists only if determinant of A is not zero (det A ≠ 0)
+</p>
+
+<p>
+Formula:
+A⁻¹ = adj(A) / det(A)
+</p>
+</div>
+
+<!-- ================= CHAPTER 4 ================= -->
+<div class="chapter">
+<h2>Chapter 4: Determinants (Complete Detailed Notes)</h2>
+
+<p>
+A determinant is a scalar value associated with a square matrix.
+It is denoted as |A|.
+</p>
+
+<p>
+<b>Determinant of 2×2 Matrix:</b><br>
+|a  b|
+|c  d| = ad − bc
+</p>
+
+<p>
+<b>Determinant of 3×3 Matrix:</b><br>
+It is expanded using minors and cofactors.
+</p>
+
+<p>
+General form:
+|A| = a₁₁M₁₁ − a₁₂M₁₂ + a₁₃M₁₃
+</p>
+
+<p>
+<b>Minors:</b> Determinant of sub-matrix formed by deleting row and column<br>
+<b>Cofactors:</b> Signed minors
+</p>
+
+<p>
+<b>Properties of Determinants:</b><br>
+• If two rows are identical, determinant = 0<br>
+• If a row is zero, determinant = 0<br>
+• Interchanging rows changes sign<br>
+• Multiplying a row multiplies determinant<br>
+• det(A) = det(Aᵀ)
+</p>
+
+<p>
+<b>Important Formulas:</b><br>
+det(AB) = det(A) × det(B)
+</p>
+
+<p>
+<b>Cramer’s Rule:</b><br>
+Used to solve linear equations:
+Ax = B<br>
+Solution: x = Dx / D, y = Dy / D, z = Dz / D
+</p>
+
+<p>
+<b>Applications:</b><br>
+• Solving linear equations<br>
+• Finding area of triangle<br>
+• Engineering calculations
+</p>
+</div>
+
+<!-- ================= CHAPTER 5 ================= -->
+<div class="chapter">
+<h2>Chapter 5: Probability (Complete Detailed Notes)</h2>
+
+<p>
+Probability is a branch of mathematics that deals with the chance or likelihood of occurrence of an event.
+It is used to measure uncertainty.
+</p>
+
+<p>
+<b>Basic Formula:</b><br>
+P(E) = Number of favourable outcomes / Total number of outcomes
+</p>
+
+<p>
+Probability values always lie between:
+0 ≤ P(E) ≤ 1
+</p>
+
+<p>
+• If P(E) = 0 → impossible event<br>
+• If P(E) = 1 → sure event
+</p>
+
+<p>
+<b>Important Terms:</b><br>
+• Experiment: Any process that produces outcomes<br>
+• Sample Space (S): Set of all possible outcomes<br>
+• Event (E): Subset of sample space
+</p>
+
+<p>
+Example:<br>
+Throwing a dice:<br>
+S = {1,2,3,4,5,6}
+</p>
+
+<p>
+<b>Types of Events:</b><br>
+• Simple Event: One outcome<br>
+• Compound Event: More than one outcome<br>
+• Sure Event: Always occurs<br>
+• Impossible Event: Never occurs
+</p>
+
+<p>
+<b>Equally Likely Events:</b><br>
+Events having same probability of occurrence.
+Example: Tossing a fair coin (H or T)
+</p>
+
+<p>
+<b>Mutually Exclusive Events:</b><br>
+Two events that cannot happen at the same time.
+A ∩ B = 0
+</p>
+
+<p>
+<b>Independent Events:</b><br>
+Occurrence of one event does not affect another.
+</p>
+
+<p>
+<b>Addition Theorem of Probability:</b><br>
+P(A ∪ B) = P(A) + P(B) − P(A ∩ B)
+</p>
+
+<p>
+If A and B are mutually exclusive:<br>
+P(A ∪ B) = P(A) + P(B)
+</p>
+
+<p>
+<b>Conditional Probability:</b><br>
+Probability of A given B has already occurred.
+</p>
+
+<p>
+Formula:<br>
+P(A|B) = P(A ∩ B) / P(B)
+</p>
+
+<p>
+<b>Multiplication Theorem:</b><br>
+P(A ∩ B) = P(A) × P(B|A)
+</p>
+
+<p>
+If A and B are independent:<br>
+P(A ∩ B) = P(A) × P(B)
+</p>
+
+<p>
+<b>Bayes Theorem (Basic Idea):</b><br>
+Used to reverse conditional probabilities in advanced problems.
+</p>
+
+<p>
+<b>Important Applications:</b><br>
+• Weather prediction<br>
+• Risk analysis<br>
+• Insurance calculations<br>
+• Game theory
+</p>
+
+<p>
+<b>Expected Value (Extra Important):</b><br>
+E(X) = Σ [x × P(x)]
+</p>
+
+<p>
+This helps in decision making under uncertainty.
+</p>
+</div>
+
+<!-- ================= FINAL REVISION ================= -->
+<div class="chapter">
+<h2>📌 Part 5: Final Revision + Important Formulas</h2>
+
+<p>
+This section contains the most important formulas and quick revision points for exam preparation.
+Use it before exams for fast revision.
+</p>
+
+<p>
+<b>🔹 SET THEORY QUICK REVISION</b><br>
+• A ∪ B → Union (all elements)<br>
+• A ∩ B → Intersection (common elements)<br>
+• A − B → Difference<br>
+• (A ∪ B)’ = A’ ∩ B’ (De Morgan Law)<br>
+• (A ∩ B)’ = A’ ∪ B’
+</p>
+
+<p>
+<b>🔹 RELATIONS & FUNCTIONS</b><br>
+• Reflexive: (a,a) ∈ R<br>
+• Symmetric: (a,b) ⇒ (b,a)<br>
+• Transitive: (a,b),(b,c) ⇒ (a,c)<br><br>
+
+Function Types:<br>
+• One-One (Injective)<br>
+• Onto (Surjective)<br>
+• Bijective = One-One + Onto
+</p>
+
+<p>
+<b>🔹 MATRICES QUICK FORMULAS</b><br>
+• Order: m × n<br>
+• Multiplication condition: (m×n)(n×p)<br>
+• Transpose: rows ↔ columns<br>
+• A⁻¹ = adj(A) / det(A)<br>
+• Symmetric: Aᵀ = A<br>
+• Skew symmetric: Aᵀ = -A
+</p>
+
+<p>
+<b>🔹 DETERMINANTS QUICK FORMULAS</b><br>
+• 2×2: |a b| = ad − bc<br>
+        |c d|<br><br>
+
+• det(Aᵀ) = det(A)<br>
+• det(AB) = det(A) × det(B)<br>
+• Two equal rows ⇒ determinant = 0<br>
+• Row interchange changes sign
+</p>
+
+<p>
+<b>🔹 PROBABILITY QUICK FORMULAS</b><br>
+• P(E) = Favourable / Total outcomes<br>
+• 0 ≤ P(E) ≤ 1<br>
+• P(A ∪ B) = P(A) + P(B) − P(A ∩ B)<br>
+• P(A|B) = P(A ∩ B) / P(B)<br>
+• P(A ∩ B) = P(A) × P(B|A)<br>
+• Independent events: P(A ∩ B) = P(A)P(B)
+</p>
+
+<p>
+<b>🔹 IMPORTANT EXAM TIPS</b><br>
+• Always write formula before solving<br>
+• Draw Venn diagram for set problems<br>
+• Check matrix order before multiplication<br>
+• Step-by-step determinant expansion<br>
+• Probability questions solve using sample space
+</p>
+
+<p>
+<b>🔹 MOST IMPORTANT TOPICS (HIGH SCORING)</b><br>
+• De Morgan’s Laws<br>
+• Matrix inverse problems<br>
+• Cramer’s Rule<br>
+• Determinant properties<br>
+• Conditional probability
+</p>
+
+<p>
+📌 Final Tip: Revise this section 2–3 times before exam for quick recall.
+</p>
+
+</div>

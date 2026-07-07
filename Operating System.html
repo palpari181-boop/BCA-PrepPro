@@ -1,0 +1,1336 @@
+<!-- ===================================================== -->
+<!-- CHAPTER 1 : INTRODUCTION TO OPERATING SYSTEM -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>🖥️ Chapter 1 : Introduction to Operating System</h2>
+
+<div class="highlight-box">
+
+<h3>📖 Introduction</h3>
+
+<p>
+An Operating System (OS) is system software that acts as an interface
+between the user and computer hardware. It manages hardware resources,
+executes programs and provides services to application software. Without an
+Operating System, a computer cannot function efficiently. Popular operating
+systems include Windows, Linux, macOS and Android.
+</p>
+
+</div>
+
+<hr>
+
+<h2>📚 What is an Operating System?</h2>
+
+<p>
+An Operating System is a collection of programs that controls the execution
+of application software and manages hardware resources such as the CPU,
+memory, storage devices and input/output devices. It provides a convenient
+environment for users to interact with the computer system.
+</p>
+
+<hr>
+
+<h2>⚙️ Functions of an Operating System</h2>
+
+<table class="notes-table">
+
+<tr>
+<th>Function</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>Process Management</td>
+<td>Creates, schedules and terminates processes.</td>
+</tr>
+
+<tr>
+<td>Memory Management</td>
+<td>Allocates and deallocates memory to programs.</td>
+</tr>
+
+<tr>
+<td>File Management</td>
+<td>Organizes and manages files and directories.</td>
+</tr>
+
+<tr>
+<td>Device Management</td>
+<td>Controls communication with hardware devices.</td>
+</tr>
+
+<tr>
+<td>Security</td>
+<td>Protects data and system resources from unauthorized access.</td>
+</tr>
+
+<tr>
+<td>User Interface</td>
+<td>Provides a graphical or command-line interface for users.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🖥️ Types of Operating Systems</h2>
+
+<ul>
+
+<li>✔ Batch Operating System</li>
+
+<li>✔ Time-Sharing Operating System</li>
+
+<li>✔ Multiprogramming Operating System</li>
+
+<li>✔ Multitasking Operating System</li>
+
+<li>✔ Real-Time Operating System (RTOS)</li>
+
+<li>✔ Distributed Operating System</li>
+
+<li>✔ Network Operating System</li>
+
+</ul>
+
+<hr>
+
+<h2>🌍 Examples of Operating Systems</h2>
+
+<table class="notes-table">
+
+<tr>
+<th>Operating System</th>
+<th>Common Use</th>
+</tr>
+
+<tr>
+<td>Windows</td>
+<td>Personal computers and laptops.</td>
+</tr>
+
+<tr>
+<td>Linux</td>
+<td>Servers and software development.</td>
+</tr>
+
+<tr>
+<td>macOS</td>
+<td>Apple computers.</td>
+</tr>
+
+<tr>
+<td>Android</td>
+<td>Smartphones and tablets.</td>
+</tr>
+
+<tr>
+<td>iOS</td>
+<td>Apple mobile devices.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>⭐ Advantages of Operating System</h2>
+
+<ul>
+
+<li>✔ Simplifies computer operations.</li>
+
+<li>✔ Efficient resource management.</li>
+
+<li>✔ Supports multitasking.</li>
+
+<li>✔ Provides security and data protection.</li>
+
+<li>✔ Improves overall system performance.</li>
+
+</ul>
+
+<hr>
+
+<h2>❌ Limitations of Operating System</h2>
+
+<ul>
+
+<li>❌ Some operating systems are expensive.</li>
+
+<li>❌ Hardware compatibility issues may occur.</li>
+
+<li>❌ Security vulnerabilities may affect the system.</li>
+
+<li>❌ Regular updates and maintenance are required.</li>
+
+</ul>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>Define an Operating System.</li>
+
+<li>Explain the functions of an Operating System.</li>
+
+<li>Describe the different types of Operating Systems.</li>
+
+<li>Write the applications of an Operating System.</li>
+
+<li>State the advantages and limitations of an Operating System.</li>
+
+<li>Differentiate between Batch OS and Time-Sharing OS.</li>
+
+</ol>
+
+<hr>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Revision</h3>
+
+<p>
+
+✔ An Operating System acts as an interface between the user and hardware.<br>
+
+✔ Main Functions → Process, Memory, File and Device Management.<br>
+
+✔ Types → Batch, Time-Sharing, Multiprogramming, Multitasking, RTOS, Distributed and Network OS.<br>
+
+✔ Popular Operating Systems include Windows, Linux, macOS, Android and iOS.<br>
+
+✔ The OS improves performance, security and efficient resource utilization.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 2 : PROCESS MANAGEMENT & CPU SCHEDULING -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>⚙️ Chapter 2 : Process Management & CPU Scheduling</h2>
+
+<div class="highlight-box">
+
+<h3>📖 Introduction</h3>
+
+<p>
+Process Management is one of the primary responsibilities of an Operating
+System. A process is a program that is currently being executed. The
+Operating System manages multiple processes by allocating CPU time,
+maintaining process information and scheduling their execution efficiently.
+CPU Scheduling helps improve system performance by selecting the next
+process to run.
+</p>
+
+</div>
+
+<hr>
+
+<h2>📚 What is a Process?</h2>
+
+<p>
+A Process is an active instance of a program that is currently executing.
+Each process has its own memory space, program counter, registers and
+system resources. The Operating System creates, schedules and terminates
+processes as required.
+</p>
+
+<hr>
+
+<h2>🔄 Process States</h2>
+
+<table class="notes-table">
+
+<tr>
+<th>State</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>New</td>
+<td>The process is being created.</td>
+</tr>
+
+<tr>
+<td>Ready</td>
+<td>The process is waiting for CPU allocation.</td>
+</tr>
+
+<tr>
+<td>Running</td>
+<td>The CPU is executing the process.</td>
+</tr>
+
+<tr>
+<td>Waiting (Blocked)</td>
+<td>The process is waiting for an event or I/O operation.</td>
+</tr>
+
+<tr>
+<td>Terminated</td>
+<td>The process has finished execution.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>📋 Process Control Block (PCB)</h2>
+
+<p>
+A Process Control Block (PCB) is a data structure maintained by the
+Operating System to store information about each process. It helps the
+Operating System manage and monitor process execution.
+</p>
+
+<table class="notes-table">
+
+<tr>
+<th>PCB Information</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>Process ID (PID)</td>
+<td>Unique identification number of the process.</td>
+</tr>
+
+<tr>
+<td>Process State</td>
+<td>Current status of the process.</td>
+</tr>
+
+<tr>
+<td>CPU Registers</td>
+<td>Stores register values during execution.</td>
+</tr>
+
+<tr>
+<td>Memory Information</td>
+<td>Details about memory allocation.</td>
+</tr>
+
+<tr>
+<td>I/O Status</td>
+<td>Information about input/output operations.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🖥 CPU Scheduling</h2>
+
+<p>
+CPU Scheduling is the process of selecting the next process from the ready
+queue for execution. The main objective is to maximize CPU utilization,
+reduce waiting time and improve overall system performance.
+</p>
+
+<hr>
+
+<h2>📊 CPU Scheduling Algorithms</h2>
+
+<table class="notes-table">
+
+<tr>
+<th>Algorithm</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>FCFS (First Come First Serve)</td>
+<td>Processes are executed in the order they arrive.</td>
+</tr>
+
+<tr>
+<td>SJF (Shortest Job First)</td>
+<td>The process with the shortest execution time is selected first.</td>
+</tr>
+
+<tr>
+<td>Priority Scheduling</td>
+<td>The process with the highest priority is executed first.</td>
+</tr>
+
+<tr>
+<td>Round Robin</td>
+<td>Each process gets CPU time for a fixed time quantum.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🔄 Context Switching</h2>
+
+<p>
+Context Switching is the process of saving the current state of a running
+process and loading the state of another process. It allows multiple
+processes to share the CPU efficiently.
+</p>
+
+<hr>
+
+<h2>⭐ Advantages</h2>
+
+<ul>
+
+<li>✔ Efficient CPU utilization.</li>
+
+<li>✔ Supports multitasking.</li>
+
+<li>✔ Improves system performance.</li>
+
+<li>✔ Reduces process waiting time.</li>
+
+<li>✔ Enables smooth execution of multiple programs.</li>
+
+</ul>
+
+<hr>
+
+<h2>❌ Limitations</h2>
+
+<ul>
+
+<li>❌ Frequent context switching increases overhead.</li>
+
+<li>❌ Poor scheduling may cause starvation.</li>
+
+<li>❌ Complex scheduling algorithms require more processing time.</li>
+
+<li>❌ Deadlocks may occur in certain situations.</li>
+
+</ul>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>Define a Process and explain its states.</li>
+
+<li>What is a Process Control Block (PCB)?</li>
+
+<li>Explain CPU Scheduling and its objectives.</li>
+
+<li>Describe FCFS, SJF, Priority and Round Robin scheduling algorithms.</li>
+
+<li>What is Context Switching?</li>
+
+<li>State the advantages and limitations of Process Management.</li>
+
+</ol>
+
+<hr>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Revision</h3>
+
+<p>
+
+✔ A Process is a program in execution.<br>
+
+✔ Process States → New, Ready, Running, Waiting and Terminated.<br>
+
+✔ PCB stores process-related information.<br>
+
+✔ CPU Scheduling algorithms include FCFS, SJF, Priority and Round Robin.<br>
+
+✔ Context Switching enables efficient sharing of CPU resources.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 3 : MEMORY MANAGEMENT -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>🧠 Chapter 3 : Memory Management</h2>
+
+<div class="highlight-box">
+
+<h3>📖 Introduction</h3>
+
+<p>
+Memory Management is one of the most important functions of an Operating
+System. It manages the allocation and deallocation of memory to different
+processes, ensuring efficient utilization of available memory. Proper
+memory management improves system performance and allows multiple programs
+to execute simultaneously.
+</p>
+
+</div>
+
+<hr>
+
+<h2>📚 What is Memory Management?</h2>
+
+<p>
+Memory Management is the process of controlling and coordinating computer
+memory. The Operating System keeps track of each memory location, allocates
+memory to processes when required and releases it after execution is
+completed.
+</p>
+
+<hr>
+
+<h2>⚙️ Memory Allocation Techniques</h2>
+
+<table class="notes-table">
+
+<tr>
+<th>Technique</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>Contiguous Memory Allocation</td>
+<td>Each process is allocated a single continuous block of memory.</td>
+</tr>
+
+<tr>
+<td>Non-Contiguous Memory Allocation</td>
+<td>Memory is divided into different blocks and allocated as required.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>📄 Paging</h2>
+
+<p>
+Paging is a memory management technique in which physical memory is divided
+into fixed-size blocks called <strong>frames</strong> and logical memory is
+divided into fixed-size blocks called <strong>pages</strong>. It eliminates
+external fragmentation and allows efficient memory utilization.
+</p>
+
+<hr>
+
+<h2>📑 Segmentation</h2>
+
+<p>
+Segmentation is a memory management technique where a program is divided
+into variable-sized segments such as code, data and stack. Each segment has
+its own address and size, making memory organization more flexible.
+</p>
+
+<hr>
+
+<h2>💾 Virtual Memory</h2>
+
+<p>
+Virtual Memory is a technique that allows the execution of programs larger
+than the available physical memory. It uses secondary storage (hard disk or
+SSD) as an extension of RAM, enabling efficient multitasking.
+</p>
+
+<hr>
+
+<h2>🔄 Swapping</h2>
+
+<p>
+Swapping is the process of moving processes between main memory (RAM) and
+secondary storage. It frees memory for other processes and helps improve
+overall system performance when memory resources are limited.
+</p>
+
+<hr>
+
+<h2>📊 Page Replacement Algorithms</h2>
+
+<table class="notes-table">
+
+<tr>
+<th>Algorithm</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>FIFO (First In First Out)</td>
+<td>Replaces the page that entered memory first.</td>
+</tr>
+
+<tr>
+<td>LRU (Least Recently Used)</td>
+<td>Replaces the page that has not been used for the longest time.</td>
+</tr>
+
+<tr>
+<td>Optimal Page Replacement</td>
+<td>Replaces the page that will not be used for the longest future period.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>⭐ Advantages</h2>
+
+<ul>
+
+<li>✔ Efficient utilization of memory.</li>
+
+<li>✔ Supports multitasking.</li>
+
+<li>✔ Reduces memory wastage.</li>
+
+<li>✔ Improves system performance.</li>
+
+<li>✔ Enables execution of large applications using virtual memory.</li>
+
+</ul>
+
+<hr>
+
+<h2>❌ Limitations</h2>
+
+<ul>
+
+<li>❌ Excessive swapping may reduce system performance.</li>
+
+<li>❌ Virtual memory access is slower than RAM.</li>
+
+<li>❌ Page replacement algorithms increase system overhead.</li>
+
+<li>❌ Improper memory management may lead to fragmentation.</li>
+
+</ul>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>What is Memory Management?</li>
+
+<li>Differentiate between Paging and Segmentation.</li>
+
+<li>Explain the concept of Virtual Memory.</li>
+
+<li>What is Swapping? Explain its purpose.</li>
+
+<li>Describe FIFO, LRU and Optimal Page Replacement algorithms.</li>
+
+<li>State the advantages and limitations of Memory Management.</li>
+
+</ol>
+
+<hr>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Revision</h3>
+
+<p>
+
+✔ Memory Management controls the allocation and deallocation of memory.<br>
+
+✔ Paging divides memory into pages and frames.<br>
+
+✔ Segmentation divides programs into variable-sized segments.<br>
+
+✔ Virtual Memory allows execution of programs larger than physical RAM.<br>
+
+✔ Common Page Replacement Algorithms → FIFO, LRU and Optimal.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 4 : FILE SYSTEM & DISK MANAGEMENT -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>💽 Chapter 4 : File System & Disk Management</h2>
+
+<div class="highlight-box">
+
+<h3>📖 Introduction</h3>
+
+<p>
+A File System is a method used by an Operating System to store, organize and
+manage files on storage devices. Disk Management is responsible for managing
+disk space, file storage and efficient access to data. Together, they ensure
+that files are stored securely and can be accessed quickly whenever required.
+</p>
+
+</div>
+
+<hr>
+
+<h2>📚 File System</h2>
+
+<p>
+A File System is a structure that controls how data is stored and retrieved
+from storage devices such as hard disks and SSDs. It organizes files into
+directories and provides users with efficient access to stored information.
+</p>
+
+<hr>
+
+<h2>📂 File Operations</h2>
+
+<table class="notes-table">
+
+<tr>
+<th>Operation</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>Create</td>
+<td>Creates a new file.</td>
+</tr>
+
+<tr>
+<td>Open</td>
+<td>Opens an existing file for reading or writing.</td>
+</tr>
+
+<tr>
+<td>Read</td>
+<td>Retrieves data from a file.</td>
+</tr>
+
+<tr>
+<td>Write</td>
+<td>Stores data into a file.</td>
+</tr>
+
+<tr>
+<td>Close</td>
+<td>Closes the file after use.</td>
+</tr>
+
+<tr>
+<td>Delete</td>
+<td>Removes a file from storage.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🗂 Directory Structure</h2>
+
+<p>
+A directory is a folder that contains files and subdirectories. It helps
+organize data systematically, making file management easier and improving
+data accessibility.
+</p>
+
+<hr>
+
+<h2>📦 File Allocation Methods</h2>
+
+<table class="notes-table">
+
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>Contiguous Allocation</td>
+<td>Stores a file in consecutive memory blocks.</td>
+</tr>
+
+<tr>
+<td>Linked Allocation</td>
+<td>Stores file blocks at different locations connected through pointers.</td>
+</tr>
+
+<tr>
+<td>Indexed Allocation</td>
+<td>Uses an index block to store the addresses of all file blocks.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>💿 Disk Scheduling</h2>
+
+<p>
+Disk Scheduling is the process of deciding the order in which disk read and
+write requests are processed. Efficient scheduling reduces seek time and
+improves overall system performance.
+</p>
+
+<hr>
+
+<h2>📊 Disk Scheduling Algorithms</h2>
+
+<table class="notes-table">
+
+<tr>
+<th>Algorithm</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>FCFS (First Come First Serve)</td>
+<td>Processes requests in the order they arrive.</td>
+</tr>
+
+<tr>
+<td>SSTF (Shortest Seek Time First)</td>
+<td>Selects the request closest to the current disk head position.</td>
+</tr>
+
+<tr>
+<td>SCAN</td>
+<td>Moves the disk head in one direction, serving requests before reversing.</td>
+</tr>
+
+<tr>
+<td>C-SCAN (Circular SCAN)</td>
+<td>Moves the disk head in one direction only and then returns to the beginning.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>⭐ Advantages</h2>
+
+<ul>
+
+<li>✔ Efficient file organization.</li>
+
+<li>✔ Faster access to stored data.</li>
+
+<li>✔ Better utilization of disk space.</li>
+
+<li>✔ Improved system performance.</li>
+
+<li>✔ Supports secure storage and retrieval of files.</li>
+
+</ul>
+
+<hr>
+
+<h2>❌ Limitations</h2>
+
+<ul>
+
+<li>❌ File fragmentation may reduce performance.</li>
+
+<li>❌ Disk failures can cause data loss.</li>
+
+<li>❌ Complex file systems require more management.</li>
+
+<li>❌ Poor disk scheduling may increase seek time.</li>
+
+</ul>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>What is a File System? Explain its functions.</li>
+
+<li>Describe common File Operations.</li>
+
+<li>Explain the different File Allocation Methods.</li>
+
+<li>What is Disk Scheduling? Explain FCFS, SSTF, SCAN and C-SCAN algorithms.</li>
+
+<li>Write the advantages and limitations of File Systems.</li>
+
+<li>Differentiate between Contiguous, Linked and Indexed Allocation.</li>
+
+</ol>
+
+<hr>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Revision</h3>
+
+<p>
+
+✔ A File System manages files and directories.<br>
+
+✔ File Operations include Create, Open, Read, Write, Close and Delete.<br>
+
+✔ File Allocation Methods → Contiguous, Linked and Indexed.<br>
+
+✔ Disk Scheduling Algorithms → FCFS, SSTF, SCAN and C-SCAN.<br>
+
+✔ Efficient file and disk management improves system performance.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 5 : DEADLOCKS, SECURITY & PROTECTION -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>🔒 Chapter 5 : Deadlocks, Security & Protection</h2>
+
+<div class="highlight-box">
+
+<h3>📖 Introduction</h3>
+
+<p>
+Deadlocks, Security and Protection are essential topics in an Operating
+System. A deadlock occurs when two or more processes wait indefinitely for
+resources held by each other. Security protects the system from unauthorized
+access, while protection controls the use of system resources to ensure safe
+and efficient operation.
+</p>
+
+</div>
+
+<hr>
+
+<h2>⚠️ Deadlock</h2>
+
+<p>
+A Deadlock is a situation in which two or more processes are permanently
+blocked because each process is waiting for a resource that is held by
+another process. As a result, none of the processes can continue execution.
+</p>
+
+<hr>
+
+<h2>📋 Necessary Conditions for Deadlock</h2>
+
+<table class="notes-table">
+
+<tr>
+<th>Condition</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>Mutual Exclusion</td>
+<td>A resource can be used by only one process at a time.</td>
+</tr>
+
+<tr>
+<td>Hold and Wait</td>
+<td>A process holds one resource while waiting for another.</td>
+</tr>
+
+<tr>
+<td>No Preemption</td>
+<td>Resources cannot be forcibly taken from a process.</td>
+</tr>
+
+<tr>
+<td>Circular Wait</td>
+<td>Processes form a circular chain where each waits for a resource held by the next.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🛡 Deadlock Handling Methods</h2>
+
+<table class="notes-table">
+
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>Prevention</td>
+<td>Eliminates one or more necessary conditions for deadlock.</td>
+</tr>
+
+<tr>
+<td>Avoidance</td>
+<td>Allocates resources carefully to avoid unsafe states.</td>
+</tr>
+
+<tr>
+<td>Detection</td>
+<td>Identifies deadlocks after they occur.</td>
+</tr>
+
+<tr>
+<td>Recovery</td>
+<td>Recovers from deadlock by terminating processes or releasing resources.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🔐 System Security</h2>
+
+<p>
+System Security refers to protecting the computer system and its data from
+unauthorized access, malware and cyber threats. It ensures the
+confidentiality, integrity and availability of information.
+</p>
+
+<hr>
+
+<h2>🛡 Protection Mechanisms</h2>
+
+<ul>
+
+<li>✔ User Authentication</li>
+
+<li>✔ Password Protection</li>
+
+<li>✔ Access Control</li>
+
+<li>✔ File Permissions</li>
+
+<li>✔ Data Encryption</li>
+
+<li>✔ Antivirus Software</li>
+
+<li>✔ Firewall Protection</li>
+
+</ul>
+
+<hr>
+
+<h2>🌍 Applications</h2>
+
+<ul>
+
+<li>✔ Banking Systems</li>
+
+<li>✔ Government Organizations</li>
+
+<li>✔ Hospital Management Systems</li>
+
+<li>✔ Cloud Computing</li>
+
+<li>✔ Educational Institutions</li>
+
+<li>✔ E-Commerce Applications</li>
+
+</ul>
+
+<hr>
+
+<h2>⭐ Advantages</h2>
+
+<ul>
+
+<li>✔ Prevents unauthorized access.</li>
+
+<li>✔ Protects confidential information.</li>
+
+<li>✔ Improves system reliability.</li>
+
+<li>✔ Reduces security risks.</li>
+
+<li>✔ Ensures safe resource utilization.</li>
+
+</ul>
+
+<hr>
+
+<h2>❌ Limitations</h2>
+
+<ul>
+
+<li>❌ Security measures may increase system overhead.</li>
+
+<li>❌ Deadlock prevention may reduce resource utilization.</li>
+
+<li>❌ Recovery methods may lead to data loss.</li>
+
+<li>❌ Advanced security systems require regular maintenance.</li>
+
+</ul>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>Define Deadlock with an example.</li>
+
+<li>Explain the four necessary conditions of Deadlock.</li>
+
+<li>Describe the methods of Deadlock Handling.</li>
+
+<li>What is System Security? Explain its importance.</li>
+
+<li>Describe different Protection Mechanisms in an Operating System.</li>
+
+<li>State the advantages and limitations of Security and Protection.</li>
+
+</ol>
+
+<hr>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Revision</h3>
+
+<p>
+
+✔ Deadlock occurs when processes wait indefinitely for resources.<br>
+
+✔ Four Conditions → Mutual Exclusion, Hold and Wait, No Preemption and Circular Wait.<br>
+
+✔ Deadlock Handling → Prevention, Avoidance, Detection and Recovery.<br>
+
+✔ Security protects systems from unauthorized access and cyber threats.<br>
+
+✔ Protection Mechanisms include Authentication, Encryption, Firewall and Access Control.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 6 : DISTRIBUTED SYSTEMS & MODERN OPERATING SYSTEMS -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>🌐 Chapter 6 : Distributed Systems & Modern Operating Systems</h2>
+
+<div class="highlight-box">
+
+<h3>📖 Introduction</h3>
+
+<p>
+Modern Operating Systems are designed to support advanced computing
+environments such as distributed systems, cloud computing, mobile devices
+and virtualization. They provide efficient resource management, high
+performance, security and communication between multiple computer systems.
+</p>
+
+</div>
+
+<hr>
+
+<h2>🌍 Distributed Operating System</h2>
+
+<p>
+A Distributed Operating System manages a group of interconnected computers
+and allows them to work together as a single system. It shares resources,
+balances workloads and provides transparent access to users.
+</p>
+
+<hr>
+
+<h2>🖧 Network Operating System (NOS)</h2>
+
+<p>
+A Network Operating System is designed to manage computers connected through
+a network. It provides services such as file sharing, printer sharing,
+remote access and centralized user management.
+</p>
+
+<hr>
+
+<h2>⏱ Real-Time Operating System (RTOS)</h2>
+
+<p>
+A Real-Time Operating System processes data and responds to events within a
+fixed time limit. It is used in applications where timely responses are
+critical, such as medical devices, robotics and industrial automation.
+</p>
+
+<hr>
+
+<h2>📱 Mobile Operating Systems</h2>
+
+<p>
+Mobile Operating Systems are designed specifically for smartphones and
+tablets. They provide touch-based interfaces, power management, wireless
+communication and application support.
+</p>
+
+<table class="notes-table">
+
+<tr>
+<th>Operating System</th>
+<th>Application</th>
+</tr>
+
+<tr>
+<td>Android</td>
+<td>Smartphones and Tablets.</td>
+</tr>
+
+<tr>
+<td>iOS</td>
+<td>Apple iPhone and iPad devices.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>💻 Virtualization</h2>
+
+<p>
+Virtualization is a technology that allows multiple virtual machines (VMs)
+to run on a single physical computer. Each virtual machine behaves like an
+independent computer with its own operating system and applications.
+</p>
+
+<hr>
+
+<h2>📈 Current Trends in Operating Systems</h2>
+
+<ul>
+
+<li>✔ Cloud Computing Support</li>
+
+<li>✔ Artificial Intelligence Integration</li>
+
+<li>✔ Virtualization Technology</li>
+
+<li>✔ Internet of Things (IoT) Support</li>
+
+<li>✔ Enhanced Cyber Security</li>
+
+<li>✔ Energy-Efficient Computing</li>
+
+<li>✔ Multi-Core Processor Support</li>
+
+</ul>
+
+<hr>
+
+<h2>🌍 Applications</h2>
+
+<ul>
+
+<li>✔ Cloud Data Centers</li>
+
+<li>✔ Smart Devices</li>
+
+<li>✔ Industrial Automation</li>
+
+<li>✔ Banking Systems</li>
+
+<li>✔ Healthcare Systems</li>
+
+<li>✔ E-Commerce Platforms</li>
+
+<li>✔ Educational Institutions</li>
+
+</ul>
+
+<hr>
+
+<h2>⭐ Advantages</h2>
+
+<ul>
+
+<li>✔ Supports distributed computing.</li>
+
+<li>✔ Efficient resource sharing.</li>
+
+<li>✔ High system availability.</li>
+
+<li>✔ Improved scalability and performance.</li>
+
+<li>✔ Better security and reliability.</li>
+
+</ul>
+
+<hr>
+
+<h2>❌ Limitations</h2>
+
+<ul>
+
+<li>❌ High implementation cost.</li>
+
+<li>❌ Complex system management.</li>
+
+<li>❌ Network failures may affect performance.</li>
+
+<li>❌ Requires skilled administrators.</li>
+
+</ul>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>What is a Distributed Operating System?</li>
+
+<li>Differentiate between Distributed OS and Network OS.</li>
+
+<li>Explain the features and applications of RTOS.</li>
+
+<li>What is Virtualization? Explain its advantages.</li>
+
+<li>Describe the current trends in Operating Systems.</li>
+
+<li>State the advantages and limitations of Modern Operating Systems.</li>
+
+</ol>
+
+<hr>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Revision</h3>
+
+<p>
+
+✔ Distributed OS manages multiple computers as one system.<br>
+
+✔ Network OS provides network-based services such as file and printer sharing.<br>
+
+✔ RTOS is used in time-critical applications.<br>
+
+✔ Virtualization allows multiple virtual machines to run on one physical computer.<br>
+
+✔ Modern OS trends include Cloud Computing, AI, IoT, Virtualization and Cyber Security.
+
+</p>
+
+</div>
+
+</div>

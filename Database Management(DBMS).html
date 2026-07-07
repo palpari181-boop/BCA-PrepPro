@@ -1,0 +1,3982 @@
+<!-- ===================================================== -->
+<!-- CHAPTER 1 : INTRODUCTION TO DBMS -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>🗄️ Chapter 1 : Introduction to Database Management System (DBMS)</h2>
+
+<p>
+A Database Management System (DBMS) is software that allows users to create,
+store, organize, retrieve, update, and manage data efficiently.
+Instead of storing information in separate files, a DBMS stores data in a structured
+database, making it easy to access, modify, and secure.
+Today almost every organization such as banks, hospitals, schools,
+railway reservation systems, shopping websites, and social media platforms uses DBMS.
+</p>
+
+<div class="highlight-box">
+
+<h3>📖 Definition</h3>
+
+<p>
+A Database Management System (DBMS) is software that acts as an interface
+between the user and the database. It enables users to perform operations
+such as inserting, updating, deleting, and retrieving data efficiently.
+</p>
+
+</div>
+
+<hr>
+
+<h2>📚 What is Data?</h2>
+
+<p>
+Data refers to raw facts and figures that have not yet been processed.
+For example:
+</p>
+
+<ul>
+<li>Student Name</li>
+<li>Roll Number</li>
+<li>Age</li>
+<li>Marks</li>
+<li>Salary</li>
+</ul>
+
+<p>
+Raw data becomes useful information after processing.
+</p>
+
+<hr>
+
+<h2>📂 What is a Database?</h2>
+
+<p>
+A Database is an organized collection of related data.
+It stores information in a structured manner so that it can be easily accessed,
+managed, and updated whenever required.
+</p>
+
+<div class="note-box">
+
+<h3>Examples</h3>
+
+<ul>
+<li>🏦 Bank Database</li>
+<li>🏥 Hospital Database</li>
+<li>🎓 College Database</li>
+<li>🛒 Shopping Website Database</li>
+<li>✈ Airline Reservation Database</li>
+</ul>
+
+</div>
+
+<hr>
+
+<h2>⭐ Characteristics of DBMS</h2>
+
+<ul>
+
+<li>✔ Reduces Data Redundancy</li>
+
+<li>✔ Provides Data Security</li>
+
+<li>✔ Supports Multiple Users</li>
+
+<li>✔ Easy Data Retrieval</li>
+
+<li>✔ Data Integrity</li>
+
+<li>✔ Backup and Recovery</li>
+
+<li>✔ Data Sharing</li>
+
+<li>✔ Improved Data Consistency</li>
+
+</ul>
+
+<hr>
+
+<h2>🌍 Applications of DBMS</h2>
+
+<ul>
+
+<li>🏦 Banking Systems</li>
+
+<li>🏥 Hospital Management</li>
+
+<li>🎓 College Management</li>
+
+<li>🛒 E-Commerce Websites</li>
+
+<li>✈ Railway & Airline Reservation</li>
+
+<li>📱 Social Media Platforms</li>
+
+<li>📚 Library Management</li>
+
+<li>🏢 Employee Management Systems</li>
+
+</ul>
+
+<hr>
+
+<h2>⭐ Advantages of DBMS</h2>
+
+<ul>
+
+<li>✔ Minimizes Data Redundancy</li>
+
+<li>✔ Improves Data Security</li>
+
+<li>✔ Easy Backup & Recovery</li>
+
+<li>✔ Better Data Sharing</li>
+
+<li>✔ Faster Data Access</li>
+
+<li>✔ Improved Data Accuracy</li>
+
+<li>✔ Supports Multiple Users</li>
+
+</ul>
+
+<hr>
+
+<h2>❌ Disadvantages of DBMS</h2>
+
+<ul>
+
+<li>❌ High Cost</li>
+
+<li>❌ Complex Software</li>
+
+<li>❌ Requires Skilled Users</li>
+
+<li>❌ Hardware Requirements</li>
+
+<li>❌ Maintenance Cost</li>
+
+</ul>
+
+<hr>
+
+<h2>📊 DBMS vs File System</h2>
+
+<table class="notes-table">
+
+<tr>
+<th>File System</th>
+<th>DBMS</th>
+</tr>
+
+<tr>
+<td>High Data Redundancy</td>
+<td>Low Data Redundancy</td>
+</tr>
+
+<tr>
+<td>Less Security</td>
+<td>High Security</td>
+</tr>
+
+<tr>
+<td>No Data Relationships</td>
+<td>Supports Relationships</td>
+</tr>
+
+<tr>
+<td>Difficult Backup</td>
+<td>Easy Backup & Recovery</td>
+</tr>
+
+<tr>
+<td>Less Efficient</td>
+<td>Highly Efficient</td>
+</tr>
+
+</table>
+
+<hr>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Revision</h3>
+
+<p>
+
+✔ Data = Raw Facts<br>
+✔ Database = Organized Collection of Data<br>
+✔ DBMS = Software to Manage Databases<br>
+✔ Examples = MySQL, Oracle, SQL Server, PostgreSQL
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 1 : DBMS ARCHITECTURE & COMPONENTS -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>🏛️ DBMS Architecture</h2>
+
+<p>
+DBMS Architecture defines how users interact with the database and how data is processed.
+The architecture improves security, data independence, and overall performance.
+Based on the number of layers, DBMS architecture is mainly classified into three types:
+</p>
+
+<ul>
+
+<li>✔ One-Tier Architecture</li>
+
+<li>✔ Two-Tier Architecture</li>
+
+<li>✔ Three-Tier Architecture</li>
+
+</ul>
+
+<hr>
+
+<h2>1️⃣ One-Tier Architecture</h2>
+
+<p>
+In One-Tier Architecture, the user, application, and database are all present on the same system.
+There is no network communication. It is mainly used for learning and testing purposes.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+
++--------------------------+
+|        USER              |
+|  Application + Database  |
++--------------------------+
+
+</code></pre>
+
+</div>
+
+<h3>Advantages</h3>
+
+<ul>
+
+<li>✔ Simple to use.</li>
+
+<li>✔ Fast execution.</li>
+
+<li>✔ No network required.</li>
+
+</ul>
+
+<h3>Disadvantages</h3>
+
+<ul>
+
+<li>❌ Poor security.</li>
+
+<li>❌ Not suitable for large organizations.</li>
+
+</ul>
+
+<hr>
+
+<h2>2️⃣ Two-Tier Architecture</h2>
+
+<p>
+In Two-Tier Architecture, the client directly communicates with the database server.
+The client sends requests and receives responses from the database.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+
+Client  ⇄  Database Server
+
+</code></pre>
+
+</div>
+
+<h3>Advantages</h3>
+
+<ul>
+
+<li>✔ Faster communication.</li>
+
+<li>✔ Easy implementation.</li>
+
+<li>✔ Better than One-Tier.</li>
+
+</ul>
+
+<h3>Disadvantages</h3>
+
+<ul>
+
+<li>❌ Limited scalability.</li>
+
+<li>❌ Less secure than Three-Tier.</li>
+
+</ul>
+
+<hr>
+
+<h2>3️⃣ Three-Tier Architecture</h2>
+
+<p>
+Three-Tier Architecture is the most widely used architecture in modern applications.
+It consists of Presentation Layer, Application Layer, and Database Layer.
+The client never communicates directly with the database.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+
++----------------------+
+|     Client/User      |
++----------+-----------+
+           |
+           |
++----------v-----------+
+|  Application Server  |
++----------+-----------+
+           |
+           |
++----------v-----------+
+|   Database Server    |
++----------------------+
+
+</code></pre>
+
+</div>
+
+<h3>Advantages</h3>
+
+<ul>
+
+<li>✔ High Security</li>
+
+<li>✔ Easy Maintenance</li>
+
+<li>✔ Better Performance</li>
+
+<li>✔ Scalable</li>
+
+<li>✔ Used in Real Applications</li>
+
+</ul>
+
+<hr>
+
+<h2>👨‍💻 DBMS Components</h2>
+
+<p>
+A DBMS is made up of several important components that work together to manage data efficiently.
+</p>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Component</th>
+
+<th>Description</th>
+
+</tr>
+
+<tr>
+
+<td>Hardware</td>
+
+<td>Physical devices like computers and storage.</td>
+
+</tr>
+
+<tr>
+
+<td>Software</td>
+
+<td>DBMS software such as MySQL or Oracle.</td>
+
+</tr>
+
+<tr>
+
+<td>Database</td>
+
+<td>Collection of organized data.</td>
+
+</tr>
+
+<tr>
+
+<td>Users</td>
+
+<td>People who interact with the database.</td>
+
+</tr>
+
+<tr>
+
+<td>Procedures</td>
+
+<td>Rules for operating the database.</td>
+
+</tr>
+
+<tr>
+
+<td>Languages</td>
+
+<td>SQL commands used to access data.</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>👥 Types of Database Users</h2>
+
+<ul>
+
+<li>👨‍💼 Database Administrator (DBA)</li>
+
+<li>👨‍💻 Application Programmers</li>
+
+<li>🧑 End Users</li>
+
+<li>🛠️ System Analysts</li>
+
+<li>📊 Database Designers</li>
+
+</ul>
+
+<hr>
+
+<h2>👨‍💼 Database Administrator (DBA)</h2>
+
+<p>
+The DBA is responsible for managing and controlling the entire database system.
+The DBA ensures security, backup, recovery, performance tuning, and user management.
+</p>
+
+<h3>Responsibilities</h3>
+
+<ul>
+
+<li>✔ Database Installation</li>
+
+<li>✔ User Account Management</li>
+
+<li>✔ Backup & Recovery</li>
+
+<li>✔ Security Management</li>
+
+<li>✔ Performance Monitoring</li>
+
+</ul>
+
+<hr>
+
+<h2>🧑 End Users</h2>
+
+<p>
+End users are the people who use the application to access the database without knowing its internal structure.
+Examples include students, customers, bank employees, and online shoppers.
+</p>
+
+<hr>
+
+<h2>💻 Popular DBMS Software</h2>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Software</th>
+
+<th>Developer</th>
+
+</tr>
+
+<tr>
+
+<td>MySQL</td>
+
+<td>Oracle Corporation</td>
+
+</tr>
+
+<tr>
+
+<td>Oracle Database</td>
+
+<td>Oracle Corporation</td>
+
+</tr>
+
+<tr>
+
+<td>Microsoft SQL Server</td>
+
+<td>Microsoft</td>
+
+</tr>
+
+<tr>
+
+<td>PostgreSQL</td>
+
+<td>Open Source Community</td>
+
+</tr>
+
+<tr>
+
+<td>SQLite</td>
+
+<td>SQLite Team</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>Define DBMS Architecture.</li>
+
+<li>Explain One-Tier, Two-Tier and Three-Tier Architecture.</li>
+
+<li>Who is a Database Administrator?</li>
+
+<li>Explain the responsibilities of DBA.</li>
+
+<li>Explain different components of DBMS.</li>
+
+<li>Who are End Users?</li>
+
+<li>List popular DBMS software.</li>
+
+</ol>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Revision</h3>
+
+<p>
+
+✔ One-Tier → Single System<br>
+
+✔ Two-Tier → Client ↔ Database<br>
+
+✔ Three-Tier → Client → Application → Database<br>
+
+✔ DBA → Controls Entire Database<br>
+
+✔ SQL is the standard language of DBMS
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 2 : ENTITY RELATIONSHIP (ER) MODEL -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>🔷 Chapter 2 : Entity Relationship (ER) Model</h2>
+
+<p>
+The Entity Relationship (ER) Model is one of the most important concepts in Database Management Systems.
+It is a high-level conceptual model used to design the structure of a database before implementation.
+The ER Model represents real-world objects, their properties, and the relationships between them in the form of an ER Diagram.
+It was introduced by <b>Peter Chen in 1976</b> and is widely used in database designing because it provides a clear graphical representation of data.
+</p>
+
+<div class="highlight-box">
+
+<h3>📖 Definition</h3>
+
+<p>
+The Entity Relationship Model is a conceptual database model that describes data using Entities, Attributes, and Relationships. It helps database designers understand and organize data before creating database tables.
+</p>
+
+</div>
+
+<hr>
+
+<h2>🎯 Objectives of ER Model</h2>
+
+<ul>
+
+<li>✔ To represent real-world objects.</li>
+
+<li>✔ To simplify database design.</li>
+
+<li>✔ To identify relationships between entities.</li>
+
+<li>✔ To reduce redundancy during database creation.</li>
+
+<li>✔ To create a blueprint before implementation.</li>
+
+</ul>
+
+<hr>
+
+<h2>🏷️ Entity</h2>
+
+<p>
+An Entity is any real-world object, person, place, thing, or event that can be identified independently.
+Each entity contains information that needs to be stored in the database.
+</p>
+
+<div class="note-box">
+
+<h3>Examples of Entities</h3>
+
+<ul>
+
+<li>👨 Student</li>
+
+<li>👩 Teacher</li>
+
+<li>🏢 Department</li>
+
+<li>📚 Book</li>
+
+<li>🏦 Bank Account</li>
+
+<li>🛒 Customer</li>
+
+<li>📦 Product</li>
+
+</ul>
+
+</div>
+
+<hr>
+
+<h2>📌 Types of Entity</h2>
+
+<h3>1️⃣ Strong Entity</h3>
+
+<p>
+A Strong Entity has its own Primary Key and can exist independently without depending on any other entity.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+
++-------------+
+
+|  STUDENT    |
+
++-------------+
+
+Student_ID (PK)
+
+Name
+
+Course
+
+Age
+
+</code></pre>
+
+</div>
+
+<h3>Characteristics</h3>
+
+<ul>
+
+<li>✔ Independent entity</li>
+
+<li>✔ Has Primary Key</li>
+
+<li>✔ Can exist alone</li>
+
+</ul>
+
+<hr>
+
+<h3>2️⃣ Weak Entity</h3>
+
+<p>
+A Weak Entity does not have its own Primary Key.
+It depends on another entity (Owner Entity) for identification.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+
+EMPLOYEE
+
+↓
+
+DEPENDENT
+
+</code></pre>
+
+</div>
+
+<h3>Characteristics</h3>
+
+<ul>
+
+<li>✔ Depends on another entity.</li>
+
+<li>✔ Does not have complete Primary Key.</li>
+
+<li>✔ Uses Foreign Key of owner entity.</li>
+
+</ul>
+
+<hr>
+
+<h2>📝 Attributes</h2>
+
+<p>
+Attributes describe the properties or characteristics of an entity.
+Each entity contains one or more attributes.
+</p>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Entity</th>
+
+<th>Attributes</th>
+
+</tr>
+
+<tr>
+
+<td>Student</td>
+
+<td>ID, Name, Age, Course</td>
+
+</tr>
+
+<tr>
+
+<td>Employee</td>
+
+<td>Emp_ID, Name, Salary</td>
+
+</tr>
+
+<tr>
+
+<td>Book</td>
+
+<td>Book_ID, Title, Author</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>📂 Types of Attributes</h2>
+
+<h3>1. Simple Attribute</h3>
+
+<p>
+Cannot be divided further.
+Example: Age, Gender.
+</p>
+
+<h3>2. Composite Attribute</h3>
+
+<p>
+Can be divided into sub-parts.
+Example: Address → City, State, PIN Code.
+</p>
+
+<h3>3. Single-Valued Attribute</h3>
+
+<p>
+Contains only one value.
+Example: Roll Number.
+</p>
+
+<h3>4. Multi-Valued Attribute</h3>
+
+<p>
+Contains multiple values.
+Example: Phone Numbers.
+</p>
+
+<h3>5. Derived Attribute</h3>
+
+<p>
+Calculated from another attribute.
+Example: Age calculated from Date of Birth.
+</p>
+
+<hr>
+
+<h2>❤️ Relationship</h2>
+
+<p>
+A Relationship shows how two or more entities are associated with each other.
+It represents interaction between entities.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+
+STUDENT
+
+   |
+
+Studies
+
+   |
+
+COURSE
+
+</code></pre>
+
+</div>
+
+<p>
+
+Examples:
+
+Student studies Course.
+
+Customer purchases Product.
+
+Teacher teaches Subject.
+
+Employee works in Department.
+
+</p>
+
+<hr>
+
+<h2>📊 Degree of Relationship</h2>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Degree</th>
+
+<th>Description</th>
+
+</tr>
+
+<tr>
+
+<td>Unary</td>
+
+<td>Relationship within same entity.</td>
+
+</tr>
+
+<tr>
+
+<td>Binary</td>
+
+<td>Between two entities.</td>
+
+</tr>
+
+<tr>
+
+<td>Ternary</td>
+
+<td>Between three entities.</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🎯 Cardinality</h2>
+
+<p>
+Cardinality specifies the number of entities participating in a relationship.
+</p>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Type</th>
+
+<th>Example</th>
+
+</tr>
+
+<tr>
+
+<td>One-to-One (1:1)</td>
+
+<td>Person ↔ Passport</td>
+
+</tr>
+
+<tr>
+
+<td>One-to-Many (1:M)</td>
+
+<td>Department → Employees</td>
+
+</tr>
+
+<tr>
+
+<td>Many-to-One (M:1)</td>
+
+<td>Employees → Department</td>
+
+</tr>
+
+<tr>
+
+<td>Many-to-Many (M:N)</td>
+
+<td>Students ↔ Courses</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🌍 Applications of ER Model</h2>
+
+<ul>
+
+<li>🏫 College Management System</li>
+
+<li>🏥 Hospital Management</li>
+
+<li>🏦 Banking System</li>
+
+<li>🛒 E-Commerce Website</li>
+
+<li>📚 Library Management</li>
+
+<li>✈ Railway Reservation</li>
+
+<li>🏢 Employee Management</li>
+
+<li>🎓 Student Information System</li>
+
+</ul>
+
+<hr>
+
+<h2>⭐ Advantages</h2>
+
+<ul>
+
+<li>✔ Easy to understand.</li>
+
+<li>✔ Visual representation.</li>
+
+<li>✔ Reduces design errors.</li>
+
+<li>✔ Improves communication.</li>
+
+<li>✔ Helps create relational databases.</li>
+
+</ul>
+
+<hr>
+
+<h2>❌ Disadvantages</h2>
+
+<ul>
+
+<li>❌ Difficult for very large databases.</li>
+
+<li>❌ Time-consuming.</li>
+
+<li>❌ Cannot represent every business rule.</li>
+
+</ul>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>Define ER Model.</li>
+
+<li>Explain Entity and its types.</li>
+
+<li>Differentiate Strong and Weak Entity.</li>
+
+<li>Explain Attributes and their types.</li>
+
+<li>Define Relationship with examples.</li>
+
+<li>Explain Cardinality.</li>
+
+<li>Write applications of ER Model.</li>
+
+<li>Draw ER Diagram for Student-Course database.</li>
+
+</ol>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Revision</h3>
+
+<p>
+
+✔ Entity = Object<br>
+
+✔ Attribute = Property<br>
+
+✔ Relationship = Connection<br>
+
+✔ Strong Entity = Has Primary Key<br>
+
+✔ Weak Entity = Depends on another Entity<br>
+
+✔ Cardinality = 1:1, 1:M, M:1, M:N
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 2.1 : KEYS & ER DIAGRAM SYMBOLS -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>🔑 Chapter 2.1 : Keys in DBMS & ER Diagram Symbols</h2>
+
+<p>
+In a database, millions of records may be stored in different tables.
+To identify each record uniquely and maintain relationships between tables,
+DBMS uses different types of <b>Keys</b>.
+Keys play a very important role in ensuring data accuracy, preventing duplicate records,
+and establishing relationships between tables.
+Without keys, it becomes difficult to retrieve, update, or delete specific records efficiently.
+</p>
+
+<div class="highlight-box">
+
+<h3>📖 Definition of Key</h3>
+
+<p>
+A Key is one or more attributes used to identify a record uniquely in a database table.
+Keys also help in creating relationships between different tables.
+</p>
+
+</div>
+
+<hr>
+
+<h2>🎯 Why are Keys Important?</h2>
+
+<ul>
+
+<li>✔ Identify each record uniquely.</li>
+
+<li>✔ Prevent duplicate data.</li>
+
+<li>✔ Create relationships between tables.</li>
+
+<li>✔ Improve searching speed.</li>
+
+<li>✔ Maintain data integrity.</li>
+
+<li>✔ Simplify database management.</li>
+
+</ul>
+
+<hr>
+
+<h2>🔷 Types of Keys</h2>
+
+<ul>
+
+<li>🔑 Super Key</li>
+
+<li>🔑 Candidate Key</li>
+
+<li>🔑 Primary Key</li>
+
+<li>🔑 Alternate Key</li>
+
+<li>🔑 Composite Key</li>
+
+<li>🔑 Foreign Key</li>
+
+</ul>
+
+<hr>
+
+<h2>1️⃣ Super Key</h2>
+
+<p>
+A Super Key is a set of one or more attributes that can uniquely identify a record in a table.
+It may contain extra attributes in addition to the minimum required attributes.
+</p>
+
+<div class="note-box">
+
+<b>Example</b>
+
+<pre><code>
+
+Student Table
+
+Student_ID
+Name
+Email
+
+Possible Super Keys
+
+Student_ID
+
+Student_ID + Name
+
+Student_ID + Email
+
+Student_ID + Name + Email
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>2️⃣ Candidate Key</h2>
+
+<p>
+A Candidate Key is the minimum set of attributes required to uniquely identify a record.
+It does not contain unnecessary attributes.
+A table may have multiple Candidate Keys.
+</p>
+
+<div class="highlight-box">
+
+<p>
+
+Example:
+
+Student_ID
+
+Email
+
+Both can uniquely identify students.
+
+</p>
+
+</div>
+
+<hr>
+
+<h2>3️⃣ Primary Key</h2>
+
+<p>
+A Primary Key is the Candidate Key selected to uniquely identify every record.
+It cannot contain NULL values or duplicate values.
+Each table has only one Primary Key.
+</p>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Student_ID</th>
+
+<th>Name</th>
+
+<th>Course</th>
+
+</tr>
+
+<tr>
+
+<td>101</td>
+
+<td>Rahul</td>
+
+<td>BCA</td>
+
+</tr>
+
+<tr>
+
+<td>102</td>
+
+<td>Priya</td>
+
+<td>BCA</td>
+
+</tr>
+
+</table>
+
+<div class="highlight-box">
+
+<p>
+
+✔ Unique
+
+✔ Not NULL
+
+✔ Only One Primary Key
+
+</p>
+
+</div>
+
+<hr>
+
+<h2>4️⃣ Alternate Key</h2>
+
+<p>
+Candidate Keys that are not selected as the Primary Key are called Alternate Keys.
+They also uniquely identify records but are not chosen as the main identifier.
+</p>
+
+<p>
+
+Example:
+
+Primary Key = Student_ID
+
+Alternate Key = Email
+
+</p>
+
+<hr>
+
+<h2>5️⃣ Composite Key</h2>
+
+<p>
+A Composite Key is formed by combining two or more attributes to uniquely identify a record.
+Neither attribute alone is sufficient.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+
+Student_ID + Subject_Code
+
+101 + CS101
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>6️⃣ Foreign Key</h2>
+
+<p>
+A Foreign Key is an attribute that creates a relationship between two tables.
+It refers to the Primary Key of another table.
+Foreign Keys maintain Referential Integrity.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+
+STUDENT
+
+Student_ID (PK)
+
+------------
+
+RESULT
+
+Student_ID (FK)
+
+Marks
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>📊 Difference Between Primary Key & Foreign Key</h2>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Primary Key</th>
+
+<th>Foreign Key</th>
+
+</tr>
+
+<tr>
+
+<td>Uniquely identifies records.</td>
+
+<td>Links two tables.</td>
+
+</tr>
+
+<tr>
+
+<td>Cannot contain NULL.</td>
+
+<td>May contain NULL.</td>
+
+</tr>
+
+<tr>
+
+<td>One per table.</td>
+
+<td>Multiple allowed.</td>
+
+</tr>
+
+<tr>
+
+<td>Unique values.</td>
+
+<td>Duplicate values allowed.</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🎨 ER Diagram Symbols</h2>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Symbol</th>
+
+<th>Meaning</th>
+
+</tr>
+
+<tr>
+
+<td>Rectangle</td>
+
+<td>Entity</td>
+
+</tr>
+
+<tr>
+
+<td>Double Rectangle</td>
+
+<td>Weak Entity</td>
+
+</tr>
+
+<tr>
+
+<td>Oval</td>
+
+<td>Attribute</td>
+
+</tr>
+
+<tr>
+
+<td>Double Oval</td>
+
+<td>Multi-valued Attribute</td>
+
+</tr>
+
+<tr>
+
+<td>Dotted Oval</td>
+
+<td>Derived Attribute</td>
+
+</tr>
+
+<tr>
+
+<td>Diamond</td>
+
+<td>Relationship</td>
+
+</tr>
+
+<tr>
+
+<td>Double Diamond</td>
+
+<td>Identifying Relationship</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>📌 Participation Constraints</h2>
+
+<p>
+Participation Constraint specifies whether every entity must participate in a relationship or not.
+It indicates the minimum participation of entities.
+</p>
+
+<h3>1️⃣ Total Participation</h3>
+
+<p>
+Every entity must participate in the relationship.
+Representation: Double Line.
+</p>
+
+<h3>2️⃣ Partial Participation</h3>
+
+<p>
+Participation is optional.
+Representation: Single Line.
+</p>
+
+<hr>
+
+<h2>🌍 Real-Life Example</h2>
+
+<div class="note-box">
+
+<pre><code>
+
+STUDENT
+
+(Student_ID, Name)
+
+        |
+
+     Enrolls
+
+        |
+
+COURSE
+
+(Course_ID, Course_Name)
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>Define Primary Key with example.</li>
+
+<li>Explain Foreign Key.</li>
+
+<li>Differentiate Primary Key and Foreign Key.</li>
+
+<li>Explain Super Key and Candidate Key.</li>
+
+<li>Explain Composite Key.</li>
+
+<li>Draw ER Diagram symbols.</li>
+
+<li>Explain Participation Constraints.</li>
+
+<li>Write short notes on Alternate Key.</li>
+
+</ol>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Revision</h3>
+
+<p>
+
+✔ Super Key = One or More Attributes<br>
+
+✔ Candidate Key = Minimum Super Key<br>
+
+✔ Primary Key = Selected Candidate Key<br>
+
+✔ Alternate Key = Remaining Candidate Keys<br>
+
+✔ Composite Key = Combination of Attributes<br>
+
+✔ Foreign Key = Creates Relationship Between Tables
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 3 : RELATIONAL MODEL (PART 1) -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>📊 Chapter 3 : Relational Model</h2>
+
+<p>
+The Relational Model is one of the most widely used database models in Database
+Management System (DBMS). It was proposed by <b>Dr. E. F. Codd in 1970</b>.
+In this model, data is stored in the form of tables called <b>Relations</b>.
+Each table contains rows and columns, making data easy to understand, organize,
+and manage. Most modern database systems such as MySQL, Oracle, SQL Server,
+and PostgreSQL are based on the Relational Model.
+</p>
+
+<div class="highlight-box">
+
+<h3>📖 Definition</h3>
+
+<p>
+A Relational Model is a database model that stores data in the form of tables
+(Relations). Each table consists of rows (Tuples) and columns (Attributes),
+and relationships between tables are established using Keys.
+</p>
+
+</div>
+
+<hr>
+
+<h2>⭐ Features of Relational Model</h2>
+
+<ul>
+
+<li>✔ Data is stored in tabular form.</li>
+
+<li>✔ Easy to understand and maintain.</li>
+
+<li>✔ Supports relationships between tables.</li>
+
+<li>✔ Reduces data redundancy.</li>
+
+<li>✔ Provides high data integrity.</li>
+
+<li>✔ Supports SQL for data manipulation.</li>
+
+<li>✔ Multiple users can access data simultaneously.</li>
+
+</ul>
+
+<hr>
+
+<h2>📋 Basic Terminology</h2>
+
+<h3>1️⃣ Relation</h3>
+
+<p>
+A Relation is simply a table in a database. It consists of rows and columns.
+Each relation stores information about a particular entity.
+</p>
+
+<div class="note-box">
+
+<b>Example:</b>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Student_ID</th>
+
+<th>Name</th>
+
+<th>Course</th>
+
+</tr>
+
+<tr>
+
+<td>101</td>
+
+<td>Rahul</td>
+
+<td>BCA</td>
+
+</tr>
+
+<tr>
+
+<td>102</td>
+
+<td>Priya</td>
+
+<td>BCA</td>
+
+</tr>
+
+<tr>
+
+<td>103</td>
+
+<td>Aman</td>
+
+<td>BCA</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<hr>
+
+<h3>2️⃣ Tuple (Row)</h3>
+
+<p>
+A Tuple represents a single record (row) in a relation.
+Each tuple stores complete information about one entity.
+</p>
+
+<div class="highlight-box">
+
+<p>
+
+Example:
+
+Student_ID = 101
+
+Name = Rahul
+
+Course = BCA
+
+This complete row is called a Tuple.
+
+</p>
+
+</div>
+
+<hr>
+
+<h3>3️⃣ Attribute (Column)</h3>
+
+<p>
+An Attribute represents a column of a table.
+It defines a particular property of an entity.
+Each column stores one type of information.
+</p>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Attribute</th>
+
+<th>Description</th>
+
+</tr>
+
+<tr>
+
+<td>Student_ID</td>
+
+<td>Unique student number</td>
+
+</tr>
+
+<tr>
+
+<td>Name</td>
+
+<td>Name of Student</td>
+
+</tr>
+
+<tr>
+
+<td>Course</td>
+
+<td>Course Name</td>
+
+</tr>
+
+<tr>
+
+<td>Age</td>
+
+<td>Student Age</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h3>4️⃣ Domain</h3>
+
+<p>
+A Domain is the set of all valid values that an attribute can contain.
+It ensures that only meaningful data is stored in the database.
+</p>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Attribute</th>
+
+<th>Domain</th>
+
+</tr>
+
+<tr>
+
+<td>Age</td>
+
+<td>17 – 60</td>
+
+</tr>
+
+<tr>
+
+<td>Gender</td>
+
+<td>Male, Female, Other</td>
+
+</tr>
+
+<tr>
+
+<td>Marks</td>
+
+<td>0 – 100</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h3>5️⃣ Degree</h3>
+
+<p>
+Degree is the total number of attributes (columns) present in a relation.
+If a table contains four columns, then its degree is four.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+
+Student_ID | Name | Course | Age
+
+Degree = 4
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h3>6️⃣ Cardinality</h3>
+
+<p>
+Cardinality is the total number of tuples (rows) present in a relation.
+If a table contains 100 records, then its cardinality is 100.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+
+Student Table
+
+100 Rows
+
+Cardinality = 100
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>📂 Database Schema</h2>
+
+<p>
+A Schema is the logical design or blueprint of a database.
+It defines the structure of tables, attributes, relationships, constraints,
+and data types before actual data is inserted.
+Schema changes very rarely.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+
+STUDENT
+
+----------------------------
+
+Student_ID
+
+Name
+
+Course
+
+Age
+
+----------------------------
+
+</code></pre>
+
+</div>
+
+<div class="highlight-box">
+
+<b>Remember:</b>
+
+Schema = Structure of Database
+
+</div>
+
+<hr>
+
+<h2>📄 Database Instance</h2>
+
+<p>
+A Database Instance refers to the actual data stored in the database at a
+particular moment. Unlike Schema, an Instance changes frequently whenever
+records are inserted, updated, or deleted.
+</p>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Schema</th>
+
+<th>Instance</th>
+
+</tr>
+
+<tr>
+
+<td>Structure of database</td>
+
+<td>Actual stored data</td>
+
+</tr>
+
+<tr>
+
+<td>Rarely changes</td>
+
+<td>Changes frequently</td>
+
+</tr>
+
+<tr>
+
+<td>Blueprint</td>
+
+<td>Current contents</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🌍 Real-Life Example</h2>
+
+<p>
+
+Imagine a College Database.
+
+The table "Student" stores all student information.
+
+Each row represents one student.
+
+Each column stores one type of information like Roll Number,
+Name, Course, Age, and Mobile Number.
+
+The complete table is called a Relation.
+
+</p>
+
+<div class="note-box">
+
+<pre><code>
+
++--------------------------------------------------+
+
+| Roll | Name  | Course | Age |
+
++--------------------------------------------------+
+
+|101 | Rahul | BCA |19 |
+
+|102 | Priya | BCA |20 |
+
+|103 | Aman  | BCA |18 |
+
++--------------------------------------------------+
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>💡 Quick Summary</h2>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Concept</th>
+
+<th>Meaning</th>
+
+</tr>
+
+<tr>
+
+<td>Relation</td>
+
+<td>Table</td>
+
+</tr>
+
+<tr>
+
+<td>Tuple</td>
+
+<td>Row</td>
+
+</tr>
+
+<tr>
+
+<td>Attribute</td>
+
+<td>Column</td>
+
+</tr>
+
+<tr>
+
+<td>Domain</td>
+
+<td>Valid Values</td>
+
+</tr>
+
+<tr>
+
+<td>Degree</td>
+
+<td>Number of Columns</td>
+
+</tr>
+
+<tr>
+
+<td>Cardinality</td>
+
+<td>Number of Rows</td>
+
+</tr>
+
+<tr>
+
+<td>Schema</td>
+
+<td>Database Structure</td>
+
+</tr>
+
+<tr>
+
+<td>Instance</td>
+
+<td>Actual Data</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 3 : RELATIONAL MODEL (PART 2) -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>🔒 Integrity Constraints</h2>
+
+<p>
+Integrity Constraints are a set of rules that ensure the accuracy,
+consistency, and reliability of data stored in a relational database.
+These rules prevent invalid data from entering the database and help
+maintain data quality.
+</p>
+
+<div class="highlight-box">
+
+<h3>📖 Definition</h3>
+
+<p>
+Integrity Constraints are rules applied on database tables to ensure
+that the stored data remains valid, accurate, and consistent throughout
+the life of the database.
+</p>
+
+</div>
+
+<hr>
+
+<h2>📚 Types of Integrity Constraints</h2>
+
+<h3>1️⃣ Entity Integrity</h3>
+
+<p>
+Entity Integrity states that every table must have a <b>Primary Key</b>,
+and the Primary Key value can never be <b>NULL</b>. This ensures that
+every record in the table is uniquely identifiable.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+
+Student
+
+-----------------------------------
+
+Student_ID (PK)
+
+Name
+
+Course
+
+-----------------------------------
+
+✔ Student_ID = 101
+
+❌ Student_ID = NULL
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h3>2️⃣ Referential Integrity</h3>
+
+<p>
+Referential Integrity ensures that relationships between tables remain
+valid. A <b>Foreign Key</b> must always refer to an existing Primary Key
+value in another table or contain NULL (if allowed).
+</p>
+
+<div class="note-box">
+
+<pre><code>
+
+STUDENT
+
+Student_ID (PK)
+
+101
+
+102
+
+103
+
+-------------------------
+
+RESULT
+
+Student_ID (FK)
+
+101 ✔
+
+102 ✔
+
+999 ❌ Invalid
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h3>3️⃣ Domain Integrity</h3>
+
+<p>
+Domain Integrity ensures that values entered into a column belong to
+the defined domain. Invalid values are not accepted.
+</p>
+
+<table class="notes-table">
+
+<tr>
+<th>Attribute</th>
+<th>Allowed Values</th>
+</tr>
+
+<tr>
+<td>Age</td>
+<td>17 - 60</td>
+</tr>
+
+<tr>
+<td>Marks</td>
+<td>0 - 100</td>
+</tr>
+
+<tr>
+<td>Gender</td>
+<td>Male, Female, Other</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>📌 Data Independence</h2>
+
+<p>
+Data Independence is the ability to change the database structure
+without affecting application programs. It makes database maintenance
+easy and flexible.
+</p>
+
+<h3>Types</h3>
+
+<ul>
+
+<li><b>Physical Data Independence</b> – Changes in physical storage do not affect the logical structure.</li>
+
+<li><b>Logical Data Independence</b> – Changes in logical structure do not affect user applications.</li>
+
+</ul>
+
+<hr>
+
+<h2>🏗 Properties of Relational Database</h2>
+
+<ul>
+
+<li>✔ Data is stored in tables.</li>
+
+<li>✔ Every row is unique.</li>
+
+<li>✔ Columns have meaningful names.</li>
+
+<li>✔ Order of rows and columns does not matter.</li>
+
+<li>✔ Duplicate rows are not allowed.</li>
+
+<li>✔ Relationships are created using keys.</li>
+
+<li>✔ SQL is used to manage data.</li>
+
+</ul>
+
+<hr>
+
+<h2>🌍 Applications of Relational Model</h2>
+
+<ul>
+
+<li>🏦 Banking Management System</li>
+
+<li>🏥 Hospital Management System</li>
+
+<li>🎓 College & University Database</li>
+
+<li>📚 Library Management</li>
+
+<li>🛒 Online Shopping Websites</li>
+
+<li>✈ Railway & Airline Reservation</li>
+
+<li>🏢 Employee Management System</li>
+
+<li>📱 Social Media Applications</li>
+
+<li>💰 Payroll System</li>
+
+<li>🏪 Inventory Management</li>
+
+</ul>
+
+<hr>
+
+<h2>⭐ Advantages of Relational Model</h2>
+
+<ul>
+
+<li>✔ Simple and easy to understand.</li>
+
+<li>✔ Reduces data redundancy.</li>
+
+<li>✔ Ensures data consistency.</li>
+
+<li>✔ Provides high security.</li>
+
+<li>✔ Easy data retrieval using SQL.</li>
+
+<li>✔ Supports relationships between multiple tables.</li>
+
+<li>✔ Backup and recovery are easier.</li>
+
+<li>✔ Widely used in modern database systems.</li>
+
+</ul>
+
+<hr>
+
+<h2>❌ Disadvantages of Relational Model</h2>
+
+<ul>
+
+<li>❌ Large databases may reduce performance.</li>
+
+<li>❌ Complex joins can be time-consuming.</li>
+
+<li>❌ Database design requires expertise.</li>
+
+<li>❌ Difficult to handle highly unstructured data.</li>
+
+<li>❌ Scaling very large systems can be expensive.</li>
+
+</ul>
+
+<hr>
+
+<h2>📊 Difference Between Schema and Instance</h2>
+
+<table class="notes-table">
+
+<tr>
+<th>Schema</th>
+<th>Instance</th>
+</tr>
+
+<tr>
+<td>Blueprint of Database</td>
+<td>Actual Data</td>
+</tr>
+
+<tr>
+<td>Rarely Changes</td>
+<td>Changes Frequently</td>
+</tr>
+
+<tr>
+<td>Designed Before Data Entry</td>
+<td>Represents Current Data</td>
+</tr>
+
+<tr>
+<td>Logical Structure</td>
+<td>Current State</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>📝 Important University Questions</h2>
+
+<ol>
+
+<li>Define Relational Model.</li>
+
+<li>Explain Relation, Tuple and Attribute.</li>
+
+<li>What is Domain? Explain with examples.</li>
+
+<li>Differentiate Degree and Cardinality.</li>
+
+<li>Explain Schema and Instance.</li>
+
+<li>What are Integrity Constraints?</li>
+
+<li>Explain Entity Integrity.</li>
+
+<li>Explain Referential Integrity.</li>
+
+<li>Explain Domain Integrity.</li>
+
+<li>What is Data Independence?</li>
+
+<li>Write advantages and disadvantages of Relational Model.</li>
+
+<li>Write applications of Relational Database.</li>
+
+</ol>
+
+<hr>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Revision</h3>
+
+<p>
+
+✔ Relation = Table<br>
+✔ Tuple = Row<br>
+✔ Attribute = Column<br>
+✔ Domain = Valid Values<br>
+✔ Degree = Number of Columns<br>
+✔ Cardinality = Number of Rows<br>
+✔ Schema = Database Structure<br>
+✔ Instance = Current Data<br>
+✔ Entity Integrity → Primary Key cannot be NULL<br>
+✔ Referential Integrity → Foreign Key refers to Primary Key<br>
+✔ Domain Integrity → Only valid values allowed
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 4 : STRUCTURED QUERY LANGUAGE (SQL) PART-1 -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>💻 Chapter 4 : Structured Query Language (SQL)</h2>
+
+<p>
+Structured Query Language (SQL) is the standard language used to communicate with a
+Relational Database Management System (RDBMS). SQL allows users to create databases,
+store records, retrieve information, update existing data, and delete unwanted records.
+Almost every modern database such as MySQL, Oracle, SQL Server and PostgreSQL supports SQL.
+</p>
+
+<div class="highlight-box">
+
+<h3>📖 Definition</h3>
+
+<p>
+SQL (Structured Query Language) is a standard programming language used to create,
+manage, manipulate and retrieve data from relational databases.
+</p>
+
+</div>
+
+<hr>
+
+<h2>⭐ Features of SQL</h2>
+
+<ul>
+
+<li>✔ Easy to learn and use.</li>
+
+<li>✔ Standard language for databases.</li>
+
+<li>✔ Supports data retrieval and manipulation.</li>
+
+<li>✔ Works with multiple database systems.</li>
+
+<li>✔ Provides security using user privileges.</li>
+
+<li>✔ Supports transactions and data integrity.</li>
+
+<li>✔ Fast and efficient for handling large data.</li>
+
+</ul>
+
+<hr>
+
+<h2>📂 Types of SQL Commands</h2>
+
+<table class="notes-table">
+
+<tr>
+<th>Command Type</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td>DDL</td>
+<td>Defines database structure.</td>
+</tr>
+
+<tr>
+<td>DML</td>
+<td>Manipulates records.</td>
+</tr>
+
+<tr>
+<td>DQL</td>
+<td>Retrieves data.</td>
+</tr>
+
+<tr>
+<td>DCL</td>
+<td>Controls user permissions.</td>
+</tr>
+
+<tr>
+<td>TCL</td>
+<td>Manages transactions.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🏗️ DDL (Data Definition Language)</h2>
+
+<p>
+DDL commands are used to create and modify the structure of database objects like
+tables, views and indexes.
+</p>
+
+<h3>1. CREATE</h3>
+
+<p>Creates a new table or database.</p>
+
+<div class="note-box">
+
+<pre><code>
+
+CREATE TABLE Student(
+
+Student_ID INT PRIMARY KEY,
+
+Name VARCHAR(50),
+
+Course VARCHAR(30),
+
+Age INT
+
+);
+
+</code></pre>
+
+</div>
+
+<h3>2. ALTER</h3>
+
+<p>Used to modify the structure of an existing table.</p>
+
+<div class="note-box">
+
+<pre><code>
+
+ALTER TABLE Student
+
+ADD Email VARCHAR(50);
+
+</code></pre>
+
+</div>
+
+<h3>3. DROP</h3>
+
+<p>Deletes an entire table permanently.</p>
+
+<div class="note-box">
+
+<pre><code>
+
+DROP TABLE Student;
+
+</code></pre>
+
+</div>
+
+<h3>4. TRUNCATE</h3>
+
+<p>Deletes all rows from a table but keeps the table structure.</p>
+
+<div class="note-box">
+
+<pre><code>
+
+TRUNCATE TABLE Student;
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>📝 DML (Data Manipulation Language)</h2>
+
+<p>
+DML commands are used to insert, update and delete records stored inside a table.
+</p>
+
+<h3>1. INSERT</h3>
+
+<div class="note-box">
+
+<pre><code>
+
+INSERT INTO Student
+
+VALUES
+
+(101,'Rahul','BCA',19);
+
+</code></pre>
+
+</div>
+
+<h3>2. UPDATE</h3>
+
+<div class="note-box">
+
+<pre><code>
+
+UPDATE Student
+
+SET Age=20
+
+WHERE Student_ID=101;
+
+</code></pre>
+
+</div>
+
+<h3>3. DELETE</h3>
+
+<div class="note-box">
+
+<pre><code>
+
+DELETE FROM Student
+
+WHERE Student_ID=101;
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>🔍 DQL (Data Query Language)</h2>
+
+<p>
+DQL is mainly used to retrieve information from the database. The most commonly
+used command is <b>SELECT</b>.
+</p>
+
+<h3>SELECT Statement</h3>
+
+<div class="note-box">
+
+<pre><code>
+
+SELECT * FROM Student;
+
+</code></pre>
+
+</div>
+
+<p>
+The above query displays all records stored in the Student table.
+</p>
+
+<hr>
+
+<h2>📊 WHERE Clause</h2>
+
+<p>
+The WHERE clause filters records based on a specific condition.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+
+SELECT *
+
+FROM Student
+
+WHERE Age > 18;
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>📋 ORDER BY Clause</h2>
+
+<p>
+ORDER BY arranges data in ascending (ASC) or descending (DESC) order.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+
+SELECT *
+
+FROM Student
+
+ORDER BY Name ASC;
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>📌 SQL Operators</h2>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Operator</th>
+
+<th>Description</th>
+
+</tr>
+
+<tr>
+
+<td>=</td>
+
+<td>Equal To</td>
+
+</tr>
+
+<tr>
+
+<td>></td>
+
+<td>Greater Than</td>
+
+</tr>
+
+<tr>
+
+<td><</td>
+
+<td>Less Than</td>
+
+</tr>
+
+<tr>
+
+<td>>=</td>
+
+<td>Greater Than or Equal</td>
+
+</tr>
+
+<tr>
+
+<td><=</td>
+
+<td>Less Than or Equal</td>
+
+</tr>
+
+<tr>
+
+<td>!=</td>
+
+<td>Not Equal</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>⭐ Advantages of SQL</h2>
+
+<ul>
+
+<li>✔ Simple syntax.</li>
+
+<li>✔ Fast data retrieval.</li>
+
+<li>✔ Standard language.</li>
+
+<li>✔ Supports security.</li>
+
+<li>✔ Easy database management.</li>
+
+<li>✔ Supports large databases.</li>
+
+</ul>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 4 : SQL (PART 2) -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>🔐 DCL (Data Control Language)</h2>
+
+<p>
+DCL commands are used to control access to the database.
+They help the Database Administrator (DBA) provide or remove permissions
+from users.
+</p>
+
+<div class="highlight-box">
+
+<h3>📖 Main DCL Commands</h3>
+
+<ul>
+
+<li><b>GRANT</b> – Gives permissions to users.</li>
+
+<li><b>REVOKE</b> – Removes permissions from users.</li>
+
+</ul>
+
+</div>
+
+<h3>Example : GRANT</h3>
+
+<div class="note-box">
+
+<pre><code>
+
+GRANT SELECT, INSERT
+
+ON Student
+
+TO Rahul;
+
+</code></pre>
+
+</div>
+
+<p>
+The above command allows the user <b>Rahul</b> to view and insert records into the Student table.
+</p>
+
+<h3>Example : REVOKE</h3>
+
+<div class="note-box">
+
+<pre><code>
+
+REVOKE INSERT
+
+ON Student
+
+FROM Rahul;
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>🔄 TCL (Transaction Control Language)</h2>
+
+<p>
+TCL commands are used to manage database transactions.
+A transaction is a group of SQL operations that are executed together.
+</p>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Command</th>
+
+<th>Purpose</th>
+
+</tr>
+
+<tr>
+
+<td>COMMIT</td>
+
+<td>Save changes permanently.</td>
+
+</tr>
+
+<tr>
+
+<td>ROLLBACK</td>
+
+<td>Undo changes.</td>
+
+</tr>
+
+<tr>
+
+<td>SAVEPOINT</td>
+
+<td>Create a checkpoint.</td>
+
+</tr>
+
+</table>
+
+<h3>COMMIT</h3>
+
+<div class="note-box">
+
+<pre><code>
+
+COMMIT;
+
+</code></pre>
+
+</div>
+
+<p>
+Saves all changes permanently in the database.
+</p>
+
+<h3>ROLLBACK</h3>
+
+<div class="note-box">
+
+<pre><code>
+
+ROLLBACK;
+
+</code></pre>
+
+</div>
+
+<p>
+Restores the database to its previous state.
+</p>
+
+<h3>SAVEPOINT</h3>
+
+<div class="note-box">
+
+<pre><code>
+
+SAVEPOINT SP1;
+
+</code></pre>
+
+</div>
+
+<p>
+Creates a checkpoint so that the database can return to that point if needed.
+</p>
+
+<hr>
+
+<h2>📊 Aggregate Functions</h2>
+
+<p>
+Aggregate Functions perform calculations on multiple rows and return a single result.
+</p>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Function</th>
+
+<th>Description</th>
+
+</tr>
+
+<tr>
+
+<td>COUNT()</td>
+
+<td>Counts total records.</td>
+
+</tr>
+
+<tr>
+
+<td>SUM()</td>
+
+<td>Calculates total value.</td>
+
+</tr>
+
+<tr>
+
+<td>AVG()</td>
+
+<td>Calculates average value.</td>
+
+</tr>
+
+<tr>
+
+<td>MIN()</td>
+
+<td>Finds minimum value.</td>
+
+</tr>
+
+<tr>
+
+<td>MAX()</td>
+
+<td>Finds maximum value.</td>
+
+</tr>
+
+</table>
+
+<h3>Examples</h3>
+
+<div class="note-box">
+
+<pre><code>
+
+SELECT COUNT(*) FROM Student;
+
+SELECT AVG(Age) FROM Student;
+
+SELECT MAX(Marks) FROM Student;
+
+SELECT MIN(Marks) FROM Student;
+
+SELECT SUM(Fees) FROM Student;
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>📂 GROUP BY Clause</h2>
+
+<p>
+GROUP BY is used to group rows having the same values into summary rows.
+It is often used with aggregate functions.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+
+SELECT Course,
+
+COUNT(*)
+
+FROM Student
+
+GROUP BY Course;
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>📌 HAVING Clause</h2>
+
+<p>
+HAVING filters grouped records. It works with GROUP BY.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+
+SELECT Course,
+
+COUNT(*)
+
+FROM Student
+
+GROUP BY Course
+
+HAVING COUNT(*) > 5;
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>🔗 SQL Joins</h2>
+
+<p>
+Joins are used to retrieve related data from two or more tables.
+</p>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Join</th>
+
+<th>Description</th>
+
+</tr>
+
+<tr>
+
+<td>INNER JOIN</td>
+
+<td>Returns matching records.</td>
+
+</tr>
+
+<tr>
+
+<td>LEFT JOIN</td>
+
+<td>Returns all left table records.</td>
+
+</tr>
+
+<tr>
+
+<td>RIGHT JOIN</td>
+
+<td>Returns all right table records.</td>
+
+</tr>
+
+<tr>
+
+<td>FULL JOIN</td>
+
+<td>Returns all matching and non-matching records.</td>
+
+</tr>
+
+</table>
+
+<h3>Example : INNER JOIN</h3>
+
+<div class="note-box">
+
+<pre><code>
+
+SELECT Student.Name,
+
+Course.Course_Name
+
+FROM Student
+
+INNER JOIN Course
+
+ON Student.Course_ID = Course.Course_ID;
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>🌍 Applications of SQL</h2>
+
+<ul>
+
+<li>🏦 Banking Systems</li>
+
+<li>🏥 Hospital Management</li>
+
+<li>🎓 College & University Databases</li>
+
+<li>🛒 E-Commerce Websites</li>
+
+<li>📚 Library Management</li>
+
+<li>✈ Railway Reservation</li>
+
+<li>🏢 Employee Management</li>
+
+<li>📱 Social Media Platforms</li>
+
+</ul>
+
+<hr>
+
+<h2>⭐ Advantages of SQL</h2>
+
+<ul>
+
+<li>✔ Easy to learn.</li>
+
+<li>✔ Fast data retrieval.</li>
+
+<li>✔ Standard database language.</li>
+
+<li>✔ Supports security.</li>
+
+<li>✔ Easy data management.</li>
+
+<li>✔ Supports large databases.</li>
+
+<li>✔ Platform independent.</li>
+
+</ul>
+
+<hr>
+
+<h2>❌ Disadvantages of SQL</h2>
+
+<ul>
+
+<li>❌ Complex queries may be difficult.</li>
+
+<li>❌ Vendor-specific SQL syntax differs.</li>
+
+<li>❌ Performance may reduce for very large databases.</li>
+
+<li>❌ Improper queries can affect database performance.</li>
+
+</ul>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>Define SQL.</li>
+
+<li>Explain DDL, DML, DCL, DQL and TCL.</li>
+
+<li>Write SQL commands with examples.</li>
+
+<li>Explain Aggregate Functions.</li>
+
+<li>Differentiate WHERE and HAVING.</li>
+
+<li>Explain GROUP BY clause.</li>
+
+<li>What are SQL Joins?</li>
+
+<li>Explain INNER JOIN with example.</li>
+
+<li>Write short notes on COMMIT and ROLLBACK.</li>
+
+<li>Differentiate DELETE, DROP and TRUNCATE.</li>
+
+</ol>
+
+<hr>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Revision</h3>
+
+<p>
+
+✔ DDL → CREATE, ALTER, DROP, TRUNCATE<br>
+
+✔ DML → INSERT, UPDATE, DELETE<br>
+
+✔ DQL → SELECT<br>
+
+✔ DCL → GRANT, REVOKE<br>
+
+✔ TCL → COMMIT, ROLLBACK, SAVEPOINT<br>
+
+✔ Aggregate Functions → COUNT, SUM, AVG, MIN, MAX<br>
+
+✔ GROUP BY → Groups Records<br>
+
+✔ HAVING → Filters Groups<br>
+
+✔ INNER JOIN → Matching Records
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 5 : NORMALIZATION -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>📚 Chapter 5 : Normalization</h2>
+
+<p>
+Normalization is the process of organizing data in a database to reduce data redundancy
+(repetition of data) and improve data consistency. It divides large tables into smaller,
+related tables and establishes relationships between them using keys.
+Normalization helps in maintaining data integrity and makes database management more efficient.
+</p>
+
+<div class="highlight-box">
+
+<h3>📖 Definition</h3>
+
+<p>
+Normalization is a database design technique used to organize data into multiple related
+tables in order to eliminate redundancy and dependency problems.
+</p>
+
+</div>
+
+<hr>
+
+<h2>🎯 Objectives of Normalization</h2>
+
+<ul>
+
+<li>✔ Remove duplicate data.</li>
+
+<li>✔ Improve data consistency.</li>
+
+<li>✔ Reduce data redundancy.</li>
+
+<li>✔ Simplify database maintenance.</li>
+
+<li>✔ Maintain data integrity.</li>
+
+<li>✔ Improve storage efficiency.</li>
+
+</ul>
+
+<hr>
+
+<h2>📌 Need of Normalization</h2>
+
+<p>
+Without normalization, the same information may be stored multiple times,
+leading to redundancy and anomalies. If one value changes, it has to be updated
+at many places, increasing the chances of inconsistency.
+Normalization solves these problems by organizing data properly.
+</p>
+
+<hr>
+
+<h2>⚠ Problems Without Normalization</h2>
+
+<ul>
+
+<li><b>Insertion Anomaly:</b> Difficulty in inserting new data.</li>
+
+<li><b>Update Anomaly:</b> Updating the same data at multiple places.</li>
+
+<li><b>Deletion Anomaly:</b> Deleting one record may remove important information.</li>
+
+</ul>
+
+<hr>
+
+<h2>🔗 Functional Dependency</h2>
+
+<p>
+A Functional Dependency (FD) exists when the value of one attribute determines
+the value of another attribute.
+It is represented using the symbol <b>→</b>.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+
+Student_ID → Student_Name
+
+Roll_No → Course
+
+Employee_ID → Salary
+
+</code></pre>
+
+</div>
+
+<p>
+Here, Student_ID uniquely determines Student_Name.
+</p>
+
+<hr>
+
+<h2>1️⃣ First Normal Form (1NF)</h2>
+
+<p>
+A table is in First Normal Form if all attribute values are atomic
+(indivisible) and there are no repeating groups or multiple values
+in a single column.
+</p>
+
+<h3>Before 1NF</h3>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Student</th>
+
+<th>Phone Numbers</th>
+
+</tr>
+
+<tr>
+
+<td>Rahul</td>
+
+<td>9876543210, 8765432109</td>
+
+</tr>
+
+</table>
+
+<h3>After 1NF</h3>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Student</th>
+
+<th>Phone Number</th>
+
+</tr>
+
+<tr>
+
+<td>Rahul</td>
+
+<td>9876543210</td>
+
+</tr>
+
+<tr>
+
+<td>Rahul</td>
+
+<td>8765432109</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>2️⃣ Second Normal Form (2NF)</h2>
+
+<p>
+A table is in Second Normal Form if it is already in 1NF and every
+non-key attribute is fully dependent on the Primary Key.
+Partial dependency should not exist.
+</p>
+
+<div class="note-box">
+
+<b>Example:</b>
+
+<p>
+Instead of storing Student and Course details in one table,
+create separate Student and Course tables linked by a key.
+</p>
+
+</div>
+
+<hr>
+
+<h2>3️⃣ Third Normal Form (3NF)</h2>
+
+<p>
+A table is in Third Normal Form if it is already in 2NF and
+there is no transitive dependency.
+Non-key attributes should depend only on the Primary Key.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+
+Employee_ID → Department_ID
+
+Department_ID → Department_Name
+
+</code></pre>
+
+<p>
+Department_Name should be stored in a separate Department table.
+</p>
+
+</div>
+
+<hr>
+
+<h2>4️⃣ Boyce-Codd Normal Form (BCNF)</h2>
+
+<p>
+BCNF is an advanced version of 3NF.
+It removes remaining anomalies by ensuring that every determinant
+is a candidate key.
+BCNF provides a stronger level of normalization.
+</p>
+
+<hr>
+
+<h2>📊 Comparison of Normal Forms</h2>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Normal Form</th>
+
+<th>Main Rule</th>
+
+</tr>
+
+<tr>
+
+<td>1NF</td>
+
+<td>Atomic values only.</td>
+
+</tr>
+
+<tr>
+
+<td>2NF</td>
+
+<td>No partial dependency.</td>
+
+</tr>
+
+<tr>
+
+<td>3NF</td>
+
+<td>No transitive dependency.</td>
+
+</tr>
+
+<tr>
+
+<td>BCNF</td>
+
+<td>Every determinant must be a Candidate Key.</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>⭐ Advantages of Normalization</h2>
+
+<ul>
+
+<li>✔ Eliminates duplicate data.</li>
+
+<li>✔ Improves database consistency.</li>
+
+<li>✔ Saves storage space.</li>
+
+<li>✔ Simplifies updates and maintenance.</li>
+
+<li>✔ Improves data integrity.</li>
+
+</ul>
+
+<hr>
+
+<h2>❌ Disadvantages of Normalization</h2>
+
+<ul>
+
+<li>❌ More tables are created.</li>
+
+<li>❌ Complex JOIN operations.</li>
+
+<li>❌ Slight decrease in query performance.</li>
+
+</ul>
+
+<hr>
+
+<h2>🌍 Applications</h2>
+
+<ul>
+
+<li>🏦 Banking Systems</li>
+
+<li>🏥 Hospital Management</li>
+
+<li>🎓 College Databases</li>
+
+<li>📚 Library Systems</li>
+
+<li>🛒 Online Shopping Websites</li>
+
+<li>🏢 Employee Management</li>
+
+</ul>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>Define Normalization.</li>
+
+<li>Why is Normalization needed?</li>
+
+<li>Explain Functional Dependency.</li>
+
+<li>Explain 1NF with example.</li>
+
+<li>Explain 2NF with example.</li>
+
+<li>Explain 3NF with example.</li>
+
+<li>What is BCNF?</li>
+
+<li>Write advantages of Normalization.</li>
+
+<li>Differentiate 2NF and 3NF.</li>
+
+</ol>
+
+<hr>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Revision</h3>
+
+<p>
+
+✔ Normalization = Organizing Data<br>
+
+✔ 1NF = Atomic Values<br>
+
+✔ 2NF = No Partial Dependency<br>
+
+✔ 3NF = No Transitive Dependency<br>
+
+✔ BCNF = Every Determinant is a Candidate Key<br>
+
+✔ Goal = Reduce Redundancy & Improve Consistency
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 6 : TRANSACTIONS, ACID PROPERTIES & CONCURRENCY -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>💳 Chapter 6 : Transactions, ACID Properties & Concurrency Control</h2>
+
+<p>
+A transaction is a sequence of one or more database operations that are executed
+as a single logical unit of work. A transaction may contain INSERT, UPDATE,
+DELETE, or SELECT statements. The main objective of a transaction is to ensure
+that the database remains accurate and consistent even if a failure occurs.
+Transactions are widely used in banking systems, railway reservation,
+ATM machines, online shopping, and payment gateways.
+</p>
+
+<div class="highlight-box">
+
+<h3>📖 Definition</h3>
+
+<p>
+A Transaction is a collection of database operations that are performed as
+one complete unit. A transaction is considered successful only if all
+operations are completed successfully; otherwise, all changes are cancelled.
+</p>
+
+</div>
+
+<hr>
+
+<h2>🌍 Real-Life Example</h2>
+
+<p>
+Suppose Rahul transfers ₹5,000 from his bank account to Priya's account.
+This transaction consists of two operations:
+</p>
+
+<ul>
+
+<li>Debit ₹5,000 from Rahul's account.</li>
+
+<li>Credit ₹5,000 to Priya's account.</li>
+
+</ul>
+
+<p>
+If the money is debited but not credited due to a system failure,
+the transaction should be cancelled. This is handled using transactions.
+</p>
+
+<hr>
+
+<h2>📋 Transaction States</h2>
+
+<table class="notes-table">
+
+<tr>
+<th>State</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>Active</td>
+<td>Transaction is currently executing.</td>
+</tr>
+
+<tr>
+<td>Partially Committed</td>
+<td>Execution completed but not yet saved permanently.</td>
+</tr>
+
+<tr>
+<td>Committed</td>
+<td>Changes are saved permanently.</td>
+</tr>
+
+<tr>
+<td>Failed</td>
+<td>Transaction cannot continue due to an error.</td>
+</tr>
+
+<tr>
+<td>Aborted</td>
+<td>All changes are rolled back.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🔐 ACID Properties</h2>
+
+<p>
+ACID Properties ensure that every database transaction is reliable,
+accurate, and consistent.
+</p>
+
+<table class="notes-table">
+
+<tr>
+<th>Property</th>
+<th>Meaning</th>
+</tr>
+
+<tr>
+<td>Atomicity</td>
+<td>All operations execute completely or none at all.</td>
+</tr>
+
+<tr>
+<td>Consistency</td>
+<td>Database remains valid before and after the transaction.</td>
+</tr>
+
+<tr>
+<td>Isolation</td>
+<td>Transactions execute independently.</td>
+</tr>
+
+<tr>
+<td>Durability</td>
+<td>Committed data remains permanent even after system failure.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h3>1️⃣ Atomicity</h3>
+
+<p>
+Atomicity follows the "All or Nothing" rule. If one operation fails,
+the entire transaction is cancelled.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+
+Account A → -5000
+
+Account B → +5000
+
+If credit fails,
+
+Debit is also cancelled.
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h3>2️⃣ Consistency</h3>
+
+<p>
+Consistency ensures that the database always follows all rules and constraints.
+The database remains in a valid state before and after every transaction.
+</p>
+
+<hr>
+
+<h3>3️⃣ Isolation</h3>
+
+<p>
+Isolation ensures that multiple transactions running at the same time
+do not interfere with each other.
+</p>
+
+<hr>
+
+<h3>4️⃣ Durability</h3>
+
+<p>
+After a transaction is committed, the changes become permanent and
+cannot be lost even if the system crashes.
+</p>
+
+<hr>
+
+<h2>⚡ Concurrency Control</h2>
+
+<p>
+Concurrency Control is the process of managing multiple transactions
+executing simultaneously without causing data inconsistency.
+It ensures that all users can access the database safely at the same time.
+</p>
+
+<hr>
+
+<h2>🚨 Problems in Concurrent Transactions</h2>
+
+<h3>Dirty Read</h3>
+
+<p>
+A transaction reads data that has not yet been committed by another transaction.
+If the first transaction is rolled back, the second transaction has read invalid data.
+</p>
+
+<h3>Lost Update</h3>
+
+<p>
+Two users update the same record simultaneously,
+causing one update to overwrite the other.
+</p>
+
+<h3>Non-Repeatable Read</h3>
+
+<p>
+A transaction reads the same row twice but gets different values
+because another transaction modified the data in between.
+</p>
+
+<h3>Phantom Read</h3>
+
+<p>
+A transaction executes the same query twice but gets different numbers
+of rows because another transaction inserted or deleted records.
+</p>
+
+<hr>
+
+<h2>🔒 Locking Techniques</h2>
+
+<p>
+Locking prevents multiple users from modifying the same data at the same time.
+It helps maintain data consistency.
+</p>
+
+<table class="notes-table">
+
+<tr>
+<th>Lock Type</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>Shared Lock</td>
+<td>Allows only reading of data.</td>
+</tr>
+
+<tr>
+<td>Exclusive Lock</td>
+<td>Allows reading and writing; others cannot modify the data.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>💾 Recovery Techniques</h2>
+
+<p>
+Recovery is the process of restoring the database after a failure.
+It ensures that committed transactions are preserved and incomplete
+transactions are rolled back.
+</p>
+
+<h3>Recovery Methods</h3>
+
+<ul>
+
+<li>✔ Backup and Restore</li>
+
+<li>✔ Log Files</li>
+
+<li>✔ Checkpoints</li>
+
+<li>✔ Rollback</li>
+
+<li>✔ Roll Forward</li>
+
+</ul>
+
+<hr>
+
+<h2>🌍 Applications</h2>
+
+<ul>
+
+<li>🏦 Banking Systems</li>
+
+<li>💳 ATM Transactions</li>
+
+<li>🛒 Online Shopping</li>
+
+<li>✈ Railway Reservation</li>
+
+<li>🏥 Hospital Management</li>
+
+<li>📱 Online Payment Systems</li>
+
+<li>🎓 University Databases</li>
+
+</ul>
+
+<hr>
+
+<h2>⭐ Advantages</h2>
+
+<ul>
+
+<li>✔ Maintains database consistency.</li>
+
+<li>✔ Prevents data loss.</li>
+
+<li>✔ Supports multiple users.</li>
+
+<li>✔ Ensures reliable transactions.</li>
+
+<li>✔ Improves database security.</li>
+
+</ul>
+
+<hr>
+
+<h2>❌ Disadvantages</h2>
+
+<ul>
+
+<li>❌ Complex implementation.</li>
+
+<li>❌ Locking may reduce performance.</li>
+
+<li>❌ High storage required for logs and backups.</li>
+
+</ul>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>Define Transaction with example.</li>
+
+<li>Explain transaction states.</li>
+
+<li>Explain ACID Properties.</li>
+
+<li>What is Concurrency Control?</li>
+
+<li>Explain Dirty Read and Lost Update.</li>
+
+<li>Differentiate Shared Lock and Exclusive Lock.</li>
+
+<li>Explain Recovery Techniques.</li>
+
+<li>Write advantages of transactions.</li>
+
+</ol>
+
+<hr>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Revision</h3>
+
+<p>
+
+✔ Transaction = Group of Database Operations<br>
+
+✔ ACID = Atomicity, Consistency, Isolation, Durability<br>
+
+✔ COMMIT = Save Changes<br>
+
+✔ ROLLBACK = Undo Changes<br>
+
+✔ Shared Lock = Read Only<br>
+
+✔ Exclusive Lock = Read + Write<br>
+
+✔ Recovery = Restore Database After Failure
+
+</p>
+
+</div>
+
+</div>

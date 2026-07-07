@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 1 | Relation, Sets & Functions</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f5f7fb;
+color:#333;
+line-height:1.8;
+}
+
+.chapter-hero{
+
+margin:30px;
+
+padding:50px;
+
+border-radius:25px;
+
+background:linear-gradient(135deg,#4F46E5,#7C3AED);
+
+color:white;
+
+}
+
+.chapter-hero h1{
+
+font-size:42px;
+
+margin-bottom:15px;
+
+}
+
+.chapter-hero p{
+
+font-size:18px;
+
+max-width:900px;
+
+}
+
+.info-box{
+
+display:flex;
+
+gap:15px;
+
+margin-top:25px;
+
+flex-wrap:wrap;
+
+}
+
+.info-box span{
+
+background:white;
+
+color:#333;
+
+padding:10px 20px;
+
+border-radius:30px;
+
+font-weight:600;
+
+}
+
+.container{
+
+width:90%;
+
+max-width:1200px;
+
+margin:auto;
+
+}
+
+.card{
+
+background:white;
+
+padding:30px;
+
+border-radius:20px;
+
+margin-bottom:25px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.card h2{
+
+color:#4F46E5;
+
+margin-bottom:20px;
+
+}
+
+.card h3{
+
+margin-top:20px;
+
+margin-bottom:10px;
+
+color:#222;
+
+}
+
+.card ul{
+
+padding-left:20px;
+
+}
+
+.card li{
+
+margin:10px 0;
+
+}
+
+.formula{
+
+background:#EEF2FF;
+
+border-left:5px solid #4F46E5;
+
+padding:20px;
+
+margin:20px 0;
+
+font-weight:600;
+
+font-size:18px;
+
+border-radius:10px;
+
+}
+
+.example{
+
+background:#F9FAFB;
+
+padding:20px;
+
+border-radius:12px;
+
+margin-top:15px;
+
+}
+
+.navigation{
+
+display:flex;
+
+justify-content:space-between;
+
+margin:40px 0;
+
+}
+
+.navigation a{
+
+text-decoration:none;
+
+background:#4F46E5;
+
+color:white;
+
+padding:14px 25px;
+
+border-radius:10px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.navigation a:hover{
+
+background:#372FCF;
+
+}
+
+footer{
+
+background:#111827;
+
+color:white;
+
+padding:40px;
+
+text-align:center;
+
+margin-top:60px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+🎓 BCAHub
+</div>
+
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+
+<a href="notes.html">Notes</a>
+
+<a href="semester1.html">Semester 1</a>
+
+<a href="mathematics.html">Mathematics</a>
+
+</div>
+
+</nav>
+
+<section class="chapter-hero">
+
+<h1>📘 Chapter 1</h1>
+
+<h2>Relation, Sets & Functions</h2>
+
+<p>
+
+This chapter introduces the basic concepts of Sets, Relations and Functions.
+These topics are fundamental in Mathematics and Computer Science and are
+widely used in databases, programming, networking and data structures.
+
+</p>
+
+<div class="info-box">
+
+<span>📚 Beginner</span>
+
+<span>⏱ 2 Hours</span>
+
+<span>⭐ Important</span>
+
+<span>📝 Exam Topic</span>
+
+</div>
+
+</section>
+
+<div class="container">
+
+<div class="card">
+
+<h2>📖 Introduction</h2>
+
+<p>
+
+A Set is a collection of well-defined objects.
+Relations describe the relationship between two sets,
+while Functions represent a special type of relation where every input
+has exactly one output.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🎯 Learning Outcomes</h2>
+
+<ul>
+
+<li>Understand Sets and their representation.</li>
+
+<li>Perform Set Operations.</li>
+
+<li>Understand Cartesian Product.</li>
+
+<li>Learn Relations and their Types.</li>
+
+<li>Study Functions and Types of Functions.</li>
+
+<li>Applications in Computer Science.</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>📚 1. Sets</h2>
+
+<p>
+
+A Set is a well-defined collection of distinct objects.
+
+</p>
+
+<div class="formula">
+
+A = {1,2,3,4,5}
+
+</div>
+
+<h3>Examples</h3>
+
+<div class="example">
+
+A = {2,4,6,8}
+
+<br><br>
+
+B = {Apple, Mango, Orange}
+
+</div>
+
+<h3>Methods of Representation</h3>
+
+<ul>
+
+<li>Roster Method</li>
+
+<li>Set Builder Method</li>
+
+</ul>
+
+<h3>Types of Sets</h3>
+
+<ul>
+
+<li>Empty Set</li>
+
+<li>Singleton Set</li>
+
+<li>Finite Set</li>
+
+<li>Infinite Set</li>
+
+<li>Universal Set</li>
+
+<li>Subset</li>
+
+<li>Proper Subset</li>
+
+<li>Equivalent Set</li>
+
+</ul>
+
+</div>
+<div class="card">
+
+<h2>📚 2. Set Operations</h2>
+
+<p>
+
+Set Operations are used to combine or compare two or more sets.
+
+</p>
+
+<h3>1. Union of Sets</h3>
+
+<div class="formula">
+
+A ∪ B = {Elements present in A or B}
+
+</div>
+
+<div class="example">
+
+A = {1,2,3}
+
+<br>
+
+B = {3,4,5}
+
+<br><br>
+
+A ∪ B = {1,2,3,4,5}
+
+</div>
+
+<h3>2. Intersection of Sets</h3>
+
+<div class="formula">
+
+A ∩ B = {Common Elements}
+
+</div>
+
+<div class="example">
+
+A ∩ B = {3}
+
+</div>
+
+<h3>3. Difference of Sets</h3>
+
+<div class="formula">
+
+A − B = Elements of A not present in B
+
+</div>
+
+<h3>4. Complement of Set</h3>
+
+<div class="formula">
+
+A' = Universal Set − A
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>📚 3. Cartesian Product</h2>
+
+<p>
+
+The Cartesian Product of two sets A and B is the set of all ordered pairs.
+
+</p>
+
+<div class="formula">
+
+A × B
+
+</div>
+
+<div class="example">
+
+A = {1,2}
+
+<br>
+
+B = {a,b}
+
+<br><br>
+
+A × B =
+
+{(1,a),(1,b),(2,a),(2,b)}
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>📚 4. Relations</h2>
+
+<p>
+
+A Relation is a subset of Cartesian Product.
+
+</p>
+
+<div class="formula">
+
+R ⊆ A × B
+
+</div>
+
+<h3>Types of Relations</h3>
+
+<ul>
+
+<li>Reflexive Relation</li>
+
+<li>Symmetric Relation</li>
+
+<li>Transitive Relation</li>
+
+<li>Equivalence Relation</li>
+
+</ul>
+
+<h3>Applications</h3>
+
+<ul>
+
+<li>Database Management System</li>
+
+<li>Graph Theory</li>
+
+<li>Networking</li>
+
+<li>Artificial Intelligence</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>📚 5. Functions</h2>
+
+<p>
+
+A Function is a special type of relation in which every input has exactly one output.
+
+</p>
+
+<div class="formula">
+
+f : A → B
+
+</div>
+
+<h3>Types of Functions</h3>
+
+<ul>
+
+<li>One-One Function</li>
+
+<li>Many-One Function</li>
+
+<li>Onto Function</li>
+
+<li>Into Function</li>
+
+<li>Bijective Function</li>
+
+</ul>
+
+<h3>Applications</h3>
+
+<ul>
+
+<li>Programming</li>
+
+<li>Computer Graphics</li>
+
+<li>Machine Learning</li>
+
+<li>Artificial Intelligence</li>
+
+<li>Data Science</li>
+
+</ul>
+
+</div>
+<div class="card">
+
+<h2>📝 Important Formulae</h2>
+
+<div class="formula">
+
+n(A ∪ B) = n(A) + n(B) − n(A ∩ B)
+
+</div>
+
+<div class="formula">
+
+Number of Subsets = 2ⁿ
+
+</div>
+
+<div class="formula">
+
+A × B = {(a,b) | a ∈ A and b ∈ B}
+
+</div>
+
+<div class="formula">
+
+R ⊆ A × B
+
+</div>
+
+<div class="formula">
+
+f : A → B
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>📌 Chapter Summary</h2>
+
+<ul>
+
+<li>Set is a collection of well-defined objects.</li>
+
+<li>Sets can be represented using Roster and Set Builder methods.</li>
+
+<li>Union combines all elements.</li>
+
+<li>Intersection gives common elements.</li>
+
+<li>Cartesian Product forms ordered pairs.</li>
+
+<li>Relation is a subset of Cartesian Product.</li>
+
+<li>Function is a special type of Relation.</li>
+
+<li>Functions are widely used in Computer Science.</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>💡 Exam Tips</h2>
+
+<ul>
+
+<li>Learn all definitions carefully.</li>
+
+<li>Remember all Set Operations.</li>
+
+<li>Practice Cartesian Product questions.</li>
+
+<li>Understand different types of Relations.</li>
+
+<li>Learn every type of Function with examples.</li>
+
+<li>Revise important formulae regularly.</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>❓ Important Questions</h2>
+
+<ol>
+
+<li>Define Set with suitable examples.</li>
+
+<li>Explain different types of Sets.</li>
+
+<li>What is Union and Intersection?</li>
+
+<li>Explain Cartesian Product with example.</li>
+
+<li>Define Relation.</li>
+
+<li>Explain different types of Relations.</li>
+
+<li>What is a Function?</li>
+
+<li>Differentiate Between Relation and Function.</li>
+
+<li>Explain One-One and Onto Function.</li>
+
+<li>Write applications of Sets and Functions.</li>
+
+</ol>
+
+</div>
+
+<div class="navigation">
+
+<a href="mathematics.html">
+⬅ Back to Mathematics
+</a>
+
+<a href="math-chapter2.html">
+Next Chapter ➜
+</a>
+
+</div>
+
+</div>
+
+<footer>
+
+<h2>🎓 BCAHub</h2>
+
+<p>Your Complete Learning Partner for BCA Students.</p>
+
+<p style="margin-top:20px;">
+
+© 2026 BCAHub. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

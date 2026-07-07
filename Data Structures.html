@@ -1,0 +1,6063 @@
+<!-- ===================================================== -->
+<!-- CHAPTER 1 : INTRODUCTION TO DATA STRUCTURES -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>📘 Chapter 1 : Introduction to Data Structures</h2>
+
+<p>
+Data Structure is one of the most important concepts in Computer Science and Programming.
+It provides a systematic way to organize, store, manage, and process data efficiently.
+Whenever a programmer develops software, websites, mobile applications, operating systems,
+games, or databases, data structures play a vital role in improving performance and reducing
+execution time.
+</p>
+
+<p>
+In simple words, a Data Structure is a method of organizing data inside the computer's memory
+so that operations like searching, inserting, deleting, updating, and sorting can be performed
+quickly and efficiently.
+</p>
+
+<div class="highlight-box">
+
+<h3>📖 Definition</h3>
+
+<p>
+A Data Structure is a specialized format used to organize and store data in a computer
+so that it can be accessed, modified, and processed efficiently whenever required.
+</p>
+
+</div>
+
+<h3>💡 Understanding Data Structure with a Real-Life Example</h3>
+
+<p>
+Imagine a library containing thousands of books.
+If all books are placed randomly on the floor, finding a single book may take several hours.
+However, if books are arranged shelf-wise according to subjects, authors, or serial numbers,
+the required book can be found within minutes.
+</p>
+
+<p>
+Similarly, computers store millions of pieces of information.
+Without proper organization, processing data becomes slow and inefficient.
+Data Structures help organize this information in an efficient manner.
+</p>
+
+<div class="note-box">
+
+<b>Example:</b>
+
+<ul>
+
+<li>📚 Library → Books are arranged shelf-wise.</li>
+
+<li>🏥 Hospital → Patient records are arranged department-wise.</li>
+
+<li>🏦 Bank → Customer information is stored systematically.</li>
+
+<li>📱 Mobile Phone → Contact list is stored alphabetically.</li>
+
+<li>🛒 Shopping Website → Products are categorized for faster searching.</li>
+
+</ul>
+
+</div>
+
+<hr>
+
+<h2>📌 Data vs Information</h2>
+
+<p>
+Students often confuse Data and Information.
+Although both terms are related, they are not exactly the same.
+</p>
+
+<table class="notes-table">
+
+<tr>
+<th>Data</th>
+<th>Information</th>
+</tr>
+
+<tr>
+<td>Raw facts and figures.</td>
+<td>Processed and meaningful data.</td>
+</tr>
+
+<tr>
+<td>Unorganized.</td>
+<td>Organized.</td>
+</tr>
+
+<tr>
+<td>No meaning individually.</td>
+<td>Useful for decision making.</td>
+</tr>
+
+<tr>
+<td>Input for processing.</td>
+<td>Output after processing.</td>
+</tr>
+
+<tr>
+<td>Example: 85, 92, 78</td>
+<td>Average Marks = 85%</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🎯 Need of Data Structures</h2>
+
+<p>
+Modern software applications process huge amounts of data every second.
+If this data is not stored efficiently, programs become slower and consume more memory.
+Data Structures solve these problems by organizing information intelligently.
+</p>
+
+<p>
+The need for Data Structures includes:
+</p>
+
+<ul>
+
+<li>✔ Faster searching of records.</li>
+
+<li>✔ Easy insertion of new data.</li>
+
+<li>✔ Quick deletion of unnecessary records.</li>
+
+<li>✔ Better memory utilization.</li>
+
+<li>✔ Improved program performance.</li>
+
+<li>✔ Efficient data management.</li>
+
+<li>✔ Easy implementation of algorithms.</li>
+
+<li>✔ Reduces execution time.</li>
+
+<li>✔ Makes software scalable.</li>
+
+<li>✔ Improves user experience.</li>
+
+</ul>
+
+<div class="highlight-box">
+
+<h3>⭐ Important Exam Point</h3>
+
+<p>
+Without Data Structures, managing large amounts of data becomes difficult,
+slow, and memory inefficient.
+Therefore, almost every modern software application uses one or more data structures.
+</p>
+
+</div>
+
+<hr>
+
+<h2>🚀 Characteristics of Data Structures</h2>
+
+<p>
+A good Data Structure should possess the following characteristics:
+</p>
+
+<ol>
+
+<li><b>Efficiency:</b> Performs operations quickly.</li>
+
+<li><b>Reusability:</b> Can be reused in different programs.</li>
+
+<li><b>Scalability:</b> Works efficiently even when data increases.</li>
+
+<li><b>Simplicity:</b> Easy to understand and implement.</li>
+
+<li><b>Flexibility:</b> Can handle different types of data.</li>
+
+<li><b>Memory Optimization:</b> Uses minimum memory.</li>
+
+<li><b>Maintainability:</b> Easy to modify and update.</li>
+
+<li><b>Reliability:</b> Produces accurate results consistently.</li>
+
+</ol>
+
+<hr>
+
+<h2>🌍 Applications of Data Structures</h2>
+
+<p>
+Data Structures are used almost everywhere in computer science.
+Some important applications are listed below:
+</p>
+
+<ul>
+
+<li>💻 Operating Systems</li>
+
+<li>🌐 Web Browsers</li>
+
+<li>📱 Mobile Applications</li>
+
+<li>🎮 Game Development</li>
+
+<li>🤖 Artificial Intelligence</li>
+
+<li>☁ Cloud Computing</li>
+
+<li>📊 Data Analytics</li>
+
+<li>💳 Banking Systems</li>
+
+<li>🛒 E-Commerce Websites</li>
+
+<li>📍 Google Maps</li>
+
+<li>📺 Social Media Platforms</li>
+
+<li>🎬 OTT Platforms</li>
+
+<li>📧 Email Systems</li>
+
+<li>🧠 Machine Learning</li>
+
+<li>🗄 Database Management Systems</li>
+
+</ul>
+
+<div class="note-box">
+
+<h3>💼 Real Life Examples</h3>
+
+<p>
+
+Google Search → Trees & Graphs<br>
+
+WhatsApp Chats → Linked Lists<br>
+
+Undo Button → Stack<br>
+
+Printer Queue → Queue<br>
+
+Music Playlist → Linked List<br>
+
+GPS Navigation → Graph<br>
+
+Facebook Friends → Graph<br>
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 1 CONTINUE : TYPES OF DATA STRUCTURES -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>📚 Types of Data Structures</h2>
+
+<p>
+Data Structures can be classified into different categories depending on the way data is stored,
+organized, and accessed. Understanding these classifications is very important because every
+programming problem requires a suitable data structure.
+</p>
+
+<p>
+The major classification of Data Structures is shown below:
+</p>
+
+<ul>
+
+<li>✅ Primitive Data Structures</li>
+
+<li>✅ Non-Primitive Data Structures</li>
+
+</ul>
+
+<hr>
+
+<h2>🔹 Primitive Data Structures</h2>
+
+<p>
+Primitive Data Structures are the basic and built-in data types provided by programming languages.
+These are directly supported by the compiler and are used to store single values.
+</p>
+
+<p>
+They act as the building blocks for all advanced data structures.
+Without primitive data types, complex data structures cannot be created.
+</p>
+
+<div class="highlight-box">
+
+<h3>Characteristics of Primitive Data Structures</h3>
+
+<ul>
+
+<li>✔ Built into the programming language.</li>
+
+<li>✔ Stores only one value at a time.</li>
+
+<li>✔ Requires fixed memory.</li>
+
+<li>✔ Easy to declare and use.</li>
+
+<li>✔ Faster execution.</li>
+
+<li>✔ Used in almost every program.</li>
+
+</ul>
+
+</div>
+
+<h3>Examples of Primitive Data Types</h3>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Data Type</th>
+
+<th>Description</th>
+
+<th>Example</th>
+
+</tr>
+
+<tr>
+
+<td>Integer (int)</td>
+
+<td>Stores whole numbers.</td>
+
+<td>15, 200, -10</td>
+
+</tr>
+
+<tr>
+
+<td>Float</td>
+
+<td>Stores decimal values.</td>
+
+<td>3.14, 25.50</td>
+
+</tr>
+
+<tr>
+
+<td>Double</td>
+
+<td>Stores high precision decimal values.</td>
+
+<td>123.456789</td>
+
+</tr>
+
+<tr>
+
+<td>Character (char)</td>
+
+<td>Stores a single character.</td>
+
+<td>'A', 'Z'</td>
+
+</tr>
+
+<tr>
+
+<td>Boolean</td>
+
+<td>Stores True or False.</td>
+
+<td>true / false</td>
+
+</tr>
+
+</table>
+
+<div class="note-box">
+
+<h3>Example</h3>
+
+<p>
+
+int age = 20;<br>
+
+float salary = 25000.50;<br>
+
+char grade = 'A';<br>
+
+bool pass = true;
+
+</p>
+
+</div>
+
+<hr>
+
+<h2>🔷 Non-Primitive Data Structures</h2>
+
+<p>
+Non-Primitive Data Structures are advanced data structures that are created using primitive data types.
+They can store multiple values and represent complex relationships among data.
+</p>
+
+<p>
+These data structures are generally designed by programmers to solve real-world problems.
+</p>
+
+<div class="highlight-box">
+
+<h3>Main Characteristics</h3>
+
+<ul>
+
+<li>✔ Can store multiple values.</li>
+
+<li>✔ Can represent complex data.</li>
+
+<li>✔ Memory can be static or dynamic.</li>
+
+<li>✔ Used in software development.</li>
+
+<li>✔ Makes searching and processing easier.</li>
+
+</ul>
+
+</div>
+
+<p>
+Non-Primitive Data Structures are divided into two categories:
+</p>
+
+<ul>
+
+<li>📌 Linear Data Structures</li>
+
+<li>📌 Non-Linear Data Structures</li>
+
+</ul>
+
+<hr>
+
+<h2>📖 Linear Data Structures</h2>
+
+<p>
+A Linear Data Structure stores data elements in a sequential order.
+Each element is connected to the next element in a single line.
+</p>
+
+<p>
+Traversal is straightforward because data is arranged one after another.
+</p>
+
+<h3>Characteristics</h3>
+
+<ul>
+
+<li>✔ Sequential arrangement.</li>
+
+<li>✔ Easy traversal.</li>
+
+<li>✔ One-to-one relationship.</li>
+
+<li>✔ Simple implementation.</li>
+
+</ul>
+
+<h3>Examples</h3>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Data Structure</th>
+
+<th>Use</th>
+
+</tr>
+
+<tr>
+
+<td>Array</td>
+
+<td>Stores fixed-size collection of elements.</td>
+
+</tr>
+
+<tr>
+
+<td>Linked List</td>
+
+<td>Stores dynamically connected nodes.</td>
+
+</tr>
+
+<tr>
+
+<td>Stack</td>
+
+<td>Works on LIFO principle.</td>
+
+</tr>
+
+<tr>
+
+<td>Queue</td>
+
+<td>Works on FIFO principle.</td>
+
+</tr>
+
+</table>
+
+<div class="note-box">
+
+<b>Real-Life Examples</b>
+
+<ul>
+
+<li>📚 Queue at Ticket Counter</li>
+
+<li>🚗 Cars waiting at Toll Plaza</li>
+
+<li>📄 Students standing in a line</li>
+
+<li>🛒 Checkout Queue in Shopping Mall</li>
+
+</ul>
+
+</div>
+
+<hr>
+
+<h2>🌳 Non-Linear Data Structures</h2>
+
+<p>
+Unlike linear data structures, non-linear data structures do not arrange elements in a single sequence.
+Each element can be connected with multiple elements.
+</p>
+
+<p>
+These structures are mainly used when relationships between data are more complex.
+</p>
+
+<h3>Characteristics</h3>
+
+<ul>
+
+<li>✔ Hierarchical organization.</li>
+
+<li>✔ One-to-many relationship.</li>
+
+<li>✔ Faster searching in many applications.</li>
+
+<li>✔ Suitable for complex data.</li>
+
+</ul>
+
+<h3>Examples</h3>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Structure</th>
+
+<th>Application</th>
+
+</tr>
+
+<tr>
+
+<td>Tree</td>
+
+<td>File System, XML Documents</td>
+
+</tr>
+
+<tr>
+
+<td>Graph</td>
+
+<td>Google Maps, Facebook Network</td>
+
+</tr>
+
+</table>
+
+<div class="highlight-box">
+
+<h3>🌍 Real-Life Applications</h3>
+
+<p>
+
+📁 Computer Folder Structure → Tree<br>
+
+🌐 Internet Network → Graph<br>
+
+👥 Social Media Friends → Graph<br>
+
+🛰 GPS Navigation → Graph<br>
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 1 CONTINUE : STATIC & DYNAMIC DATA STRUCTURES -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>📦 Static Data Structures</h2>
+
+<p>
+A Static Data Structure is a type of data structure in which the memory size is fixed before
+the execution of the program. Once the memory is allocated, its size cannot be increased or
+decreased during runtime.
+</p>
+
+<p>
+Static data structures are simple to implement and execute faster because the memory is
+allocated only once. However, if more memory is required later, it cannot be allocated,
+which may lead to memory wastage or overflow.
+</p>
+
+<div class="highlight-box">
+
+<h3>Characteristics of Static Data Structures</h3>
+
+<ul>
+
+<li>✔ Fixed memory allocation.</li>
+
+<li>✔ Size is decided before program execution.</li>
+
+<li>✔ Faster data access.</li>
+
+<li>✔ Easy implementation.</li>
+
+<li>✔ Suitable for small applications.</li>
+
+<li>✔ Less flexible.</li>
+
+</ul>
+
+</div>
+
+<h3>Advantages</h3>
+
+<ul>
+
+<li>✔ Simple to understand.</li>
+
+<li>✔ Faster execution.</li>
+
+<li>✔ Easy memory management.</li>
+
+<li>✔ Direct access to elements.</li>
+
+</ul>
+
+<h3>Disadvantages</h3>
+
+<ul>
+
+<li>❌ Memory cannot be changed.</li>
+
+<li>❌ Memory wastage is possible.</li>
+
+<li>❌ Not suitable for large applications.</li>
+
+<li>❌ Cannot store unlimited data.</li>
+
+</ul>
+
+<div class="note-box">
+
+<b>Example:</b>
+
+<p>
+
+An array of size 100 is created.<br>
+
+Even if only 10 elements are used, memory for all 100 elements remains reserved.
+
+</p>
+
+</div>
+
+<hr>
+
+<h2>⚡ Dynamic Data Structures</h2>
+
+<p>
+Dynamic Data Structures allocate memory during program execution.
+The memory size can increase or decrease whenever required.
+This makes dynamic structures flexible and memory efficient.
+</p>
+
+<p>
+Dynamic memory allocation is performed using pointers.
+Examples include Linked List, Trees, and Graphs.
+</p>
+
+<div class="highlight-box">
+
+<h3>Characteristics</h3>
+
+<ul>
+
+<li>✔ Memory allocated at runtime.</li>
+
+<li>✔ Flexible size.</li>
+
+<li>✔ Better memory utilization.</li>
+
+<li>✔ Suitable for large applications.</li>
+
+<li>✔ Can grow or shrink anytime.</li>
+
+</ul>
+
+</div>
+
+<h3>Advantages</h3>
+
+<ul>
+
+<li>✔ No memory wastage.</li>
+
+<li>✔ Flexible.</li>
+
+<li>✔ Better performance for changing data.</li>
+
+<li>✔ Can store unlimited records (depending on available memory).</li>
+
+</ul>
+
+<h3>Disadvantages</h3>
+
+<ul>
+
+<li>❌ More complex than static structures.</li>
+
+<li>❌ Uses pointers.</li>
+
+<li>❌ Slightly slower than static structures.</li>
+
+<li>❌ Programming becomes difficult.</li>
+
+</ul>
+
+<div class="note-box">
+
+<b>Examples of Dynamic Data Structures</b>
+
+<ul>
+
+<li>📄 Linked List</li>
+
+<li>🌳 Tree</li>
+
+<li>🕸 Graph</li>
+
+</ul>
+
+</div>
+
+<hr>
+
+<h2>📊 Difference Between Static and Dynamic Data Structures</h2>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Static</th>
+
+<th>Dynamic</th>
+
+</tr>
+
+<tr>
+
+<td>Memory allocated before execution.</td>
+
+<td>Memory allocated during execution.</td>
+
+</tr>
+
+<tr>
+
+<td>Fixed size.</td>
+
+<td>Variable size.</td>
+
+</tr>
+
+<tr>
+
+<td>Fast.</td>
+
+<td>Slightly slower.</td>
+
+</tr>
+
+<tr>
+
+<td>Simple implementation.</td>
+
+<td>Complex implementation.</td>
+
+</tr>
+
+<tr>
+
+<td>Memory wastage possible.</td>
+
+<td>Better memory utilization.</td>
+
+</tr>
+
+<tr>
+
+<td>Example: Array</td>
+
+<td>Example: Linked List</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- DATA STRUCTURE OPERATIONS -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>⚙️ Operations on Data Structures</h2>
+
+<p>
+Every data structure supports different operations that allow programmers to manipulate
+the stored data efficiently.
+</p>
+
+<p>
+The six basic operations are:
+</p>
+
+<ol>
+
+<li>Traversal</li>
+
+<li>Insertion</li>
+
+<li>Deletion</li>
+
+<li>Searching</li>
+
+<li>Sorting</li>
+
+<li>Merging</li>
+
+</ol>
+
+<hr>
+
+<h3>1️⃣ Traversal</h3>
+
+<p>
+Traversal means visiting each element of the data structure exactly once.
+It is mainly used for displaying, processing, or checking all stored elements.
+</p>
+
+<p>
+<b>Example:</b> Printing all student names stored in an array.
+</p>
+
+<hr>
+
+<h3>2️⃣ Insertion</h3>
+
+<p>
+Insertion means adding a new element into the data structure.
+The new element may be inserted at the beginning, middle, or end depending on the requirement.
+</p>
+
+<p>
+<b>Example:</b> Adding a new employee record into the database.
+</p>
+
+<hr>
+
+<h3>3️⃣ Deletion</h3>
+
+<p>
+Deletion is the process of removing an existing element from the data structure.
+Proper deletion helps in maintaining correct and updated information.
+</p>
+
+<p>
+<b>Example:</b> Removing a cancelled train ticket record.
+</p>
+
+<hr>
+
+<h3>4️⃣ Searching</h3>
+
+<p>
+Searching is used to locate a specific element within the data structure.
+Efficient searching algorithms reduce execution time significantly.
+</p>
+
+<p>
+<b>Example:</b> Searching a contact number in a mobile phone.
+</p>
+
+<hr>
+
+<h3>5️⃣ Sorting</h3>
+
+<p>
+Sorting means arranging data in ascending or descending order.
+Sorting improves searching speed and overall efficiency.
+</p>
+
+<p>
+<b>Example:</b> Arranging student marks from highest to lowest.
+</p>
+
+<hr>
+
+<h3>6️⃣ Merging</h3>
+
+<p>
+Merging combines two or more data structures into a single structure.
+This operation is useful while combining datasets.
+</p>
+
+<p>
+<b>Example:</b> Combining two class attendance lists.
+</p>
+
+<div class="highlight-box">
+
+<h3>💡 Important Point</h3>
+
+<p>
+
+Almost every Data Structure supports these six operations.
+However, the implementation method differs from one structure to another.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 1 FINAL : TIME COMPLEXITY & SPACE COMPLEXITY -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>⏱️ Time Complexity</h2>
+
+<p>
+Time Complexity is the amount of time required by an algorithm to complete its execution.
+It tells us how the running time of a program increases when the size of input data increases.
+Time Complexity does not measure the actual time in seconds. Instead, it measures the number
+of basic operations performed by an algorithm.
+</p>
+
+<p>
+For example, if an algorithm takes 10 operations for 10 elements and 100 operations for
+100 elements, we say that its running time grows with the size of input.
+</p>
+
+<div class="highlight-box">
+
+<h3>Why Time Complexity is Important?</h3>
+
+<ul>
+
+<li>✔ Helps compare different algorithms.</li>
+
+<li>✔ Improves program performance.</li>
+
+<li>✔ Reduces execution time.</li>
+
+<li>✔ Helps choose the best algorithm for large datasets.</li>
+
+<li>✔ Essential in competitive programming and software development.</li>
+
+</ul>
+
+</div>
+
+<hr>
+
+<h2>📈 Big O Notation (O)</h2>
+
+<p>
+Big O Notation represents the <b>worst-case performance</b> of an algorithm.
+It tells us the maximum amount of time an algorithm may take to complete its execution.
+</p>
+
+<p>
+Example:
+Searching an element in an unsorted array may require checking every element.
+Therefore, the worst-case complexity is O(n).
+</p>
+
+<table class="notes-table">
+
+<tr>
+<th>Notation</th>
+<th>Name</th>
+<th>Performance</th>
+</tr>
+
+<tr>
+<td>O(1)</td>
+<td>Constant Time</td>
+<td>Excellent</td>
+</tr>
+
+<tr>
+<td>O(log n)</td>
+<td>Logarithmic</td>
+<td>Very Fast</td>
+</tr>
+
+<tr>
+<td>O(n)</td>
+<td>Linear</td>
+<td>Good</td>
+</tr>
+
+<tr>
+<td>O(n log n)</td>
+<td>Linear Logarithmic</td>
+<td>Efficient</td>
+</tr>
+
+<tr>
+<td>O(n²)</td>
+<td>Quadratic</td>
+<td>Slow for large data</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>📉 Omega Notation (Ω)</h2>
+
+<p>
+Omega Notation represents the <b>best-case performance</b> of an algorithm.
+It indicates the minimum amount of time required by an algorithm.
+</p>
+
+<p>
+Example:
+Searching the first element of an array requires only one comparison.
+Hence, the best case is Ω(1).
+</p>
+
+<hr>
+
+<h2>📊 Theta Notation (Θ)</h2>
+
+<p>
+Theta Notation represents the <b>average-case performance</b>.
+It gives the average running time considering all possible inputs.
+</p>
+
+<div class="note-box">
+
+<h3>Easy Trick to Remember</h3>
+
+<p>
+
+Big O → Worst Case 🚨<br>
+
+Omega → Best Case ⚡<br>
+
+Theta → Average Case 📊
+
+</p>
+
+</div>
+
+<hr>
+
+<h2>💾 Space Complexity</h2>
+
+<p>
+Space Complexity refers to the amount of memory required by an algorithm during execution.
+It includes both input memory and extra memory used by variables, arrays, recursion, etc.
+</p>
+
+<p>
+A good algorithm should use minimum memory while maintaining good performance.
+</p>
+
+<div class="highlight-box">
+
+<h3>Importance of Space Complexity</h3>
+
+<ul>
+
+<li>✔ Reduces memory consumption.</li>
+
+<li>✔ Makes software efficient.</li>
+
+<li>✔ Improves system performance.</li>
+
+<li>✔ Prevents memory overflow.</li>
+
+<li>✔ Useful for mobile and embedded systems.</li>
+
+</ul>
+
+</div>
+
+<hr>
+
+<h2>⭐ Advantages of Data Structures</h2>
+
+<ul>
+
+<li>✔ Organizes data efficiently.</li>
+
+<li>✔ Reduces execution time.</li>
+
+<li>✔ Improves searching speed.</li>
+
+<li>✔ Simplifies programming.</li>
+
+<li>✔ Better memory utilization.</li>
+
+<li>✔ Easy data management.</li>
+
+<li>✔ Improves software performance.</li>
+
+<li>✔ Supports efficient algorithms.</li>
+
+<li>✔ Suitable for large-scale applications.</li>
+
+<li>✔ Makes code reusable and maintainable.</li>
+
+</ul>
+
+<hr>
+
+<h2>❌ Disadvantages of Data Structures</h2>
+
+<ul>
+
+<li>❌ Some structures are difficult to understand.</li>
+
+<li>❌ Dynamic structures require pointers.</li>
+
+<li>❌ Incorrect implementation may reduce performance.</li>
+
+<li>❌ Additional memory may be required.</li>
+
+<li>❌ Complex data structures increase coding complexity.</li>
+
+</ul>
+
+<hr>
+
+<h2>📝 Chapter Summary</h2>
+
+<p>
+
+✔ Data Structure organizes data efficiently.<br>
+
+✔ Primitive Data Structures store single values.<br>
+
+✔ Non-Primitive Data Structures store multiple values.<br>
+
+✔ Linear structures store data sequentially.<br>
+
+✔ Non-linear structures represent hierarchical relationships.<br>
+
+✔ Static structures have fixed memory.<br>
+
+✔ Dynamic structures allocate memory at runtime.<br>
+
+✔ Six basic operations are Traversal, Insertion, Deletion, Searching, Sorting and Merging.<br>
+
+✔ Time Complexity measures execution time.<br>
+
+✔ Space Complexity measures memory usage.<br>
+
+</p>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>Define Data Structure with suitable examples.</li>
+
+<li>Differentiate between Data and Information.</li>
+
+<li>Explain Primitive and Non-Primitive Data Structures.</li>
+
+<li>Differentiate between Linear and Non-Linear Data Structures.</li>
+
+<li>Explain Static and Dynamic Data Structures.</li>
+
+<li>Describe various operations performed on Data Structures.</li>
+
+<li>What is Time Complexity? Explain Big O, Omega and Theta Notations.</li>
+
+<li>Explain Space Complexity.</li>
+
+<li>Write advantages and disadvantages of Data Structures.</li>
+
+<li>Explain real-life applications of Data Structures.</li>
+
+</ol>
+
+<div class="highlight-box">
+
+<h3>🏆 Exam Tip</h3>
+
+<p>
+For long-answer questions, always include:
+Definition → Explanation → Diagram (if applicable) → Advantages → Disadvantages → Applications → Example. This structure helps you score better in university exams.
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 2 : ARRAYS (PART 2.1A) -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>📘 Chapter 2 : Arrays</h2>
+
+<p>
+Array is one of the most fundamental and widely used data structures in computer science.
+It is used to store multiple values of the same data type in a single variable. Instead of
+creating many individual variables, an array allows us to store all related elements together,
+making programs more organized, readable, and efficient.
+</p>
+
+<p>
+Arrays are used in almost every programming language such as C, C++, Java, Python, and C#.
+Many advanced data structures like Stacks, Queues, Heaps, and Hash Tables are also implemented
+using arrays.
+</p>
+
+<div class="highlight-box">
+
+<h3>📖 Definition of Array</h3>
+
+<p>
+An <b>Array</b> is a collection of elements of the same data type stored in contiguous
+(consecutive) memory locations. Each element in an array is identified by its index number,
+which starts from <b>0</b>.
+</p>
+
+</div>
+
+<hr>
+
+<h2>💡 Why Do We Need Arrays?</h2>
+
+<p>
+Imagine a teacher wants to store the marks of 100 students.
+Without arrays, the programmer would have to create 100 different variables such as:
+</p>
+
+<div class="note-box">
+
+<p>
+
+marks1<br>
+marks2<br>
+marks3<br>
+marks4<br>
+...<br>
+marks100
+
+</p>
+
+</div>
+
+<p>
+Managing such a large number of variables becomes difficult and increases the chances of
+errors. Arrays solve this problem by allowing all values to be stored under one variable name.
+</p>
+
+<div class="note-box">
+
+<b>Example:</b>
+
+<p>
+
+int marks[100];
+
+</p>
+
+</div>
+
+<p>
+Now all 100 student marks can be stored inside a single array, and each value can be accessed
+using its index number.
+</p>
+
+<hr>
+
+<h2>🌍 Real-Life Examples of Arrays</h2>
+
+<p>
+Arrays are used in many real-life situations where similar types of data need to be stored
+together.
+</p>
+
+<ul>
+
+<li>🎓 Marks of students in a class.</li>
+
+<li>💰 Monthly salary of employees.</li>
+
+<li>🌡️ Daily temperature of a city.</li>
+
+<li>📱 Contact numbers stored in a mobile application.</li>
+
+<li>🏏 Runs scored by players in a cricket match.</li>
+
+<li>🛒 Prices of products in an online shopping website.</li>
+
+<li>📚 Roll numbers of students.</li>
+
+<li>🎵 Playlist of songs.</li>
+
+</ul>
+
+<hr>
+
+<h2>⭐ Characteristics of Arrays</h2>
+
+<p>
+Arrays have several important characteristics that make them useful for storing data.
+</p>
+
+<ul>
+
+<li>✔ Stores elements of the same data type.</li>
+
+<li>✔ Elements are stored in continuous memory locations.</li>
+
+<li>✔ Every element has a unique index.</li>
+
+<li>✔ Indexing starts from 0.</li>
+
+<li>✔ Random access is possible.</li>
+
+<li>✔ Fixed size after declaration.</li>
+
+<li>✔ Easy traversal using loops.</li>
+
+<li>✔ Fast access to elements.</li>
+
+</ul>
+
+<div class="highlight-box">
+
+<h3>💡 Important Note</h3>
+
+<p>
+
+The size of an array cannot be changed after it has been declared.
+If more space is required, a new array must be created.
+
+</p>
+
+</div>
+
+<hr>
+
+<h2>🎯 Features of Arrays</h2>
+
+<p>
+Arrays provide many useful features that make programming easier and more efficient.
+</p>
+
+<ol>
+
+<li>Stores multiple values using a single variable.</li>
+
+<li>Requires less coding.</li>
+
+<li>Provides direct access to elements.</li>
+
+<li>Consumes less execution time.</li>
+
+<li>Easy to process using loops.</li>
+
+<li>Supports searching and sorting algorithms.</li>
+
+<li>Improves program readability.</li>
+
+<li>Widely used in software development.</li>
+
+</ol>
+
+<hr>
+
+<h2>🧠 How Array Works?</h2>
+
+<p>
+When an array is declared, the computer reserves a block of continuous memory.
+Each element occupies equal memory depending on its data type.
+</p>
+
+<div class="note-box">
+
+<p>
+
+Example:<br><br>
+
+int numbers[5] = {10,20,30,40,50};
+
+</p>
+
+</div>
+
+<p>
+Memory Representation:
+</p>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Index</th>
+
+<th>Value</th>
+
+</tr>
+
+<tr>
+
+<td>0</td>
+
+<td>10</td>
+
+</tr>
+
+<tr>
+
+<td>1</td>
+
+<td>20</td>
+
+</tr>
+
+<tr>
+
+<td>2</td>
+
+<td>30</td>
+
+</tr>
+
+<tr>
+
+<td>3</td>
+
+<td>40</td>
+
+</tr>
+
+<tr>
+
+<td>4</td>
+
+<td>50</td>
+
+</tr>
+
+</table>
+
+<p>
+To access the third element, we write:
+</p>
+
+<div class="note-box">
+
+<p>
+
+numbers[2]
+
+</p>
+
+</div>
+
+<p>
+Since indexing starts from 0, <b>numbers[2]</b> returns the value <b>30</b>.
+</p>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 2 : ARRAYS (PART 2.1B) -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>📝 Declaration of Arrays</h2>
+
+<p>
+Before storing values inside an array, it must be declared. Array declaration tells the compiler
+about the data type, array name, and the maximum number of elements that can be stored.
+Memory for all elements is reserved during declaration.
+</p>
+
+<div class="highlight-box">
+
+<h3>General Syntax</h3>
+
+<pre><code>
+data_type array_name[size];
+</code></pre>
+
+</div>
+
+<h3>Examples</h3>
+
+<div class="note-box">
+
+<pre><code>
+int marks[50];
+
+float salary[20];
+
+char name[30];
+
+double price[15];
+</code></pre>
+
+</div>
+
+<p>
+In the above examples:
+</p>
+
+<ul>
+
+<li><b>int</b> → Data type of the array.</li>
+
+<li><b>marks</b> → Name of the array.</li>
+
+<li><b>50</b> → Maximum number of elements.</li>
+
+</ul>
+
+<hr>
+
+<h2>🎯 Rules for Declaring an Array</h2>
+
+<p>
+Some important rules should always be followed while declaring arrays.
+</p>
+
+<ul>
+
+<li>✔ Array name must be a valid identifier.</li>
+
+<li>✔ Array size should be a positive integer.</li>
+
+<li>✔ All elements must belong to the same data type.</li>
+
+<li>✔ Index always starts from <b>0</b>.</li>
+
+<li>✔ Size cannot be negative.</li>
+
+<li>✔ Memory size becomes fixed after declaration.</li>
+
+<li>✔ Array size should not exceed available memory.</li>
+
+</ul>
+
+<div class="highlight-box">
+
+<h3>Exam Tip</h3>
+
+<p>
+
+The compiler automatically allocates memory according to the size of the array.
+
+</p>
+
+</div>
+
+<hr>
+
+<h2>📚 Initialization of Arrays</h2>
+
+<p>
+Initialization means assigning values to array elements.
+Initialization can be performed during declaration or after declaration.
+</p>
+
+<h3>Method 1 : Initialization During Declaration</h3>
+
+<div class="note-box">
+
+<pre><code>
+int marks[5] = {90,85,78,88,95};
+</code></pre>
+
+</div>
+
+<p>
+The compiler stores all five values automatically in continuous memory locations.
+</p>
+
+<hr>
+
+<h3>Method 2 : Partial Initialization</h3>
+
+<div class="note-box">
+
+<pre><code>
+int numbers[5]={10,20};
+</code></pre>
+
+</div>
+
+<p>
+Only the first two elements receive values.
+The remaining elements automatically become 0.
+</p>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Index</th>
+
+<th>Stored Value</th>
+
+</tr>
+
+<tr>
+
+<td>0</td>
+
+<td>10</td>
+
+</tr>
+
+<tr>
+
+<td>1</td>
+
+<td>20</td>
+
+</tr>
+
+<tr>
+
+<td>2</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>3</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>4</td>
+
+<td>0</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h3>Method 3 : Size Automatically Determined</h3>
+
+<div class="note-box">
+
+<pre><code>
+int numbers[]={5,10,15,20,25};
+</code></pre>
+
+</div>
+
+<p>
+Here, the compiler automatically calculates the array size based on the number of elements.
+In this example, the size becomes 5.
+</p>
+
+<hr>
+
+<h3>Method 4 : Initialization After Declaration</h3>
+
+<div class="note-box">
+
+<pre><code>
+int marks[5];
+
+marks[0]=85;
+marks[1]=92;
+marks[2]=78;
+marks[3]=88;
+marks[4]=95;
+</code></pre>
+
+</div>
+
+<p>
+Each element is assigned individually using its index number.
+</p>
+
+<hr>
+
+<h2>💾 Memory Representation of Arrays</h2>
+
+<p>
+One of the biggest advantages of arrays is that all elements are stored in contiguous
+(consecutive) memory locations. This allows the processor to access any element directly
+without searching the entire collection.
+</p>
+
+<div class="highlight-box">
+
+<h3>Example</h3>
+
+<pre><code>
+int A[5]={10,20,30,40,50};
+</code></pre>
+
+</div>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Index</th>
+
+<th>Value</th>
+
+<th>Memory Address (Example)</th>
+
+</tr>
+
+<tr>
+
+<td>0</td>
+
+<td>10</td>
+
+<td>1000</td>
+
+</tr>
+
+<tr>
+
+<td>1</td>
+
+<td>20</td>
+
+<td>1004</td>
+
+</tr>
+
+<tr>
+
+<td>2</td>
+
+<td>30</td>
+
+<td>1008</td>
+
+</tr>
+
+<tr>
+
+<td>3</td>
+
+<td>40</td>
+
+<td>1012</td>
+
+</tr>
+
+<tr>
+
+<td>4</td>
+
+<td>50</td>
+
+<td>1016</td>
+
+</tr>
+
+</table>
+
+<p>
+Each integer occupies 4 bytes of memory (on many systems). Therefore, addresses increase
+by 4 bytes for every next element.
+</p>
+
+<div class="note-box">
+
+<h3>Important Formula</h3>
+
+<p>
+
+Address of Element = Base Address + (Index × Size of Data Type)
+
+</p>
+
+</div>
+
+<hr>
+
+<h2>⚠️ Common Mistakes While Using Arrays</h2>
+
+<ul>
+
+<li>❌ Accessing elements beyond the declared size.</li>
+
+<li>❌ Forgetting that indexing starts from 0.</li>
+
+<li>❌ Declaring a very large array without enough memory.</li>
+
+<li>❌ Mixing different data types in the same array.</li>
+
+<li>❌ Forgetting to initialize array elements before using them.</li>
+
+</ul>
+
+<div class="highlight-box">
+
+<h3>Remember</h3>
+
+<p>
+
+If an array has size 10, the valid indexes are:
+
+0,1,2,3,4,5,6,7,8,9
+
+Accessing index 10 or higher results in undefined behavior.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 2 : ARRAYS (PART 2.1C) -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>🔍 Accessing Array Elements</h2>
+
+<p>
+Accessing an array element means retrieving or reading the value stored at a particular
+position in the array. Every element of an array is identified by an index number.
+Since array indexing starts from <b>0</b>, the first element is stored at index 0,
+the second element at index 1, and so on.
+</p>
+
+<div class="highlight-box">
+
+<h3>📌 Syntax</h3>
+
+<pre><code>
+array_name[index];
+</code></pre>
+
+</div>
+
+<div class="note-box">
+
+<h3>Example</h3>
+
+<pre><code>
+int marks[5] = {80, 85, 90, 75, 95};
+
+printf("%d", marks[0]);   // Output: 80
+
+printf("%d", marks[3]);   // Output: 75
+</code></pre>
+
+</div>
+
+<p>
+Using the correct index allows the program to directly access any element without checking
+other elements. This direct access makes arrays very fast compared to many other data structures.
+</p>
+
+<hr>
+
+<h2>✍️ Reading Values into an Array</h2>
+
+<p>
+Values can also be entered by the user during program execution. This is known as runtime input.
+The most common method is using a <b>for loop</b>.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+int marks[5];
+
+for(int i=0; i<5; i++)
+{
+    scanf("%d", &marks[i]);
+}
+</code></pre>
+
+</div>
+
+<p>
+Each value entered by the user is stored at its respective index.
+</p>
+
+<hr>
+
+<h2>🖨️ Displaying Array Elements</h2>
+
+<p>
+To display all elements of an array, programmers generally use a loop.
+The loop visits each element one by one and prints it.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+for(int i=0; i<5; i++)
+{
+    printf("%d ", marks[i]);
+}
+</code></pre>
+
+</div>
+
+<p>
+This process is called <b>Array Traversal</b>.
+</p>
+
+<hr>
+
+<h2>🔄 Traversing an Array</h2>
+
+<p>
+Traversal means visiting each element of an array exactly once.
+It is one of the most common operations performed on arrays.
+</p>
+
+<p>
+During traversal we can:
+</p>
+
+<ul>
+
+<li>✔ Display all elements.</li>
+
+<li>✔ Calculate the sum.</li>
+
+<li>✔ Find the largest element.</li>
+
+<li>✔ Find the smallest element.</li>
+
+<li>✔ Count positive and negative numbers.</li>
+
+<li>✔ Calculate average.</li>
+
+</ul>
+
+<div class="highlight-box">
+
+<h3>Example</h3>
+
+<pre><code>
+int arr[5]={10,20,30,40,50};
+
+for(int i=0;i<5;i++)
+{
+    printf("%d ",arr[i]);
+}
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>⭐ Advantages of Arrays</h2>
+
+<p>
+Arrays are widely used because of their speed and simplicity.
+Some important advantages are:
+</p>
+
+<ul>
+
+<li>✔ Easy to understand and implement.</li>
+
+<li>✔ Direct access using index.</li>
+
+<li>✔ Faster searching in small datasets.</li>
+
+<li>✔ Requires less coding.</li>
+
+<li>✔ Efficient memory utilization due to contiguous storage.</li>
+
+<li>✔ Suitable for storing large collections of similar data.</li>
+
+<li>✔ Supports sorting and searching algorithms.</li>
+
+<li>✔ Easy traversal using loops.</li>
+
+<li>✔ Improves program readability.</li>
+
+<li>✔ Used as the base for many advanced data structures.</li>
+
+</ul>
+
+<hr>
+
+<h2>❌ Disadvantages of Arrays</h2>
+
+<p>
+Although arrays are very useful, they also have certain limitations.
+</p>
+
+<ul>
+
+<li>❌ Fixed size after declaration.</li>
+
+<li>❌ Memory wastage if the array is not fully utilized.</li>
+
+<li>❌ Insertion in the middle requires shifting elements.</li>
+
+<li>❌ Deletion also requires shifting.</li>
+
+<li>❌ Can store only one type of data.</li>
+
+<li>❌ Not suitable when data size changes frequently.</li>
+
+<li>❌ Overflow may occur if the array becomes full.</li>
+
+</ul>
+
+<hr>
+
+<h2>🌍 Applications of Arrays</h2>
+
+<p>
+Arrays are used in almost every software application.
+Some important applications are:
+</p>
+
+<ul>
+
+<li>📚 Student Management Systems</li>
+
+<li>🏦 Banking Applications</li>
+
+<li>📱 Mobile Contact Lists</li>
+
+<li>🎮 Game Development</li>
+
+<li>📊 Data Analysis</li>
+
+<li>🛒 E-Commerce Websites</li>
+
+<li>📈 Stock Market Applications</li>
+
+<li>🎵 Music Players</li>
+
+<li>🎬 Video Streaming Platforms</li>
+
+<li>🤖 Artificial Intelligence</li>
+
+</ul>
+
+<hr>
+
+<h2>🌟 Real-Life Examples of Arrays</h2>
+
+<table class="notes-table">
+
+<tr>
+<th>Real-Life Example</th>
+<th>Stored Data</th>
+</tr>
+
+<tr>
+<td>Classroom</td>
+<td>Marks of Students</td>
+</tr>
+
+<tr>
+<td>Hospital</td>
+<td>Patient IDs</td>
+</tr>
+
+<tr>
+<td>Shopping Website</td>
+<td>Product Prices</td>
+</tr>
+
+<tr>
+<td>Weather Department</td>
+<td>Daily Temperature</td>
+</tr>
+
+<tr>
+<td>Bank</td>
+<td>Account Numbers</td>
+</tr>
+
+<tr>
+<td>Library</td>
+<td>Book IDs</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>📝 Chapter Summary</h2>
+
+<ul>
+
+<li>✔ Arrays store multiple elements of the same data type.</li>
+
+<li>✔ Indexing starts from 0.</li>
+
+<li>✔ Elements are stored in contiguous memory.</li>
+
+<li>✔ Arrays provide direct access to elements.</li>
+
+<li>✔ Arrays are easy to traverse using loops.</li>
+
+<li>✔ Arrays have fixed size.</li>
+
+<li>✔ Arrays are fast but less flexible than linked lists.</li>
+
+</ul>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>Define an Array with suitable examples.</li>
+
+<li>Explain the characteristics of arrays.</li>
+
+<li>Describe different methods of array initialization.</li>
+
+<li>Explain memory representation of arrays.</li>
+
+<li>Write advantages and disadvantages of arrays.</li>
+
+<li>Explain applications of arrays.</li>
+
+<li>Differentiate between variables and arrays.</li>
+
+<li>How are array elements accessed?</li>
+
+<li>Explain array traversal with an example.</li>
+
+<li>Why are arrays considered static data structures?</li>
+
+</ol>
+
+<div class="highlight-box">
+
+<h3>💯 Exam Tip</h3>
+
+<p>
+For array-related questions, always write:
+<b>Definition → Syntax → Example → Diagram/Table → Advantages → Disadvantages → Applications.</b>
+This format helps you score better in university exams.
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 2 : ARRAY OPERATIONS -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>⚡ Operations on Arrays</h2>
+
+<p>
+After creating an array, different operations can be performed on it.
+These operations help programmers manage data efficiently.
+Almost every application that uses arrays performs one or more of these operations.
+</p>
+
+<p>
+The basic operations performed on arrays are:
+</p>
+
+<ul>
+
+<li>✅ Traversing</li>
+
+<li>✅ Insertion</li>
+
+<li>✅ Deletion</li>
+
+<li>✅ Searching</li>
+
+<li>✅ Updating</li>
+
+<li>✅ Sorting</li>
+
+<li>✅ Merging</li>
+
+</ul>
+
+<hr>
+
+<h2>1️⃣ Traversing an Array</h2>
+
+<p>
+Traversal means visiting each element of an array exactly once.
+It is the simplest and most commonly used operation.
+Traversal is mainly used to display data, calculate sum, average,
+largest element, smallest element, and perform many other calculations.
+</p>
+
+<div class="highlight-box">
+
+<h3>Algorithm</h3>
+
+<ol>
+
+<li>Start from index 0.</li>
+
+<li>Visit every element one by one.</li>
+
+<li>Repeat until the last element.</li>
+
+<li>Stop.</li>
+
+</ol>
+
+</div>
+
+<div class="note-box">
+
+<h3>C Program</h3>
+
+<pre><code>
+#include<stdio.h>
+
+int main()
+{
+int arr[5]={10,20,30,40,50};
+
+for(int i=0;i<5;i++)
+{
+printf("%d ",arr[i]);
+}
+
+return 0;
+}
+</code></pre>
+
+</div>
+
+<p>
+
+Output:
+
+10 20 30 40 50
+
+</p>
+
+<div class="highlight-box">
+
+<h3>Applications</h3>
+
+<ul>
+
+<li>Displaying student marks</li>
+
+<li>Calculating total salary</li>
+
+<li>Finding average marks</li>
+
+<li>Printing product prices</li>
+
+<li>Reading sensor values</li>
+
+</ul>
+
+</div>
+
+<hr>
+
+<h2>2️⃣ Insertion in Array</h2>
+
+<p>
+
+Insertion means adding a new element into an existing array.
+The new element can be inserted at the beginning,
+middle, or end of the array.
+
+</p>
+
+<p>
+
+Whenever an element is inserted,
+all elements after that position must be shifted one position towards the right.
+
+</p>
+
+<div class="note-box">
+
+Example
+
+</div>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Before</th>
+
+<th>Insert 25 at Index 2</th>
+
+<th>After</th>
+
+</tr>
+
+<tr>
+
+<td>10 20 30 40</td>
+
+<td>25</td>
+
+<td>10 20 25 30 40</td>
+
+</tr>
+
+</table>
+
+<h3>Algorithm</h3>
+
+<ol>
+
+<li>Select insertion position.</li>
+
+<li>Shift elements towards the right.</li>
+
+<li>Insert new element.</li>
+
+<li>Increase array size.</li>
+
+</ol>
+
+<div class="note-box">
+
+<pre><code>
+for(i=n;i>pos;i--)
+{
+arr[i]=arr[i-1];
+}
+
+arr[pos]=value;
+n++;
+</code></pre>
+
+</div>
+
+<div class="highlight-box">
+
+<b>Time Complexity</b>
+
+<p>
+
+Worst Case = O(n)
+
+</p>
+
+</div>
+
+<hr>
+
+<h2>3️⃣ Deletion from Array</h2>
+
+<p>
+
+Deletion means removing an existing element from an array.
+
+After deletion,
+all remaining elements are shifted towards the left.
+
+</p>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Before</th>
+
+<th>Delete 30</th>
+
+<th>After</th>
+
+</tr>
+
+<tr>
+
+<td>10 20 30 40 50</td>
+
+<td>Index 2</td>
+
+<td>10 20 40 50</td>
+
+</tr>
+
+</table>
+
+<h3>Algorithm</h3>
+
+<ol>
+
+<li>Select deletion position.</li>
+
+<li>Shift remaining elements left.</li>
+
+<li>Reduce array size.</li>
+
+</ol>
+
+<div class="note-box">
+
+<pre><code>
+for(i=pos;i<n-1;i++)
+{
+arr[i]=arr[i+1];
+}
+
+n--;
+</code></pre>
+
+</div>
+
+<div class="highlight-box">
+
+<b>Time Complexity</b>
+
+<p>
+
+Worst Case = O(n)
+
+</p>
+
+</div>
+
+<hr>
+
+<h2>4️⃣ Searching in Array</h2>
+
+<p>
+
+Searching means finding the location of an element.
+
+Searching is one of the most frequently used operations in Data Structures.
+
+</p>
+
+<h3>Types of Searching</h3>
+
+<ul>
+
+<li>Linear Search</li>
+
+<li>Binary Search</li>
+
+</ul>
+
+<h3>Linear Search</h3>
+
+<p>
+
+Linear Search checks every element one by one until the required element is found.
+
+</p>
+
+<div class="note-box">
+
+<pre><code>
+for(i=0;i<n;i++)
+{
+if(arr[i]==key)
+{
+printf("Element Found");
+break;
+}
+}
+</code></pre>
+
+</div>
+
+<div class="highlight-box">
+
+<b>Time Complexity</b>
+
+<p>
+
+Best Case = O(1)
+
+Worst Case = O(n)
+
+</p>
+
+</div>
+
+<h3>Binary Search</h3>
+
+<p>
+
+Binary Search works only on sorted arrays.
+
+It repeatedly divides the array into two halves,
+making searching much faster than Linear Search.
+
+</p>
+
+<div class="highlight-box">
+
+<b>Time Complexity</b>
+
+<p>
+
+O(log n)
+
+</p>
+
+</div>
+
+<hr>
+
+<h2>5️⃣ Updating an Array</h2>
+
+<p>
+
+Updating means replacing an existing value with a new value.
+
+Unlike insertion or deletion,
+updating does not change the size of the array.
+
+</p>
+
+<div class="note-box">
+
+Example
+
+<pre><code>
+arr[3]=100;
+</code></pre>
+
+</div>
+
+<p>
+
+If index 3 originally contained 40,
+after updating it becomes 100.
+
+</p>
+
+<hr>
+
+<h2>6️⃣ Sorting an Array</h2>
+
+<p>
+
+Sorting means arranging elements in ascending or descending order.
+
+Sorting improves searching speed
+and helps organize data properly.
+
+</p>
+
+<ul>
+
+<li>Bubble Sort</li>
+
+<li>Selection Sort</li>
+
+<li>Insertion Sort</li>
+
+<li>Merge Sort</li>
+
+<li>Quick Sort</li>
+
+</ul>
+
+<hr>
+
+<h2>7️⃣ Merging Arrays</h2>
+
+<p>
+
+Merging is the process of combining two arrays
+into a single larger array.
+
+</p>
+
+<p>
+
+Example:
+
+Array A = {10,20,30}
+
+Array B = {40,50,60}
+
+Merged Array = {10,20,30,40,50,60}
+
+</p>
+
+<hr>
+
+<h2>📊 Time Complexity of Array Operations</h2>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Operation</th>
+
+<th>Complexity</th>
+
+</tr>
+
+<tr>
+
+<td>Access</td>
+
+<td>O(1)</td>
+
+</tr>
+
+<tr>
+
+<td>Traversal</td>
+
+<td>O(n)</td>
+
+</tr>
+
+<tr>
+
+<td>Insertion</td>
+
+<td>O(n)</td>
+
+</tr>
+
+<tr>
+
+<td>Deletion</td>
+
+<td>O(n)</td>
+
+</tr>
+
+<tr>
+
+<td>Linear Search</td>
+
+<td>O(n)</td>
+
+</tr>
+
+<tr>
+
+<td>Binary Search</td>
+
+<td>O(log n)</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>💡 Important Points</h2>
+
+<ul>
+
+<li>Arrays provide direct access using index.</li>
+
+<li>Insertion and deletion are comparatively slow.</li>
+
+<li>Binary Search requires sorted data.</li>
+
+<li>Arrays occupy contiguous memory locations.</li>
+
+<li>Arrays are the foundation of many advanced data structures.</li>
+
+</ul>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 2 : ONE DIMENSIONAL ARRAY -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>📘 One Dimensional Array (1D Array)</h2>
+
+<p>
+A One Dimensional Array (1D Array) is the simplest form of an array in which elements are stored in a single row. Every element is identified by one index value starting from 0. Since all elements are stored in contiguous memory locations, accessing data becomes very fast and efficient.
+</p>
+
+<div class="highlight-box">
+<h3>📖 Definition</h3>
+
+<p>
+A One Dimensional Array is a collection of elements of the same data type stored sequentially in memory and accessed using a single index.
+</p>
+
+</div>
+
+<hr>
+
+<h2>✨ Features of One Dimensional Array</h2>
+
+<ul>
+
+<li>✔ Stores homogeneous data.</li>
+
+<li>✔ Uses a single index.</li>
+
+<li>✔ Fast random access.</li>
+
+<li>✔ Simple to declare and use.</li>
+
+<li>✔ Memory is allocated continuously.</li>
+
+<li>✔ Supports loops for easy processing.</li>
+
+</ul>
+
+<hr>
+
+<h2>📝 Declaration</h2>
+
+<pre><code>
+int marks[5];
+
+float salary[10];
+
+char grade[20];
+</code></pre>
+
+<hr>
+
+<h2>📥 Initialization</h2>
+
+<h3>Method 1</h3>
+
+<pre><code>
+int marks[5]={80,85,90,75,95};
+</code></pre>
+
+<h3>Method 2</h3>
+
+<pre><code>
+int marks[]={10,20,30,40,50};
+</code></pre>
+
+<h3>Method 3</h3>
+
+<pre><code>
+int marks[5];
+
+marks[0]=80;
+marks[1]=85;
+marks[2]=90;
+marks[3]=75;
+marks[4]=95;
+</code></pre>
+
+<hr>
+
+<h2>💾 Memory Representation</h2>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Index</th>
+
+<th>Value</th>
+
+</tr>
+
+<tr><td>0</td><td>80</td></tr>
+
+<tr><td>1</td><td>85</td></tr>
+
+<tr><td>2</td><td>90</td></tr>
+
+<tr><td>3</td><td>75</td></tr>
+
+<tr><td>4</td><td>95</td></tr>
+
+</table>
+
+<p>
+The first element is stored at index 0 and the last element is stored at index (size-1).
+</p>
+
+<hr>
+
+<h2>📖 Input Elements</h2>
+
+<pre><code>
+for(i=0;i<5;i++)
+{
+scanf("%d",&marks[i]);
+}
+</code></pre>
+
+<hr>
+
+<h2>🖨 Display Elements</h2>
+
+<pre><code>
+for(i=0;i<5;i++)
+{
+printf("%d ",marks[i]);
+}
+</code></pre>
+
+<hr>
+
+<h2>➕ Find Sum of Elements</h2>
+
+<pre><code>
+int sum=0;
+
+for(i=0;i<5;i++)
+{
+sum=sum+marks[i];
+}
+
+printf("%d",sum);
+</code></pre>
+
+<p>
+
+Example
+
+80+85+90+75+95 = 425
+
+</p>
+
+<hr>
+
+<h2>📊 Find Average</h2>
+
+<pre><code>
+float avg;
+
+avg=sum/5.0;
+
+printf("%.2f",avg);
+</code></pre>
+
+<p>
+
+Average = Total Sum / Number of Elements
+
+</p>
+
+<hr>
+
+<h2>🏆 Largest Element</h2>
+
+<pre><code>
+largest=marks[0];
+
+for(i=1;i<5;i++)
+{
+if(marks[i]>largest)
+largest=marks[i];
+}
+</code></pre>
+
+<p>
+
+Output = 95
+
+</p>
+
+<hr>
+
+<h2>📉 Smallest Element</h2>
+
+<pre><code>
+smallest=marks[0];
+
+for(i=1;i<5;i++)
+{
+if(marks[i]<smallest)
+smallest=marks[i];
+}
+</code></pre>
+
+<p>
+
+Output = 75
+
+</p>
+
+<hr>
+
+<h2>🔄 Reverse Array</h2>
+
+<p>
+
+Original Array
+
+10 20 30 40 50
+
+</p>
+
+<p>
+
+Reversed Array
+
+50 40 30 20 10
+
+</p>
+
+<pre><code>
+for(i=4;i>=0;i--)
+{
+printf("%d ",marks[i]);
+}
+</code></pre>
+
+<hr>
+
+<h2>📋 Copy One Array into Another</h2>
+
+<pre><code>
+for(i=0;i<5;i++)
+{
+copy[i]=marks[i];
+}
+</code></pre>
+
+<p>
+
+Now both arrays contain the same values.
+
+</p>
+
+<hr>
+
+<h2>🌍 Applications of One Dimensional Arrays</h2>
+
+<ul>
+
+<li>📚 Student Marks</li>
+
+<li>💰 Employee Salary</li>
+
+<li>🏏 Cricket Scores</li>
+
+<li>📱 Contact Numbers</li>
+
+<li>🌡 Temperature Records</li>
+
+<li>📦 Product Prices</li>
+
+<li>🎓 Attendance Records</li>
+
+<li>🛒 Shopping Cart Data</li>
+
+</ul>
+
+<hr>
+
+<h2>⭐ Advantages</h2>
+
+<ul>
+
+<li>✔ Easy implementation.</li>
+
+<li>✔ Fast access using index.</li>
+
+<li>✔ Less execution time.</li>
+
+<li>✔ Easy traversal.</li>
+
+<li>✔ Supports sorting and searching.</li>
+
+<li>✔ Memory organized efficiently.</li>
+
+</ul>
+
+<hr>
+
+<h2>❌ Disadvantages</h2>
+
+<ul>
+
+<li>❌ Fixed size.</li>
+
+<li>❌ Memory wastage.</li>
+
+<li>❌ Slow insertion.</li>
+
+<li>❌ Slow deletion.</li>
+
+<li>❌ Stores only one type of data.</li>
+
+</ul>
+
+<hr>
+
+<h2>📌 Important Viva Questions</h2>
+
+<ol>
+
+<li>What is a One Dimensional Array?</li>
+
+<li>Why does array indexing start from 0?</li>
+
+<li>How is memory allocated in arrays?</li>
+
+<li>Differentiate between variable and array.</li>
+
+<li>How do you find the largest element?</li>
+
+<li>How do you calculate the average of array elements?</li>
+
+<li>Write the advantages and disadvantages of arrays.</li>
+
+</ol>
+
+<div class="highlight-box">
+
+<h3>🎯 Exam Tip</h3>
+
+<p>
+
+Always remember:
+
+Array Index = 0 to (n-1)
+
+All elements are stored in contiguous memory.
+
+Traversal is performed using loops.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 2.4 : TWO DIMENSIONAL ARRAY -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>📗 Two Dimensional Array (2D Array)</h2>
+
+<p>
+A Two Dimensional Array is an array that stores data in the form of rows and columns.
+It is also known as a Matrix because its structure looks like a table.
+Each element is identified by two indexes: one for the row and one for the column.
+2D Arrays are widely used in mathematical calculations, image processing,
+games, and database applications.
+</p>
+
+<div class="highlight-box">
+
+<h3>📖 Definition</h3>
+
+<p>
+A Two Dimensional Array is a collection of similar data elements arranged in rows and columns.
+Each element is accessed using two index values.
+</p>
+
+</div>
+
+<hr>
+
+<h2>✨ Characteristics of 2D Arrays</h2>
+
+<ul>
+
+<li>✔ Stores data in tabular form.</li>
+<li>✔ Uses two indexes (row and column).</li>
+<li>✔ All elements have the same data type.</li>
+<li>✔ Memory is allocated continuously.</li>
+<li>✔ Suitable for matrix operations.</li>
+<li>✔ Easy to represent tables and grids.</li>
+
+</ul>
+
+<hr>
+
+<h2>📝 Syntax</h2>
+
+<pre><code>
+data_type array_name[rows][columns];
+</code></pre>
+
+<h3>Example</h3>
+
+<pre><code>
+int marks[3][4];
+
+int matrix[2][2];
+
+float salary[5][6];
+</code></pre>
+
+<hr>
+
+<h2>📥 Initialization</h2>
+
+<pre><code>
+int matrix[2][3]=
+{
+   {10,20,30},
+   {40,50,60}
+};
+</code></pre>
+
+<p>
+Here, the array contains <b>2 rows</b> and <b>3 columns</b>.
+</p>
+
+<hr>
+
+<h2>💾 Memory Representation</h2>
+
+<table class="notes-table">
+
+<tr>
+
+<th></th>
+
+<th>Column 0</th>
+
+<th>Column 1</th>
+
+<th>Column 2</th>
+
+</tr>
+
+<tr>
+
+<td><b>Row 0</b></td>
+
+<td>10</td>
+
+<td>20</td>
+
+<td>30</td>
+
+</tr>
+
+<tr>
+
+<td><b>Row 1</b></td>
+
+<td>40</td>
+
+<td>50</td>
+
+<td>60</td>
+
+</tr>
+
+</table>
+
+<p>
+Each element is accessed using two indexes.
+Example:
+</p>
+
+<pre><code>
+matrix[1][2]
+</code></pre>
+
+<p>
+Output = 60
+</p>
+
+<hr>
+
+<h2>📖 Input Elements</h2>
+
+<pre><code>
+for(i=0;i<2;i++)
+{
+   for(j=0;j<3;j++)
+   {
+      scanf("%d",&matrix[i][j]);
+   }
+}
+</code></pre>
+
+<hr>
+
+<h2>🖨 Display Elements</h2>
+
+<pre><code>
+for(i=0;i<2;i++)
+{
+   for(j=0;j<3;j++)
+   {
+      printf("%d ",matrix[i][j]);
+   }
+
+   printf("\n");
+}
+</code></pre>
+
+<hr>
+
+<h2>➕ Matrix Addition</h2>
+
+<p>
+Matrix addition is performed by adding corresponding elements of two matrices.
+Both matrices must have the same number of rows and columns.
+</p>
+
+<h3>Example</h3>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Matrix A</th>
+
+<th>Matrix B</th>
+
+<th>Result</th>
+
+</tr>
+
+<tr>
+
+<td>
+1 2<br>
+3 4
+</td>
+
+<td>
+5 6<br>
+7 8
+</td>
+
+<td>
+6 8<br>
+10 12
+</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>✖ Matrix Multiplication</h2>
+
+<p>
+Matrix multiplication is performed by multiplying rows of the first matrix
+with columns of the second matrix.
+The number of columns of the first matrix must be equal to the number of rows
+of the second matrix.
+</p>
+
+<div class="highlight-box">
+
+<h3>Important Rule</h3>
+
+<p>
+
+A(m×n) × B(n×p) = Result(m×p)
+
+</p>
+
+</div>
+
+<hr>
+
+<h2>🔄 Transpose of Matrix</h2>
+
+<p>
+Transpose means converting rows into columns and columns into rows.
+</p>
+
+<h3>Example</h3>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Original Matrix</th>
+
+<th>Transpose Matrix</th>
+
+</tr>
+
+<tr>
+
+<td>
+1 2 3<br>
+4 5 6
+</td>
+
+<td>
+1 4<br>
+2 5<br>
+3 6
+</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🌍 Applications of Two Dimensional Arrays</h2>
+
+<ul>
+
+<li>📊 Matrix calculations</li>
+
+<li>🎮 Game boards (Chess, Sudoku, Tic Tac Toe)</li>
+
+<li>🖼 Image processing</li>
+
+<li>📈 Spreadsheet software</li>
+
+<li>🧾 Student result tables</li>
+
+<li>🏦 Banking reports</li>
+
+<li>🌦 Weather data analysis</li>
+
+<li>🤖 Artificial Intelligence</li>
+
+</ul>
+
+<hr>
+
+<h2>⭐ Advantages</h2>
+
+<ul>
+
+<li>✔ Represents tabular data efficiently.</li>
+
+<li>✔ Easy matrix calculations.</li>
+
+<li>✔ Organized storage.</li>
+
+<li>✔ Fast element access.</li>
+
+<li>✔ Useful in scientific computing.</li>
+
+</ul>
+
+<hr>
+
+<h2>❌ Disadvantages</h2>
+
+<ul>
+
+<li>❌ Fixed size.</li>
+
+<li>❌ Memory wastage if partially filled.</li>
+
+<li>❌ Insertion and deletion are difficult.</li>
+
+<li>❌ Can store only one data type.</li>
+
+</ul>
+
+<hr>
+
+<h2>📌 Difference Between 1D and 2D Array</h2>
+
+<table class="notes-table">
+
+<tr>
+
+<th>1D Array</th>
+
+<th>2D Array</th>
+
+</tr>
+
+<tr>
+
+<td>Uses one index.</td>
+
+<td>Uses two indexes.</td>
+
+</tr>
+
+<tr>
+
+<td>Stores data in one row.</td>
+
+<td>Stores data in rows and columns.</td>
+
+</tr>
+
+<tr>
+
+<td>Simple structure.</td>
+
+<td>Table-like structure.</td>
+
+</tr>
+
+<tr>
+
+<td>Less memory organization.</td>
+
+<td>Better for matrix representation.</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>Define Two Dimensional Array with syntax.</li>
+
+<li>Explain memory representation of a 2D array.</li>
+
+<li>Write a program to input and display a matrix.</li>
+
+<li>Explain matrix addition.</li>
+
+<li>Explain matrix multiplication.</li>
+
+<li>What is the transpose of a matrix?</li>
+
+<li>Differentiate between 1D and 2D arrays.</li>
+
+<li>Write applications of Two Dimensional Arrays.</li>
+
+</ol>
+
+<div class="highlight-box">
+
+<h3>💯 Exam Tip</h3>
+
+<p>
+Remember:
+<br><br>
+
+✔ 1D Array → One Index<br>
+✔ 2D Array → Two Indexes<br>
+✔ Matrix Addition → Same Size Matrices<br>
+✔ Matrix Multiplication → Columns of First = Rows of Second
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 2.5 : SEARCHING & SORTING -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>🔍 Searching and Sorting Techniques</h2>
+
+<p>
+Searching and Sorting are two of the most important operations performed on arrays and other
+data structures. Searching helps us find a required element, whereas Sorting arranges data in
+ascending or descending order. These techniques improve efficiency and make data management easier.
+</p>
+
+<hr>
+
+<h2>🔍 Searching</h2>
+
+<p>
+Searching is the process of finding the location of a particular element in a collection of data.
+If the element is found, its position is returned; otherwise, the search reports that the element
+does not exist.
+</p>
+
+<div class="highlight-box">
+
+<h3>Types of Searching</h3>
+
+<ul>
+
+<li>✔ Linear Search</li>
+
+<li>✔ Binary Search</li>
+
+</ul>
+
+</div>
+
+<hr>
+
+<h2>1️⃣ Linear Search</h2>
+
+<p>
+Linear Search is the simplest searching technique. It checks every element one by one until
+the required element is found or the array ends.
+</p>
+
+<h3>Algorithm</h3>
+
+<ol>
+
+<li>Start from the first element.</li>
+
+<li>Compare each element with the required value.</li>
+
+<li>If matched, return the position.</li>
+
+<li>If the last element is reached, stop the search.</li>
+
+</ol>
+
+<div class="note-box">
+
+<h3>C Program</h3>
+
+<pre><code>
+int key = 30;
+
+for(int i=0;i<5;i++)
+{
+    if(arr[i]==key)
+    {
+        printf("Element Found");
+        break;
+    }
+}
+</code></pre>
+
+</div>
+
+<p><b>Time Complexity:</b> O(n)</p>
+
+<hr>
+
+<h2>2️⃣ Binary Search</h2>
+
+<p>
+Binary Search is a faster searching technique that works only on sorted arrays.
+It repeatedly divides the array into two equal parts until the element is found.
+</p>
+
+<div class="highlight-box">
+
+<h3>Conditions</h3>
+
+<ul>
+
+<li>✔ Array must be sorted.</li>
+
+<li>✔ Middle element is compared first.</li>
+
+<li>✔ Search continues in only one half.</li>
+
+</ul>
+
+</div>
+
+<p><b>Time Complexity:</b> O(log n)</p>
+
+<hr>
+
+<h2>📊 Difference Between Linear and Binary Search</h2>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Linear Search</th>
+
+<th>Binary Search</th>
+
+</tr>
+
+<tr>
+
+<td>Works on sorted and unsorted arrays.</td>
+
+<td>Works only on sorted arrays.</td>
+
+</tr>
+
+<tr>
+
+<td>Simple algorithm.</td>
+
+<td>More efficient.</td>
+
+</tr>
+
+<tr>
+
+<td>O(n)</td>
+
+<td>O(log n)</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🔄 Sorting</h2>
+
+<p>
+Sorting is the process of arranging elements in ascending or descending order.
+It makes searching faster and improves data organization.
+</p>
+
+<div class="highlight-box">
+
+<h3>Common Sorting Techniques</h3>
+
+<ul>
+
+<li>✔ Bubble Sort</li>
+
+<li>✔ Selection Sort</li>
+
+<li>✔ Insertion Sort</li>
+
+</ul>
+
+</div>
+
+<hr>
+
+<h2>1️⃣ Bubble Sort</h2>
+
+<p>
+Bubble Sort repeatedly compares adjacent elements and swaps them if they are in the wrong order.
+After each pass, the largest element moves to its correct position.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+for(i=0;i<n-1;i++)
+{
+   for(j=0;j<n-i-1;j++)
+   {
+      if(arr[j]>arr[j+1])
+      {
+         temp=arr[j];
+         arr[j]=arr[j+1];
+         arr[j+1]=temp;
+      }
+   }
+}
+</code></pre>
+
+</div>
+
+<p><b>Time Complexity:</b> O(n²)</p>
+
+<hr>
+
+<h2>2️⃣ Selection Sort</h2>
+
+<p>
+Selection Sort selects the smallest element from the unsorted part of the array
+and places it at the correct position.
+</p>
+
+<p><b>Time Complexity:</b> O(n²)</p>
+
+<hr>
+
+<h2>3️⃣ Insertion Sort</h2>
+
+<p>
+Insertion Sort inserts each element into its correct position in the already sorted part
+of the array. It is efficient for small datasets.
+</p>
+
+<p><b>Time Complexity:</b> O(n²)</p>
+
+<hr>
+
+<h2>📈 Time Complexity Comparison</h2>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Technique</th>
+
+<th>Best</th>
+
+<th>Worst</th>
+
+</tr>
+
+<tr>
+
+<td>Linear Search</td>
+
+<td>O(1)</td>
+
+<td>O(n)</td>
+
+</tr>
+
+<tr>
+
+<td>Binary Search</td>
+
+<td>O(1)</td>
+
+<td>O(log n)</td>
+
+</tr>
+
+<tr>
+
+<td>Bubble Sort</td>
+
+<td>O(n)</td>
+
+<td>O(n²)</td>
+
+</tr>
+
+<tr>
+
+<td>Selection Sort</td>
+
+<td>O(n²)</td>
+
+<td>O(n²)</td>
+
+</tr>
+
+<tr>
+
+<td>Insertion Sort</td>
+
+<td>O(n)</td>
+
+<td>O(n²)</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🌍 Applications</h2>
+
+<ul>
+
+<li>📚 Student Record Management</li>
+
+<li>🏦 Banking Systems</li>
+
+<li>🛒 E-commerce Websites</li>
+
+<li>📊 Data Analysis</li>
+
+<li>📱 Contact Searching</li>
+
+<li>🎵 Music Playlists</li>
+
+<li>📈 Stock Market Analysis</li>
+
+<li>🤖 Artificial Intelligence</li>
+
+</ul>
+
+<hr>
+
+<h2>⭐ Advantages</h2>
+
+<ul>
+
+<li>✔ Faster data retrieval.</li>
+
+<li>✔ Better data organization.</li>
+
+<li>✔ Improves application performance.</li>
+
+<li>✔ Easy implementation for small datasets.</li>
+
+</ul>
+
+<hr>
+
+<h2>❌ Limitations</h2>
+
+<ul>
+
+<li>❌ Linear Search is slow for large data.</li>
+
+<li>❌ Binary Search requires sorted data.</li>
+
+<li>❌ Bubble Sort is inefficient for large datasets.</li>
+
+<li>❌ Sorting large arrays consumes more time.</li>
+
+</ul>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>Define Searching and explain its types.</li>
+
+<li>Explain Linear Search with algorithm.</li>
+
+<li>Explain Binary Search with advantages.</li>
+
+<li>Differentiate between Linear and Binary Search.</li>
+
+<li>What is Sorting? Explain Bubble Sort.</li>
+
+<li>Differentiate Bubble, Selection and Insertion Sort.</li>
+
+<li>Write the time complexity of searching and sorting techniques.</li>
+
+</ol>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Revision</h3>
+
+<p>
+
+✔ Linear Search → O(n)<br>
+
+✔ Binary Search → O(log n)<br>
+
+✔ Bubble Sort → O(n²)<br>
+
+✔ Selection Sort → O(n²)<br>
+
+✔ Insertion Sort → O(n²)
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 3 : LINKED LIST -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>🔗 Chapter 3 : Linked List</h2>
+
+<p>
+A Linked List is a dynamic linear data structure in which elements are called <b>nodes</b>. Unlike arrays, linked list elements are not stored in contiguous memory locations. Each node contains two parts: the first part stores the data, while the second part stores the address (pointer) of the next node. Because of this structure, linked lists can grow or shrink dynamically during program execution.
+</p>
+
+<div class="highlight-box">
+
+<h3>📖 Definition</h3>
+
+<p>
+A Linked List is a collection of nodes connected through pointers, where each node contains data and the address of the next node.
+</p>
+
+</div>
+
+<hr>
+
+<h2>🤔 Why Linked List is Needed?</h2>
+
+<p>
+Arrays have a fixed size and require contiguous memory. If we need to insert or delete elements frequently, arrays become inefficient because elements have to be shifted. Linked Lists solve this problem by allowing dynamic memory allocation and easy insertion or deletion without shifting elements.
+</p>
+
+<ul>
+
+<li>✔ Dynamic memory allocation.</li>
+<li>✔ Easy insertion and deletion.</li>
+<li>✔ Efficient memory utilization.</li>
+<li>✔ No memory wastage due to fixed size.</li>
+
+</ul>
+
+<hr>
+
+<h2>🧩 Structure of a Node</h2>
+
+<p>
+Each node in a linked list consists of two parts:
+</p>
+
+<table class="notes-table">
+
+<tr>
+<th>Part</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>Data</td>
+<td>Stores the actual value.</td>
+</tr>
+
+<tr>
+<td>Next Pointer</td>
+<td>Stores the address of the next node.</td>
+</tr>
+
+</table>
+
+<div class="note-box">
+
+<pre><code>
+-------------------------
+| Data | Next Address |
+-------------------------
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>⚙️ Working of Linked List</h2>
+
+<p>
+The first node is called the <b>Head Node</b>. The last node stores <b>NULL</b> in its next pointer, indicating the end of the list.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+HEAD
+
+ ↓
+
++-----+------+     +-----+------+     +-----+------+
+| 10  |  •---|---->| 20  |  •---|---->| 30  | NULL |
++-----+------+     +-----+------+     +-----+------+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>📚 Types of Linked List</h2>
+
+<ol>
+
+<li>Singly Linked List</li>
+
+<li>Doubly Linked List</li>
+
+<li>Circular Linked List</li>
+
+<li>Circular Doubly Linked List</li>
+
+</ol>
+
+<hr>
+
+<h2>1️⃣ Singly Linked List</h2>
+
+<p>
+A Singly Linked List is the simplest type of linked list. Each node contains data and one pointer that points to the next node.
+Traversal is possible only in the forward direction.
+</p>
+
+<div class="highlight-box">
+
+<h3>Advantages</h3>
+
+<ul>
+
+<li>✔ Easy implementation.</li>
+
+<li>✔ Less memory required.</li>
+
+<li>✔ Dynamic size.</li>
+
+</ul>
+
+</div>
+
+<hr>
+
+<h2>2️⃣ Doubly Linked List</h2>
+
+<p>
+In a Doubly Linked List, every node contains two pointers: one points to the previous node and the other points to the next node. This allows traversal in both forward and backward directions.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+NULL <- 10 <-> 20 <-> 30 -> NULL
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>3️⃣ Circular Linked List</h2>
+
+<p>
+In a Circular Linked List, the last node points back to the first node instead of NULL. This forms a complete circle and allows continuous traversal.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+10 → 20 → 30
+↑         ↓
+└─────────┘
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>4️⃣ Circular Doubly Linked List</h2>
+
+<p>
+It combines the features of both Doubly Linked List and Circular Linked List. Every node has two pointers, and the last node connects back to the first node.
+</p>
+
+<hr>
+
+<h2>⭐ Advantages of Linked List</h2>
+
+<ul>
+
+<li>✔ Dynamic memory allocation.</li>
+
+<li>✔ Easy insertion and deletion.</li>
+
+<li>✔ Efficient memory utilization.</li>
+
+<li>✔ No shifting of elements.</li>
+
+<li>✔ Suitable for implementing stacks and queues.</li>
+
+<li>✔ Flexible size.</li>
+
+</ul>
+
+<hr>
+
+<h2>❌ Disadvantages of Linked List</h2>
+
+<ul>
+
+<li>❌ Extra memory required for pointers.</li>
+
+<li>❌ Random access is not possible.</li>
+
+<li>❌ Traversal is slower than arrays.</li>
+
+<li>❌ More complex implementation.</li>
+
+</ul>
+
+<hr>
+
+<h2>🌍 Applications of Linked List</h2>
+
+<ul>
+
+<li>📄 Music Playlist</li>
+
+<li>🌐 Browser History</li>
+
+<li>↩️ Undo and Redo Operations</li>
+
+<li>🖥 Operating System Memory Management</li>
+
+<li>📚 Stack Implementation</li>
+
+<li>📥 Queue Implementation</li>
+
+<li>📂 File Management Systems</li>
+
+<li>🤖 Graph Representation</li>
+
+</ul>
+
+<hr>
+
+<h2>📌 Difference Between Array and Linked List</h2>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Array</th>
+
+<th>Linked List</th>
+
+</tr>
+
+<tr>
+
+<td>Fixed Size</td>
+
+<td>Dynamic Size</td>
+
+</tr>
+
+<tr>
+
+<td>Contiguous Memory</td>
+
+<td>Non-Contiguous Memory</td>
+
+</tr>
+
+<tr>
+
+<td>Fast Random Access</td>
+
+<td>Sequential Access</td>
+
+</tr>
+
+<tr>
+
+<td>Insertion is Slow</td>
+
+<td>Insertion is Fast</td>
+
+</tr>
+
+<tr>
+
+<td>Deletion is Slow</td>
+
+<td>Deletion is Fast</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>Define Linked List with diagram.</li>
+
+<li>Explain the structure of a node.</li>
+
+<li>Differentiate between Array and Linked List.</li>
+
+<li>Explain different types of Linked Lists.</li>
+
+<li>Write advantages and disadvantages of Linked List.</li>
+
+<li>Explain applications of Linked List.</li>
+
+<li>Why is Linked List called a dynamic data structure?</li>
+
+<li>Differentiate between Singly and Doubly Linked List.</li>
+
+</ol>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Revision</h3>
+
+<p>
+
+✔ Linked List = Collection of Nodes<br>
+
+✔ Each Node = Data + Pointer<br>
+
+✔ Dynamic Memory Allocation<br>
+
+✔ Fast Insertion & Deletion<br>
+
+✔ Types → Singly, Doubly, Circular, Circular Doubly
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 3.1 : OPERATIONS ON LINKED LIST -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>⚙️ Operations on Linked List</h2>
+
+<p>
+Different operations can be performed on a Linked List to manage data efficiently.
+The most common operations are Traversal, Insertion, Deletion, Searching and Updating.
+These operations make Linked Lists more flexible than Arrays.
+</p>
+
+<hr>
+
+<h2>📋 Basic Operations</h2>
+
+<ul>
+
+<li>✔ Traversal</li>
+
+<li>✔ Insertion</li>
+
+<li>✔ Deletion</li>
+
+<li>✔ Searching</li>
+
+<li>✔ Updating</li>
+
+</ul>
+
+<hr>
+
+<h2>1️⃣ Traversal</h2>
+
+<p>
+Traversal means visiting each node of the Linked List one by one from the first node
+(Head) to the last node (NULL). It is mainly used for displaying the contents of the list.
+</p>
+
+<div class="highlight-box">
+
+<h3>Algorithm</h3>
+
+<ol>
+
+<li>Start from the Head node.</li>
+
+<li>Display the data of the current node.</li>
+
+<li>Move to the next node.</li>
+
+<li>Repeat until NULL is reached.</li>
+
+</ol>
+
+</div>
+
+<div class="note-box">
+
+<pre><code>
+HEAD
+
+↓
+
+10 → 20 → 30 → 40 → NULL
+</code></pre>
+
+</div>
+
+<p>
+Traversal Output:
+</p>
+
+<pre><code>
+10 20 30 40
+</code></pre>
+
+<hr>
+
+<h2>2️⃣ Insertion in Linked List</h2>
+
+<p>
+Insertion means adding a new node into the Linked List.
+Unlike arrays, elements do not need to be shifted.
+Only the pointer links are changed.
+</p>
+
+<h3>Types of Insertion</h3>
+
+<ul>
+
+<li>✔ Insertion at Beginning</li>
+
+<li>✔ Insertion at End</li>
+
+<li>✔ Insertion at Any Position</li>
+
+</ul>
+
+<hr>
+
+<h2>📍 Insertion at Beginning</h2>
+
+<p>
+A new node is created and linked before the first node.
+The Head pointer is updated to point to the new node.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+Before
+
+HEAD
+
+↓
+
+20 → 30 → NULL
+
+After inserting 10
+
+HEAD
+
+↓
+
+10 → 20 → 30 → NULL
+</code></pre>
+
+</div>
+
+<p>
+<b>Time Complexity:</b> O(1)
+</p>
+
+<hr>
+
+<h2>📍 Insertion at End</h2>
+
+<p>
+The program traverses to the last node and links the new node after it.
+The new node becomes the last node of the list.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+Before
+
+10 → 20 → 30 → NULL
+
+After inserting 40
+
+10 → 20 → 30 → 40 → NULL
+</code></pre>
+
+</div>
+
+<p>
+<b>Time Complexity:</b> O(n)
+</p>
+
+<hr>
+
+<h2>📍 Insertion at Middle</h2>
+
+<p>
+A new node is inserted between two existing nodes by updating their pointer links.
+This operation is useful when data needs to be inserted at a specific position.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+Before
+
+10 → 20 → 40 → NULL
+
+Insert 30
+
+After
+
+10 → 20 → 30 → 40 → NULL
+</code></pre>
+
+</div>
+
+<p>
+<b>Time Complexity:</b> O(n)
+</p>
+
+<hr>
+
+<h2>3️⃣ Deletion in Linked List</h2>
+
+<p>
+Deletion means removing a node from the Linked List.
+After deletion, the pointer of the previous node is updated so that the list remains connected.
+</p>
+
+<h3>Types of Deletion</h3>
+
+<ul>
+
+<li>✔ Delete from Beginning</li>
+
+<li>✔ Delete from End</li>
+
+<li>✔ Delete from Specific Position</li>
+
+</ul>
+
+<hr>
+
+<h2>📍 Delete from Beginning</h2>
+
+<p>
+The Head pointer moves to the second node.
+The first node is removed from memory.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+Before
+
+10 → 20 → 30 → NULL
+
+After
+
+20 → 30 → NULL
+</code></pre>
+
+</div>
+
+<p>
+<b>Time Complexity:</b> O(1)
+</p>
+
+<hr>
+
+<h2>📍 Delete from End</h2>
+
+<p>
+The second last node is located and its next pointer is changed to NULL.
+The last node is then removed.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+Before
+
+10 → 20 → 30 → 40 → NULL
+
+After
+
+10 → 20 → 30 → NULL
+</code></pre>
+
+</div>
+
+<p>
+<b>Time Complexity:</b> O(n)
+</p>
+
+<hr>
+
+<h2>📍 Delete from Middle</h2>
+
+<p>
+The node before the target node is located.
+Its next pointer is updated to skip the deleted node.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+Before
+
+10 → 20 → 30 → 40 → NULL
+
+Delete 30
+
+After
+
+10 → 20 → 40 → NULL
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>4️⃣ Searching in Linked List</h2>
+
+<p>
+Searching means finding whether a particular node exists in the Linked List.
+The search starts from the Head node and continues until the required node or NULL is reached.
+</p>
+
+<div class="highlight-box">
+
+<h3>Example</h3>
+
+<p>
+
+Search = 30
+
+10 → 20 → 30 → 40 → NULL
+
+Result = Element Found
+
+</p>
+
+</div>
+
+<p>
+<b>Time Complexity:</b> O(n)
+</p>
+
+<hr>
+
+<h2>5️⃣ Updating a Node</h2>
+
+<p>
+Updating means changing the value stored inside a node without changing the structure of the Linked List.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+Before
+
+10 → 20 → 30
+
+Update 20 to 25
+
+After
+
+10 → 25 → 30
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>📊 Time Complexity Table</h2>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Operation</th>
+
+<th>Time Complexity</th>
+
+</tr>
+
+<tr>
+
+<td>Traversal</td>
+
+<td>O(n)</td>
+
+</tr>
+
+<tr>
+
+<td>Insertion at Beginning</td>
+
+<td>O(1)</td>
+
+</tr>
+
+<tr>
+
+<td>Insertion at End</td>
+
+<td>O(n)</td>
+
+</tr>
+
+<tr>
+
+<td>Deletion at Beginning</td>
+
+<td>O(1)</td>
+
+</tr>
+
+<tr>
+
+<td>Deletion at End</td>
+
+<td>O(n)</td>
+
+</tr>
+
+<tr>
+
+<td>Searching</td>
+
+<td>O(n)</td>
+
+</tr>
+
+<tr>
+
+<td>Updating</td>
+
+<td>O(n)</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🌍 Real-Life Applications</h2>
+
+<ul>
+
+<li>🎵 Music Playlist</li>
+
+<li>🌐 Browser History</li>
+
+<li>📱 Image Gallery</li>
+
+<li>📄 Text Editors (Undo/Redo)</li>
+
+<li>💻 Operating Systems</li>
+
+<li>🧠 Memory Management</li>
+
+<li>📚 Stack and Queue Implementation</li>
+
+</ul>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>Explain Traversal in Linked List.</li>
+
+<li>Explain Insertion at Beginning and End.</li>
+
+<li>Explain Deletion in Linked List.</li>
+
+<li>Differentiate Array and Linked List based on operations.</li>
+
+<li>Write the time complexity of Linked List operations.</li>
+
+<li>Explain Searching in Linked List.</li>
+
+</ol>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Revision</h3>
+
+<p>
+
+✔ Traversal → Visit all nodes<br>
+
+✔ Insertion → O(1) at Beginning, O(n) at End<br>
+
+✔ Deletion → O(1) at Beginning, O(n) at End<br>
+
+✔ Searching → O(n)<br>
+
+✔ Linked List uses pointers instead of indexes.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 4 : STACK -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>📚 Chapter 4 : Stack</h2>
+
+<p>
+A Stack is a linear data structure in which insertion and deletion of elements take place from only one end called the <b>TOP</b>. It follows the <b>LIFO (Last In, First Out)</b> principle, which means the element inserted last is removed first.
+</p>
+
+<div class="highlight-box">
+
+<h3>📖 Definition</h3>
+
+<p>
+A Stack is a linear data structure that allows insertion (Push) and deletion (Pop) from only one end called the Top of the Stack.
+</p>
+
+</div>
+
+<hr>
+
+<h2>🎯 LIFO Principle</h2>
+
+<p>
+LIFO stands for <b>Last In, First Out</b>. The last element inserted into the stack is the first one to be removed.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+Push: 10
+
+Push: 20
+
+Push: 30
+
+Stack
+
+TOP
+ ↓
+30
+20
+10
+
+Pop()
+
+Removed = 30
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>✨ Characteristics of Stack</h2>
+
+<ul>
+
+<li>✔ Linear Data Structure</li>
+
+<li>✔ Follows LIFO Principle</li>
+
+<li>✔ Single TOP pointer</li>
+
+<li>✔ Insertion and deletion from one end only</li>
+
+<li>✔ Easy implementation using Arrays or Linked Lists</li>
+
+</ul>
+
+<hr>
+
+<h2>⚙️ Basic Operations on Stack</h2>
+
+<ul>
+
+<li>📥 Push</li>
+
+<li>📤 Pop</li>
+
+<li>👀 Peek (Top)</li>
+
+<li>❓ IsEmpty</li>
+
+<li>📦 IsFull</li>
+
+</ul>
+
+<hr>
+
+<h2>1️⃣ Push Operation</h2>
+
+<p>
+Push is used to insert a new element at the top of the stack. Before inserting, the program checks whether the stack is full or not.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+Before
+
+TOP
+
+20
+10
+
+Push(30)
+
+After
+
+TOP
+
+30
+20
+10
+</code></pre>
+
+</div>
+
+<p><b>Time Complexity:</b> O(1)</p>
+
+<hr>
+
+<h2>2️⃣ Pop Operation</h2>
+
+<p>
+Pop removes the top element from the stack. If the stack is empty, the operation cannot be performed (Stack Underflow).
+</p>
+
+<div class="note-box">
+
+<pre><code>
+Before
+
+TOP
+
+30
+20
+10
+
+Pop()
+
+After
+
+TOP
+
+20
+10
+</code></pre>
+
+</div>
+
+<p><b>Time Complexity:</b> O(1)</p>
+
+<hr>
+
+<h2>3️⃣ Peek Operation</h2>
+
+<p>
+Peek returns the top element without removing it from the stack.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+Stack
+
+TOP
+
+40
+30
+20
+
+Peek()
+
+Output = 40
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>4️⃣ IsEmpty Operation</h2>
+
+<p>
+This operation checks whether the stack contains any element. If TOP = -1, the stack is empty.
+</p>
+
+<hr>
+
+<h2>5️⃣ IsFull Operation</h2>
+
+<p>
+In an array implementation, if TOP reaches the maximum size of the stack, it is called Stack Overflow.
+</p>
+
+<hr>
+
+<h2>⚠️ Stack Overflow</h2>
+
+<p>
+Stack Overflow occurs when we try to insert an element into a full stack.
+</p>
+
+<div class="highlight-box">
+
+<p>
+
+Condition:
+
+TOP = MAX - 1
+
+</p>
+
+</div>
+
+<hr>
+
+<h2>⚠️ Stack Underflow</h2>
+
+<p>
+Stack Underflow occurs when we try to delete an element from an empty stack.
+</p>
+
+<div class="highlight-box">
+
+<p>
+
+Condition:
+
+TOP = -1
+
+</p>
+
+</div>
+
+<hr>
+
+<h2>📊 Time Complexity</h2>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Operation</th>
+
+<th>Complexity</th>
+
+</tr>
+
+<tr>
+
+<td>Push</td>
+
+<td>O(1)</td>
+
+</tr>
+
+<tr>
+
+<td>Pop</td>
+
+<td>O(1)</td>
+
+</tr>
+
+<tr>
+
+<td>Peek</td>
+
+<td>O(1)</td>
+
+</tr>
+
+<tr>
+
+<td>IsEmpty</td>
+
+<td>O(1)</td>
+
+</tr>
+
+<tr>
+
+<td>IsFull</td>
+
+<td>O(1)</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🌍 Applications of Stack</h2>
+
+<ul>
+
+<li>↩️ Undo and Redo Operations</li>
+
+<li>🌐 Browser Back Button</li>
+
+<li>🧮 Expression Evaluation</li>
+
+<li>⚖️ Parentheses Matching</li>
+
+<li>📞 Function Call Management</li>
+
+<li>📝 Text Editors</li>
+
+<li>💻 Compiler Design</li>
+
+<li>📂 Directory Navigation</li>
+
+</ul>
+
+<hr>
+
+<h2>⭐ Advantages</h2>
+
+<ul>
+
+<li>✔ Simple implementation</li>
+
+<li>✔ Fast insertion and deletion</li>
+
+<li>✔ Efficient memory management</li>
+
+<li>✔ Useful in recursion</li>
+
+<li>✔ Widely used in system software</li>
+
+</ul>
+
+<hr>
+
+<h2>❌ Disadvantages</h2>
+
+<ul>
+
+<li>❌ Limited access (Top only)</li>
+
+<li>❌ Fixed size in array implementation</li>
+
+<li>❌ Cannot access middle elements directly</li>
+
+</ul>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>Define Stack with diagram.</li>
+
+<li>Explain LIFO principle.</li>
+
+<li>Differentiate Push and Pop.</li>
+
+<li>Explain Stack Overflow and Underflow.</li>
+
+<li>Write applications of Stack.</li>
+
+<li>Write the time complexity of Stack operations.</li>
+
+<li>Differentiate Stack and Queue.</li>
+
+</ol>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Revision</h3>
+
+<p>
+
+✔ Stack follows LIFO.<br>
+
+✔ Push → Insert.<br>
+
+✔ Pop → Delete.<br>
+
+✔ Peek → View Top Element.<br>
+
+✔ Overflow → Stack Full.<br>
+
+✔ Underflow → Stack Empty.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 5 : QUEUE -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>🚶 Chapter 5 : Queue</h2>
+
+<p>
+A Queue is a linear data structure that follows the <b>FIFO (First In, First Out)</b> principle. This means the element inserted first is removed first. Unlike a Stack, insertion takes place at the <b>Rear</b> end and deletion takes place from the <b>Front</b> end. Queue is widely used in operating systems, scheduling algorithms, printers, networking, and many real-life applications.
+</p>
+
+<div class="highlight-box">
+
+<h3>📖 Definition</h3>
+
+<p>
+A Queue is a linear data structure in which insertion is performed at the Rear end and deletion is performed at the Front end, following the FIFO principle.
+</p>
+
+</div>
+
+<hr>
+
+<h2>🎯 FIFO Principle</h2>
+
+<p>
+FIFO stands for <b>First In, First Out</b>. The first element inserted into the queue is the first element to be removed.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+Enqueue : 10
+Enqueue : 20
+Enqueue : 30
+
+Front → 10 20 30 ← Rear
+
+Dequeue()
+
+Output = 10
+
+Front → 20 30 ← Rear
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>✨ Characteristics of Queue</h2>
+
+<ul>
+
+<li>✔ Linear Data Structure</li>
+
+<li>✔ Follows FIFO Principle</li>
+
+<li>✔ Two pointers are used (Front and Rear)</li>
+
+<li>✔ Insertion at Rear</li>
+
+<li>✔ Deletion from Front</li>
+
+<li>✔ Can be implemented using Arrays or Linked Lists</li>
+
+</ul>
+
+<hr>
+
+<h2>⚙️ Basic Operations</h2>
+
+<ul>
+
+<li>📥 Enqueue</li>
+
+<li>📤 Dequeue</li>
+
+<li>👀 Peek / Front</li>
+
+<li>❓ IsEmpty</li>
+
+<li>📦 IsFull</li>
+
+</ul>
+
+<hr>
+
+<h2>1️⃣ Enqueue Operation</h2>
+
+<p>
+Enqueue inserts a new element at the Rear end of the queue. Before insertion, the queue is checked for overflow.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+Before
+
+Front Rear
+  ↓     ↓
+
+10 → 20
+
+Enqueue(30)
+
+After
+
+Front     Rear
+  ↓         ↓
+
+10 → 20 → 30
+</code></pre>
+
+</div>
+
+<p><b>Time Complexity:</b> O(1)</p>
+
+<hr>
+
+<h2>2️⃣ Dequeue Operation</h2>
+
+<p>
+Dequeue removes the element from the Front end of the queue. If the queue is empty, the operation cannot be performed.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+Before
+
+Front
+ ↓
+
+10 → 20 → 30
+
+After Dequeue
+
+Front
+ ↓
+
+20 → 30
+</code></pre>
+
+</div>
+
+<p><b>Time Complexity:</b> O(1)</p>
+
+<hr>
+
+<h2>3️⃣ Peek (Front)</h2>
+
+<p>
+Peek returns the first element of the queue without deleting it.
+</p>
+
+<pre><code>
+Queue
+
+Front → 50 60 70
+
+Peek()
+
+Output = 50
+</code></pre>
+
+<hr>
+
+<h2>⚠️ Queue Overflow</h2>
+
+<p>
+Overflow occurs when we try to insert an element into a full queue.
+</p>
+
+<div class="highlight-box">
+
+<p>
+
+Condition:
+
+Rear = MAX - 1
+
+</p>
+
+</div>
+
+<hr>
+
+<h2>⚠️ Queue Underflow</h2>
+
+<p>
+Underflow occurs when we try to delete an element from an empty queue.
+</p>
+
+<div class="highlight-box">
+
+<p>
+
+Condition:
+
+Front = -1
+
+</p>
+
+</div>
+
+<hr>
+
+<h2>🔄 Types of Queue</h2>
+
+<h3>1. Simple Queue</h3>
+
+<p>
+Insertion at Rear and deletion at Front.
+</p>
+
+<h3>2. Circular Queue</h3>
+
+<p>
+The last position is connected back to the first position, reducing memory wastage.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+1 → 2 → 3 → 4
+↑           ↓
+└───────────┘
+</code></pre>
+
+</div>
+
+<h3>3. Priority Queue</h3>
+
+<p>
+Elements are removed according to their priority instead of arrival time.
+Higher priority elements are processed first.
+</p>
+
+<h3>4. Double Ended Queue (Deque)</h3>
+
+<p>
+Insertion and deletion can be performed from both Front and Rear ends.
+</p>
+
+<hr>
+
+<h2>📊 Time Complexity</h2>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Operation</th>
+
+<th>Complexity</th>
+
+</tr>
+
+<tr>
+
+<td>Enqueue</td>
+
+<td>O(1)</td>
+
+</tr>
+
+<tr>
+
+<td>Dequeue</td>
+
+<td>O(1)</td>
+
+</tr>
+
+<tr>
+
+<td>Peek</td>
+
+<td>O(1)</td>
+
+</tr>
+
+<tr>
+
+<td>IsEmpty</td>
+
+<td>O(1)</td>
+
+</tr>
+
+<tr>
+
+<td>IsFull</td>
+
+<td>O(1)</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🌍 Applications of Queue</h2>
+
+<ul>
+
+<li>🖨 Printer Queue</li>
+
+<li>💻 CPU Scheduling</li>
+
+<li>🌐 Network Packet Routing</li>
+
+<li>📞 Call Center Systems</li>
+
+<li>🎫 Ticket Reservation</li>
+
+<li>💬 Message Queues</li>
+
+<li>📺 Video Streaming Buffers</li>
+
+<li>🤖 Breadth First Search (BFS)</li>
+
+</ul>
+
+<hr>
+
+<h2>📌 Difference Between Stack and Queue</h2>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Stack</th>
+
+<th>Queue</th>
+
+</tr>
+
+<tr>
+
+<td>LIFO</td>
+
+<td>FIFO</td>
+
+</tr>
+
+<tr>
+
+<td>One End (Top)</td>
+
+<td>Front and Rear</td>
+
+</tr>
+
+<tr>
+
+<td>Push & Pop</td>
+
+<td>Enqueue & Dequeue</td>
+
+</tr>
+
+<tr>
+
+<td>Last element removed first</td>
+
+<td>First element removed first</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>⭐ Advantages</h2>
+
+<ul>
+
+<li>✔ Easy implementation</li>
+
+<li>✔ Efficient scheduling</li>
+
+<li>✔ Fast insertion and deletion</li>
+
+<li>✔ Maintains processing order</li>
+
+<li>✔ Useful in multitasking systems</li>
+
+</ul>
+
+<hr>
+
+<h2>❌ Disadvantages</h2>
+
+<ul>
+
+<li>❌ Limited direct access</li>
+
+<li>❌ Fixed size in array implementation</li>
+
+<li>❌ Overflow may occur</li>
+
+<li>❌ Memory wastage in simple queue</li>
+
+</ul>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>Define Queue with diagram.</li>
+
+<li>Explain FIFO principle.</li>
+
+<li>Differentiate Enqueue and Dequeue.</li>
+
+<li>Explain Circular Queue.</li>
+
+<li>Explain Priority Queue.</li>
+
+<li>Differentiate Stack and Queue.</li>
+
+<li>Write applications of Queue.</li>
+
+<li>Explain Queue Overflow and Underflow.</li>
+
+</ol>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Revision</h3>
+
+<p>
+
+✔ Queue → FIFO<br>
+
+✔ Enqueue → Insert at Rear<br>
+
+✔ Dequeue → Delete from Front<br>
+
+✔ Circular Queue avoids memory wastage<br>
+
+✔ Priority Queue processes high-priority elements first
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 7 : GRAPH -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>🌐 Chapter 7 : Graph</h2>
+
+<p>
+A Graph is a non-linear data structure that consists of a collection of vertices (nodes) and edges.
+Unlike trees, a graph does not have a root node and can represent complex relationships between different objects.
+Graphs are one of the most important data structures because they are used in social media, GPS navigation,
+computer networks, recommendation systems, artificial intelligence, and many other real-world applications.
+</p>
+
+<div class="highlight-box">
+
+<h3>📖 Definition</h3>
+
+<p>
+A Graph is a collection of vertices (V) and edges (E), where vertices represent objects and edges represent the relationships or connections between those objects.
+</p>
+
+</div>
+
+<hr>
+
+<h2>📚 Terminologies</h2>
+
+<table class="notes-table">
+
+<tr>
+<th>Term</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>Vertex (Node)</td>
+<td>A point that stores data.</td>
+</tr>
+
+<tr>
+<td>Edge</td>
+<td>A connection between two vertices.</td>
+</tr>
+
+<tr>
+<td>Adjacent Vertices</td>
+<td>Vertices connected by an edge.</td>
+</tr>
+
+<tr>
+<td>Degree</td>
+<td>Number of edges connected to a vertex.</td>
+</tr>
+
+<tr>
+<td>Path</td>
+<td>A sequence of connected vertices.</td>
+</tr>
+
+<tr>
+<td>Cycle</td>
+<td>A path that starts and ends at the same vertex.</td>
+</tr>
+
+<tr>
+<td>Connected Graph</td>
+<td>Every vertex is reachable from every other vertex.</td>
+</tr>
+
+<tr>
+<td>Disconnected Graph</td>
+<td>Some vertices are not connected.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>📊 Graph Representation</h2>
+
+<div class="note-box">
+
+<pre><code>
+
+      A
+     / \
+    B---C
+     \
+      D
+
+</code></pre>
+
+</div>
+
+<p>
+
+Vertices = A, B, C, D
+
+Edges = AB, AC, BC, BD
+
+</p>
+
+<hr>
+
+<h2>🌟 Types of Graph</h2>
+
+<ul>
+
+<li>✔ Undirected Graph</li>
+
+<li>✔ Directed Graph (Digraph)</li>
+
+<li>✔ Weighted Graph</li>
+
+<li>✔ Unweighted Graph</li>
+
+<li>✔ Connected Graph</li>
+
+<li>✔ Disconnected Graph</li>
+
+<li>✔ Cyclic Graph</li>
+
+<li>✔ Acyclic Graph</li>
+
+</ul>
+
+<hr>
+
+<h2>➡️ Directed Graph</h2>
+
+<p>
+In a Directed Graph, every edge has a direction.
+The connection is represented using arrows.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+
+A → B → C
+
+↑     ↓
+
+D ← E
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>↔️ Undirected Graph</h2>
+
+<p>
+In an Undirected Graph, edges have no direction.
+The connection works in both directions.
+</p>
+
+<hr>
+
+<h2>⚖️ Weighted Graph</h2>
+
+<p>
+A Weighted Graph stores a numerical value (weight) with every edge.
+These weights may represent distance, cost, or time.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+
+A ----5---- B
+
+ \
+
+  3
+
+   \
+
+    C
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>🔍 Breadth First Search (BFS)</h2>
+
+<p>
+Breadth First Search (BFS) visits nodes level by level.
+It uses a <b>Queue</b> data structure to keep track of the next vertex to visit.
+BFS always explores all neighboring vertices before moving to the next level.
+</p>
+
+<h3>Algorithm</h3>
+
+<ol>
+
+<li>Start from the source vertex.</li>
+
+<li>Mark it as visited.</li>
+
+<li>Insert it into the Queue.</li>
+
+<li>Remove a vertex from the Queue.</li>
+
+<li>Visit all unvisited neighbors.</li>
+
+<li>Repeat until the Queue becomes empty.</li>
+
+</ol>
+
+<p>
+
+<b>Time Complexity:</b> O(V + E)
+
+</p>
+
+<hr>
+
+<h2>🌲 Depth First Search (DFS)</h2>
+
+<p>
+Depth First Search (DFS) explores one branch completely before moving to another branch.
+It uses a <b>Stack</b> or recursion.
+</p>
+
+<h3>Algorithm</h3>
+
+<ol>
+
+<li>Start from the source vertex.</li>
+
+<li>Mark it as visited.</li>
+
+<li>Visit an unvisited adjacent vertex.</li>
+
+<li>Continue until no unvisited vertex remains.</li>
+
+<li>Backtrack and continue.</li>
+
+</ol>
+
+<p>
+
+<b>Time Complexity:</b> O(V + E)
+
+</p>
+
+<hr>
+
+<h2>📊 Difference Between BFS and DFS</h2>
+
+<table class="notes-table">
+
+<tr>
+
+<th>BFS</th>
+
+<th>DFS</th>
+
+</tr>
+
+<tr>
+
+<td>Uses Queue</td>
+
+<td>Uses Stack / Recursion</td>
+
+</tr>
+
+<tr>
+
+<td>Level-wise Traversal</td>
+
+<td>Depth-wise Traversal</td>
+
+</tr>
+
+<tr>
+
+<td>Suitable for shortest path</td>
+
+<td>Suitable for path finding</td>
+
+</tr>
+
+<tr>
+
+<td>More Memory</td>
+
+<td>Less Memory</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🌍 Applications of Graph</h2>
+
+<ul>
+
+<li>🌐 Social Networks (Facebook, LinkedIn)</li>
+
+<li>🗺 GPS Navigation</li>
+
+<li>✈ Airline Route Mapping</li>
+
+<li>💻 Computer Networks</li>
+
+<li>📡 Internet Routing</li>
+
+<li>🤖 Artificial Intelligence</li>
+
+<li>🎮 Game Development</li>
+
+<li>🧬 Biological Networks</li>
+
+<li>🛒 Recommendation Systems</li>
+
+<li>📈 Project Scheduling</li>
+
+</ul>
+
+<hr>
+
+<h2>⭐ Advantages</h2>
+
+<ul>
+
+<li>✔ Represents complex relationships.</li>
+
+<li>✔ Efficient path finding.</li>
+
+<li>✔ Supports network modeling.</li>
+
+<li>✔ Used in many real-world applications.</li>
+
+<li>✔ Dynamic structure.</li>
+
+</ul>
+
+<hr>
+
+<h2>❌ Disadvantages</h2>
+
+<ul>
+
+<li>❌ Complex implementation.</li>
+
+<li>❌ High memory usage for large graphs.</li>
+
+<li>❌ Traversal algorithms are comparatively complex.</li>
+
+<li>❌ Difficult to visualize very large graphs.</li>
+
+</ul>
+
+<hr>
+
+<h2>📌 Difference Between Tree and Graph</h2>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Tree</th>
+
+<th>Graph</th>
+
+</tr>
+
+<tr>
+
+<td>Hierarchical Structure</td>
+
+<td>Network Structure</td>
+
+</tr>
+
+<tr>
+
+<td>Has One Root</td>
+
+<td>No Root Required</td>
+
+</tr>
+
+<tr>
+
+<td>No Cycles</td>
+
+<td>Cycles May Exist</td>
+
+</tr>
+
+<tr>
+
+<td>Connected Structure</td>
+
+<td>May be Connected or Disconnected</td>
+
+</tr>
+
+<tr>
+
+<td>N-1 Edges</td>
+
+<td>Any Number of Edges</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>Define Graph with diagram.</li>
+
+<li>Explain graph terminology.</li>
+
+<li>Differentiate Directed and Undirected Graph.</li>
+
+<li>Explain Weighted Graph.</li>
+
+<li>Explain BFS algorithm.</li>
+
+<li>Explain DFS algorithm.</li>
+
+<li>Differentiate BFS and DFS.</li>
+
+<li>Differentiate Tree and Graph.</li>
+
+<li>Write applications of Graph.</li>
+
+</ol>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Revision</h3>
+
+<p>
+
+✔ Graph = Vertices + Edges<br>
+
+✔ Directed Graph → Arrows<br>
+
+✔ Undirected Graph → No Direction<br>
+
+✔ BFS → Queue<br>
+
+✔ DFS → Stack / Recursion<br>
+
+✔ Time Complexity (BFS & DFS) = O(V + E)
+
+</p>
+
+</div>
+
+</div>
+
+

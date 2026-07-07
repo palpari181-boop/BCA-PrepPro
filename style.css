@@ -349,6 +349,8 @@ transition:.3s;
 
 transform:translateY(-8px);
 
+transition:.3s;
+
 }
 
 .chapter-number{
@@ -2079,4 +2081,481 @@ transform:translateY(0);
 }
 
 }
+.notes-btn{
+display:inline-block;
+margin-top:20px;
+padding:15px 30px;
+background:linear-gradient(135deg,#4F46E5,#7C3AED);
+color:#fff;
+text-decoration:none;
+font-size:17px;
+font-weight:600;
+border-radius:12px;
+transition:0.3s ease;
+box-shadow:0 10px 25px rgba(79,70,229,0.3);
+}
 
+.notes-btn:hover{
+transform:translateY(-5px);
+box-shadow:0 15px 35px rgba(79,70,229,0.4);
+}
+.notes-btn{
+  display:inline-block;
+  padding:12px 22px;
+  color:#fff;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius:12px;
+  font-weight:600;
+  text-decoration:none;
+}
+/* ===========================
+   CHAPTER DESIGN
+=========================== */
+
+.chapter{
+    max-width:1100px;
+    margin:40px auto;
+    padding:35px;
+    background:#ffffff;
+    border-radius:18px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    animation:fadeUp .6s ease;
+}
+
+.chapter h2{
+    color:#1565c0;
+    font-size:32px;
+    margin-bottom:20px;
+    border-left:8px solid #42a5f5;
+    padding-left:15px;
+}
+
+.chapter h3{
+    color:#0d47a1;
+    margin-top:25px;
+}
+
+.chapter p,
+.chapter li{
+    font-size:17px;
+    line-height:1.8;
+    color:#444;
+}
+
+.chapter hr{
+    border:none;
+    height:2px;
+    background:linear-gradient(to right,#42a5f5,#26c6da);
+    margin:35px 0;
+}
+
+/* Highlight Box */
+
+.highlight-box{
+    background:linear-gradient(135deg,#2196f3,#64b5f6);
+    color:white;
+    padding:25px;
+    border-radius:15px;
+    margin:25px 0;
+}
+
+.highlight-box h3{
+    color:white;
+}
+
+.highlight-box p{
+    color:white;
+}
+
+/* Note Box */
+
+.note-box{
+    background:#e8f5e9;
+    border-left:6px solid #43a047;
+    padding:20px;
+    margin:25px 0;
+    border-radius:10px;
+}
+
+/* Tables */
+
+.notes-table{
+    width:100%;
+    border-collapse:collapse;
+    margin:25px 0;
+}
+
+.notes-table th{
+    background:#1976d2;
+    color:white;
+    padding:15px;
+}
+
+.notes-table td{
+    padding:14px;
+    border:1px solid #ddd;
+}
+
+.notes-table tr:nth-child(even){
+    background:#f5f5f5;
+}
+
+.notes-table tr:hover{
+    background:#e3f2fd;
+}
+
+/* Code */
+
+pre{
+    background:#1e293b;
+    color:#00e676;
+    padding:18px;
+    border-radius:12px;
+    overflow:auto;
+}
+
+code{
+    font-family:Consolas, monospace;
+}
+
+/* Lists */
+
+ul li{
+    margin:10px 0;
+}
+
+ol li{
+    margin:10px 0;
+}
+
+/* Animation */
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.popup{
+
+display:none;
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:rgba(0,0,0,.5);
+
+justify-content:center;
+
+align-items:center;
+
+z-index:999;
+
+}
+
+.popup-content{
+
+background:#fff;
+
+padding:30px;
+
+border-radius:20px;
+
+width:90%;
+
+max-width:420px;
+
+text-align:center;
+
+}
+
+.popup-content input{
+
+width:100%;
+
+padding:12px;
+
+margin:10px 0;
+
+border:1px solid #ddd;
+
+border-radius:10px;
+
+font-size:16px;
+
+}
+
+.popup-content button{
+
+padding:12px 25px;
+
+margin:10px;
+
+border:none;
+
+border-radius:10px;
+
+cursor:pointer;
+
+background:#4F46E5;
+
+color:white;
+
+font-weight:600;
+
+}
+
+/* ===========================
+   Save Subject Button
+=========================== */
+
+.save-subject{
+
+    position: fixed;
+
+    top: 90px;
+
+    right: 20px;
+
+    background: #6c4df6;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+    z-index: 1000;
+
+    transition: 0.3s;
+
+}
+
+.save-subject:hover{
+
+    background: #5636f0;
+
+    transform: translateY(-2px);
+
+}
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width:768px){
+
+/* Navbar */
+
+.navbar{
+
+    flex-direction:column;
+
+    padding:15px;
+
+    gap:15px;
+
+}
+
+.logo{
+
+    margin-bottom:10px;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:12px;
+
+}
+
+.nav-links a{
+
+    font-size:15px;
+
+}
+
+/* Hero */
+
+.hero{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    padding:40px 20px;
+
+}
+
+.hero-content{
+
+    max-width:100%;
+
+}
+
+.hero-image{
+
+    margin-top:30px;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    max-width:350px;
+
+}
+
+/* Cards */
+
+.chapter-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.chapter-card{
+
+    width:100%;
+
+}
+
+/* Section */
+
+.chapter-section{
+
+    padding:20px;
+
+}
+
+.section-header h2{
+
+    text-align:center;
+
+    font-size:28px;
+
+}
+
+/* Footer */
+
+.footer-links{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.footer{
+
+    text-align:center;
+
+}
+
+}
+/* =============================
+   Responsive Fix
+============================= */
+
+@media screen and (max-width:768px){
+
+.chapter-section{
+    margin:20px 15px;
+}
+
+.chapter-grid{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    gap:15px;
+}
+
+.chapter-card{
+    width:100% !important;
+    max-width:100% !important;
+    padding:20px;
+    box-sizing:border-box;
+}
+
+.action-card{
+    width:100%;
+    display:block;
+}
+
+}
+.profile-container{
+    position:relative;
+    margin-left:10px;
+}
+
+.profile-img{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    cursor:pointer;
+    object-fit:cover;
+}
+
+.profile-dropdown{
+    display:none;
+    position:absolute;
+    right:0;
+    top:50px;
+    width:180px;
+    background:white;
+    border-radius:10px;
+    padding:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    z-index:1000;
+}
+
+.profile-dropdown a{
+    display:block;
+    padding:10px;
+    text-decoration:none;
+    color:#333;
+}
+
+.profile-dropdown a:hover{
+    background:#f2f2f2;
+    border-radius:6px;
+}
+
+.profile-dropdown.active{
+    display:block;
+}

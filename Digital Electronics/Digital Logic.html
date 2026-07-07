@@ -1,0 +1,2887 @@
+<!-- ===================================================== -->
+<!-- CHAPTER 1 : NUMBER SYSTEM & BINARY CODES -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>🔢 Chapter 1 : Number System & Binary Codes</h2>
+
+<div class="highlight-box">
+
+<h3>📖 Introduction</h3>
+
+<p>
+A Number System is a method of representing numbers using a set of digits.
+In Digital Electronics and Computer Systems, all information is stored and
+processed in the form of binary digits (0 and 1). Different number systems
+such as Decimal, Binary, Octal and Hexadecimal are used for calculations,
+programming and data representation.
+</p>
+
+</div>
+
+<hr>
+
+<h2>📚 Definition</h2>
+
+<p>
+A Number System is a mathematical technique used to represent numbers with
+the help of specific symbols or digits. Each number system has a fixed base
+(radix) that determines the number of digits used.
+</p>
+
+<hr>
+
+<h2>⭐ Types of Number Systems</h2>
+
+<table class="notes-table">
+
+<tr>
+<th>Number System</th>
+<th>Base</th>
+<th>Digits Used</th>
+</tr>
+
+<tr>
+<td>Decimal</td>
+<td>10</td>
+<td>0 – 9</td>
+</tr>
+
+<tr>
+<td>Binary</td>
+<td>2</td>
+<td>0, 1</td>
+</tr>
+
+<tr>
+<td>Octal</td>
+<td>8</td>
+<td>0 – 7</td>
+</tr>
+
+<tr>
+<td>Hexadecimal</td>
+<td>16</td>
+<td>0 – 9, A – F</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🔟 Decimal Number System</h2>
+
+<p>
+The Decimal Number System is the most commonly used number system in daily
+life. It has a base of 10 and uses ten digits from 0 to 9.
+</p>
+
+<div class="note-box">
+
+<b>Example:</b>
+
+<pre><code>
+
+45810
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>💻 Binary Number System</h2>
+
+<p>
+The Binary Number System has a base of 2 and uses only two digits: 0 and 1.
+Computers understand and process data only in binary form.
+</p>
+
+<div class="note-box">
+
+<b>Example:</b>
+
+<pre><code>
+
+101101₂
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>🔶 Octal Number System</h2>
+
+<p>
+The Octal Number System has a base of 8 and uses digits from 0 to 7.
+It provides a shorter representation of binary numbers.
+</p>
+
+<div class="note-box">
+
+<b>Example:</b>
+
+<pre><code>
+
+725₈
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>🟣 Hexadecimal Number System</h2>
+
+<p>
+The Hexadecimal Number System has a base of 16 and uses digits 0–9 and
+letters A–F. It is widely used in computer programming, memory addressing
+and web color codes.
+</p>
+
+<div class="note-box">
+
+<b>Example:</b>
+
+<pre><code>
+
+3AF₁₆
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>🔄 Number System Conversion</h2>
+
+<p>
+Conversion means changing a number from one number system to another.
+The most common conversions are Decimal to Binary, Binary to Decimal,
+Binary to Octal and Binary to Hexadecimal.
+</p>
+
+<table class="notes-table">
+
+<tr>
+<th>Conversion</th>
+<th>Method</th>
+</tr>
+
+<tr>
+<td>Decimal → Binary</td>
+<td>Repeated division by 2</td>
+</tr>
+
+<tr>
+<td>Binary → Decimal</td>
+<td>Positional weights (powers of 2)</td>
+</tr>
+
+<tr>
+<td>Binary → Octal</td>
+<td>Group bits in sets of 3</td>
+</tr>
+
+<tr>
+<td>Binary → Hexadecimal</td>
+<td>Group bits in sets of 4</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>➕ Binary Arithmetic</h2>
+
+<p>
+Binary arithmetic performs mathematical operations using binary digits.
+The basic operations are Binary Addition, Subtraction, Multiplication and Division.
+</p>
+
+<div class="note-box">
+
+<b>Example:</b>
+
+<pre><code>
+
+1010
++0101
+------
+1111
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>🔄 1's Complement & 2's Complement</h2>
+
+<p>
+Complements are used to represent negative numbers and simplify subtraction
+operations in digital systems.
+</p>
+
+<table class="notes-table">
+
+<tr>
+<th>Complement</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>1's Complement</td>
+<td>Invert all bits (0 ↔ 1)</td>
+</tr>
+
+<tr>
+<td>2's Complement</td>
+<td>1's Complement + 1</td>
+</tr>
+
+</table>
+
+<div class="note-box">
+
+<b>Example:</b>
+
+<pre><code>
+
+Binary : 1010
+
+1's Complement : 0101
+
+2's Complement : 0110
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>🔤 Binary Codes</h2>
+
+<p>
+Binary Codes are used to represent numbers, letters and special characters
+in binary form. They improve communication between computers and digital devices.
+</p>
+
+<table class="notes-table">
+
+<tr>
+<th>Code</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td>BCD</td>
+<td>Represents decimal digits in binary.</td>
+</tr>
+
+<tr>
+<td>Gray Code</td>
+<td>Only one bit changes between consecutive values.</td>
+</tr>
+
+<tr>
+<td>ASCII</td>
+<td>Represents characters in computers.</td>
+</tr>
+
+<tr>
+<td>Unicode</td>
+<td>Supports multiple international languages.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>⭐ Advantages of Binary Number System</h2>
+
+<ul>
+
+<li>✔ Easy for digital circuits.</li>
+
+<li>✔ High accuracy and reliability.</li>
+
+<li>✔ Simple electronic implementation.</li>
+
+<li>✔ Fast data processing.</li>
+
+<li>✔ Used in all modern computers.</li>
+
+</ul>
+
+<hr>
+
+<h2>❌ Disadvantages</h2>
+
+<ul>
+
+<li>❌ Binary numbers become lengthy.</li>
+
+<li>❌ Difficult for humans to read directly.</li>
+
+<li>❌ Manual calculations are time-consuming.</li>
+
+</ul>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>Define Number System.</li>
+
+<li>Explain Decimal, Binary, Octal and Hexadecimal Number Systems.</li>
+
+<li>Explain Number System Conversion.</li>
+
+<li>What is Binary Arithmetic?</li>
+
+<li>Differentiate 1's Complement and 2's Complement.</li>
+
+<li>Explain Binary Codes with examples.</li>
+
+<li>Write advantages of the Binary Number System.</li>
+
+</ol>
+
+<hr>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Revision</h3>
+
+<p>
+
+✔ Decimal → Base 10<br>
+
+✔ Binary → Base 2<br>
+
+✔ Octal → Base 8<br>
+
+✔ Hexadecimal → Base 16<br>
+
+✔ 1's Complement = Invert Bits<br>
+
+✔ 2's Complement = 1's Complement + 1<br>
+
+✔ BCD, Gray Code & ASCII are common Binary Codes.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 2 : LOGIC GATES -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>⚙️ Chapter 2 : Logic Gates</h2>
+
+<div class="highlight-box">
+
+<h3>📖 Introduction</h3>
+
+<p>
+Logic Gates are the basic building blocks of digital electronics. They perform
+logical operations on one or more binary inputs (0 or 1) and produce a single
+binary output. Every digital circuit, such as computers, calculators, mobile
+phones and communication systems, is built using logic gates.
+</p>
+
+</div>
+
+<hr>
+
+<h2>📚 Definition</h2>
+
+<p>
+A Logic Gate is an electronic circuit that performs a logical operation based on
+Boolean Algebra. It accepts binary inputs and produces a binary output according
+to a specific logical rule.
+</p>
+
+<hr>
+
+<h2>⭐ Features of Logic Gates</h2>
+
+<ul>
+
+<li>✔ Operate using binary values (0 and 1).</li>
+
+<li>✔ Used in all digital electronic devices.</li>
+
+<li>✔ Perform logical operations quickly.</li>
+
+<li>✔ Easy to combine for complex circuits.</li>
+
+<li>✔ Form the basis of digital computers.</li>
+
+</ul>
+
+<hr>
+
+<h2>🔷 Types of Logic Gates</h2>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Logic Gate</th>
+
+<th>Symbol</th>
+
+<th>Function</th>
+
+</tr>
+
+<tr>
+
+<td>AND</td>
+
+<td>&</td>
+
+<td>Output is 1 only if all inputs are 1.</td>
+
+</tr>
+
+<tr>
+
+<td>OR</td>
+
+<td>≥1</td>
+
+<td>Output is 1 if any input is 1.</td>
+
+</tr>
+
+<tr>
+
+<td>NOT</td>
+
+<td>¬</td>
+
+<td>Inverts the input.</td>
+
+</tr>
+
+<tr>
+
+<td>NAND</td>
+
+<td>AND + NOT</td>
+
+<td>Inverse of AND Gate.</td>
+
+</tr>
+
+<tr>
+
+<td>NOR</td>
+
+<td>OR + NOT</td>
+
+<td>Inverse of OR Gate.</td>
+
+</tr>
+
+<tr>
+
+<td>XOR</td>
+
+<td>⊕</td>
+
+<td>Output is 1 when inputs are different.</td>
+
+</tr>
+
+<tr>
+
+<td>XNOR</td>
+
+<td>⊙</td>
+
+<td>Output is 1 when inputs are the same.</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🟢 AND Gate</h2>
+
+<p>
+The AND Gate performs multiplication in Boolean Algebra. The output is HIGH (1)
+only when all inputs are HIGH.
+</p>
+
+<div class="note-box">
+
+<b>Boolean Expression:</b>
+
+<pre><code>
+
+Y = A · B
+
+</code></pre>
+
+</div>
+
+<table class="notes-table">
+
+<tr>
+
+<th>A</th>
+
+<th>B</th>
+
+<th>Y</th>
+
+</tr>
+
+<tr><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>1</td><td>1</td><td>1</td></tr>
+
+</table>
+
+<hr>
+
+<h2>🔵 OR Gate</h2>
+
+<p>
+The OR Gate performs addition in Boolean Algebra. If at least one input is HIGH,
+the output becomes HIGH.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+
+Y = A + B
+
+</code></pre>
+
+</div>
+
+<table class="notes-table">
+
+<tr>
+
+<th>A</th>
+
+<th>B</th>
+
+<th>Y</th>
+
+</tr>
+
+<tr><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>0</td><td>1</td><td>1</td></tr>
+<tr><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>1</td><td>1</td><td>1</td></tr>
+
+</table>
+
+<hr>
+
+<h2>🔴 NOT Gate</h2>
+
+<p>
+The NOT Gate is also called an Inverter. It has only one input and one output.
+It produces the opposite value of the input.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+
+Y = A'
+
+</code></pre>
+
+</div>
+
+<table class="notes-table">
+
+<tr>
+
+<th>A</th>
+
+<th>Y</th>
+
+</tr>
+
+<tr><td>0</td><td>1</td></tr>
+
+<tr><td>1</td><td>0</td></tr>
+
+</table>
+
+<hr>
+
+<h2>🟠 NAND Gate</h2>
+
+<p>
+The NAND Gate is the inverse of the AND Gate. It gives LOW output only when
+all inputs are HIGH. It is known as a Universal Gate.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+
+Y = (A · B)'
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>🟣 NOR Gate</h2>
+
+<p>
+The NOR Gate is the inverse of the OR Gate. It produces HIGH output only when
+all inputs are LOW. It is also a Universal Gate.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+
+Y = (A + B)'
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>🟡 XOR Gate</h2>
+
+<p>
+The XOR (Exclusive OR) Gate gives HIGH output only when the two inputs are
+different. It is widely used in arithmetic circuits and error detection.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+
+Y = A ⊕ B
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>⚫ XNOR Gate</h2>
+
+<p>
+The XNOR Gate is the opposite of the XOR Gate. It produces HIGH output when
+both inputs are equal.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+
+Y = (A ⊕ B)'
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>🌟 Universal Gates</h2>
+
+<p>
+NAND and NOR Gates are called Universal Gates because all other logic gates
+can be implemented using only NAND gates or only NOR gates.
+</p>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Gate</th>
+
+<th>Reason</th>
+
+</tr>
+
+<tr>
+
+<td>NAND</td>
+
+<td>Can implement all logic gates.</td>
+
+</tr>
+
+<tr>
+
+<td>NOR</td>
+
+<td>Can implement all logic gates.</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>💻 Applications of Logic Gates</h2>
+
+<ul>
+
+<li>✔ Computers and Laptops</li>
+
+<li>✔ Mobile Phones</li>
+
+<li>✔ Digital Clocks</li>
+
+<li>✔ Calculators</li>
+
+<li>✔ Memory Circuits</li>
+
+<li>✔ Traffic Light Controllers</li>
+
+<li>✔ Communication Systems</li>
+
+</ul>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>Define Logic Gate.</li>
+
+<li>Explain AND, OR and NOT Gates.</li>
+
+<li>Differentiate NAND and NOR Gates.</li>
+
+<li>What are Universal Gates?</li>
+
+<li>Explain XOR and XNOR Gates.</li>
+
+<li>Write applications of Logic Gates.</li>
+
+</ol>
+
+<hr>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Revision</h3>
+
+<p>
+
+✔ AND → All inputs must be 1.<br>
+
+✔ OR → Any one input is 1.<br>
+
+✔ NOT → Inverts the input.<br>
+
+✔ NAND → Universal Gate.<br>
+
+✔ NOR → Universal Gate.<br>
+
+✔ XOR → Inputs Different.<br>
+
+✔ XNOR → Inputs Same.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 3 : BOOLEAN ALGEBRA & K-MAP -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>🧮 Chapter 3 : Boolean Algebra & K-Map</h2>
+
+<div class="highlight-box">
+
+<h3>📖 Introduction</h3>
+
+<p>
+Boolean Algebra is a branch of mathematics used in digital electronics to
+perform logical operations using only two values, 0 (False) and 1 (True).
+It helps in designing and simplifying digital circuits. Boolean Algebra,
+together with Karnaugh Maps (K-Maps), reduces complex logical expressions,
+making circuits faster, smaller and more efficient.
+</p>
+
+</div>
+
+<hr>
+
+<h2>📚 Definition</h2>
+
+<p>
+Boolean Algebra is a mathematical system developed by George Boole. It uses
+binary variables and logical operators such as AND, OR and NOT to represent
+and simplify digital logic circuits.
+</p>
+
+<hr>
+
+<h2>⭐ Features of Boolean Algebra</h2>
+
+<ul>
+
+<li>✔ Uses only two values: 0 and 1.</li>
+
+<li>✔ Simplifies logical expressions.</li>
+
+<li>✔ Reduces hardware complexity.</li>
+
+<li>✔ Improves circuit performance.</li>
+
+<li>✔ Widely used in digital electronics and computers.</li>
+
+</ul>
+
+<hr>
+
+<h2>🔷 Basic Boolean Operations</h2>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Operation</th>
+
+<th>Symbol</th>
+
+<th>Description</th>
+
+</tr>
+
+<tr>
+
+<td>AND</td>
+
+<td>.</td>
+
+<td>Output is 1 only if all inputs are 1.</td>
+
+</tr>
+
+<tr>
+
+<td>OR</td>
+
+<td>+</td>
+
+<td>Output is 1 if any input is 1.</td>
+
+</tr>
+
+<tr>
+
+<td>NOT</td>
+
+<td>'</td>
+
+<td>Produces the opposite value.</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>📖 Boolean Laws</h2>
+
+<p>
+Boolean Laws are rules used to simplify logical expressions and design efficient
+digital circuits.
+</p>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Law</th>
+
+<th>Expression</th>
+
+</tr>
+
+<tr>
+
+<td>Identity Law</td>
+
+<td>A + 0 = A &nbsp;&nbsp; A · 1 = A</td>
+
+</tr>
+
+<tr>
+
+<td>Null Law</td>
+
+<td>A + 1 = 1 &nbsp;&nbsp; A · 0 = 0</td>
+
+</tr>
+
+<tr>
+
+<td>Idempotent Law</td>
+
+<td>A + A = A &nbsp;&nbsp; A · A = A</td>
+
+</tr>
+
+<tr>
+
+<td>Complement Law</td>
+
+<td>A + A' = 1 &nbsp;&nbsp; A · A' = 0</td>
+
+</tr>
+
+<tr>
+
+<td>Commutative Law</td>
+
+<td>A + B = B + A</td>
+
+</tr>
+
+<tr>
+
+<td>Associative Law</td>
+
+<td>(A+B)+C = A+(B+C)</td>
+
+</tr>
+
+<tr>
+
+<td>Distributive Law</td>
+
+<td>A(B+C)=AB+AC</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🔄 De Morgan's Theorem</h2>
+
+<p>
+De Morgan's Theorem is used to simplify Boolean expressions and convert
+AND operations into OR operations (and vice versa) by complementing each variable.
+It is widely used in logic circuit design.
+</p>
+
+<div class="note-box">
+
+<b>Theorem 1</b>
+
+<pre><code>
+
+(A + B)' = A' · B'
+
+</code></pre>
+
+<b>Theorem 2</b>
+
+<pre><code>
+
+(A · B)' = A' + B'
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>📌 SOP & POS Forms</h2>
+
+<p>
+Boolean expressions can be represented in two standard forms.
+</p>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Form</th>
+
+<th>Meaning</th>
+
+</tr>
+
+<tr>
+
+<td>SOP</td>
+
+<td>Sum of Products (AND terms joined by OR)</td>
+
+</tr>
+
+<tr>
+
+<td>POS</td>
+
+<td>Product of Sums (OR terms joined by AND)</td>
+
+</tr>
+
+</table>
+
+<div class="note-box">
+
+<b>Example</b>
+
+<pre><code>
+
+SOP : AB + A'C
+
+POS : (A+B)(A'+C)
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>🗂 Karnaugh Map (K-Map)</h2>
+
+<p>
+A Karnaugh Map (K-Map) is a graphical method used to simplify Boolean
+expressions. It groups adjacent cells containing 1s to produce the
+simplest possible logic expression, reducing the number of logic gates required.
+</p>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Variables</th>
+
+<th>Cells</th>
+
+</tr>
+
+<tr>
+
+<td>2 Variables</td>
+
+<td>4 Cells</td>
+
+</tr>
+
+<tr>
+
+<td>3 Variables</td>
+
+<td>8 Cells</td>
+
+</tr>
+
+<tr>
+
+<td>4 Variables</td>
+
+<td>16 Cells</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>⭐ Advantages of K-Map</h2>
+
+<ul>
+
+<li>✔ Simplifies Boolean expressions.</li>
+
+<li>✔ Reduces the number of logic gates.</li>
+
+<li>✔ Minimizes circuit cost.</li>
+
+<li>✔ Increases circuit efficiency.</li>
+
+<li>✔ Easy for small and medium circuits.</li>
+
+</ul>
+
+<hr>
+
+<h2>💻 Applications of Boolean Algebra</h2>
+
+<ul>
+
+<li>✔ Digital Circuit Design</li>
+
+<li>✔ Computer Processors</li>
+
+<li>✔ Logic Gate Implementation</li>
+
+<li>✔ Control Systems</li>
+
+<li>✔ Communication Systems</li>
+
+<li>✔ Error Detection Circuits</li>
+
+</ul>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>Define Boolean Algebra.</li>
+
+<li>Explain Boolean Laws.</li>
+
+<li>State and explain De Morgan's Theorem.</li>
+
+<li>Differentiate SOP and POS.</li>
+
+<li>What is Karnaugh Map (K-Map)?</li>
+
+<li>Write the advantages of K-Map.</li>
+
+<li>Explain applications of Boolean Algebra.</li>
+
+</ol>
+
+<hr>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Revision</h3>
+
+<p>
+
+✔ Boolean Algebra uses only 0 and 1.<br>
+
+✔ Basic Operations → AND, OR, NOT.<br>
+
+✔ De Morgan's Theorem simplifies expressions.<br>
+
+✔ SOP = Sum of Products.<br>
+
+✔ POS = Product of Sums.<br>
+
+✔ K-Map reduces logic gates and simplifies circuits.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 4 : COMBINATIONAL CIRCUITS -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>⚡ Chapter 4 : Combinational Circuits</h2>
+
+<div class="highlight-box">
+
+<h3>📖 Introduction</h3>
+
+<p>
+A Combinational Circuit is a digital circuit whose output depends only on the
+present input values. It does not store any previous data or memory. These
+circuits are widely used in digital systems for performing arithmetic
+operations, data selection, encoding and decoding.
+</p>
+
+</div>
+
+<hr>
+
+<h2>📚 Definition</h2>
+
+<p>
+A Combinational Circuit is a collection of logic gates connected together to
+produce a specific output based only on the current combination of inputs.
+There is no memory element or feedback path in these circuits.
+</p>
+
+<hr>
+
+<h2>⭐ Features of Combinational Circuits</h2>
+
+<ul>
+
+<li>✔ Output depends only on present inputs.</li>
+
+<li>✔ No memory storage.</li>
+
+<li>✔ No feedback path.</li>
+
+<li>✔ Fast operation.</li>
+
+<li>✔ Easy to design and implement.</li>
+
+</ul>
+
+<hr>
+
+<h2>➕ Half Adder</h2>
+
+<p>
+A Half Adder is a combinational circuit used to add two binary digits.
+It produces two outputs: <b>Sum (S)</b> and <b>Carry (C)</b>.
+</p>
+
+<table class="notes-table">
+
+<tr>
+<th>Input A</th>
+<th>Input B</th>
+<th>Sum</th>
+<th>Carry</th>
+</tr>
+
+<tr><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>1</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>1</td><td>1</td><td>0</td><td>1</td></tr>
+
+</table>
+
+<div class="note-box">
+
+<b>Boolean Expressions</b>
+
+<pre><code>
+
+Sum = A ⊕ B
+
+Carry = A · B
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>➕ Full Adder</h2>
+
+<p>
+A Full Adder adds three binary inputs (A, B and Carry-In). It produces
+a Sum output and a Carry-Out output.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+
+Sum = A ⊕ B ⊕ Cin
+
+Carry = AB + BCin + ACin
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>➖ Half Subtractor</h2>
+
+<p>
+A Half Subtractor subtracts one binary digit from another.
+It produces two outputs: Difference and Borrow.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+
+Difference = A ⊕ B
+
+Borrow = A'B
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>➖ Full Subtractor</h2>
+
+<p>
+A Full Subtractor subtracts three binary inputs including Borrow-In.
+It generates Difference and Borrow-Out outputs.
+</p>
+
+<div class="note-box">
+
+<pre><code>
+
+Difference = A ⊕ B ⊕ Bin
+
+Borrow = A'B + BBin + A'Bin
+
+</code></pre>
+
+</div>
+
+<hr>
+
+<h2>🔀 Multiplexer (MUX)</h2>
+
+<p>
+A Multiplexer is a data selector. It selects one input from many inputs
+and sends it to a single output based on the selection lines.
+</p>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Component</th>
+
+<th>Function</th>
+
+</tr>
+
+<tr>
+
+<td>Inputs</td>
+
+<td>Multiple</td>
+
+</tr>
+
+<tr>
+
+<td>Output</td>
+
+<td>Single</td>
+
+</tr>
+
+<tr>
+
+<td>Select Lines</td>
+
+<td>Select one input</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🔁 Demultiplexer (DEMUX)</h2>
+
+<p>
+A Demultiplexer performs the opposite operation of a Multiplexer.
+It accepts one input and distributes it to one of many outputs
+according to the select lines.
+</p>
+
+<hr>
+
+<h2>🔢 Encoder</h2>
+
+<p>
+An Encoder converts multiple input lines into a smaller number of binary
+output lines. It is mainly used for data compression and coding.
+</p>
+
+<div class="note-box">
+
+<p><b>Example:</b> 8-to-3 Encoder</p>
+
+</div>
+
+<hr>
+
+<h2>🔓 Decoder</h2>
+
+<p>
+A Decoder performs the opposite operation of an Encoder.
+It converts binary input data into multiple output lines.
+Decoders are used in memory systems and digital displays.
+</p>
+
+<div class="note-box">
+
+<p><b>Example:</b> 3-to-8 Decoder</p>
+
+</div>
+
+<hr>
+
+<h2>🌍 Applications of Combinational Circuits</h2>
+
+<ul>
+
+<li>✔ Computers</li>
+
+<li>✔ Calculators</li>
+
+<li>✔ ALU (Arithmetic Logic Unit)</li>
+
+<li>✔ Communication Systems</li>
+
+<li>✔ Memory Address Decoding</li>
+
+<li>✔ Digital Display Systems</li>
+
+<li>✔ Data Transmission</li>
+
+</ul>
+
+<hr>
+
+<h2>⭐ Advantages</h2>
+
+<ul>
+
+<li>✔ High processing speed.</li>
+
+<li>✔ Easy implementation.</li>
+
+<li>✔ No memory required.</li>
+
+<li>✔ Reliable digital operation.</li>
+
+<li>✔ Simple circuit design.</li>
+
+</ul>
+
+<hr>
+
+<h2>❌ Disadvantages</h2>
+
+<ul>
+
+<li>❌ Cannot store previous data.</li>
+
+<li>❌ Output changes immediately with input.</li>
+
+<li>❌ Not suitable where memory is required.</li>
+
+</ul>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>Define Combinational Circuit.</li>
+
+<li>Explain Half Adder with truth table.</li>
+
+<li>Explain Full Adder.</li>
+
+<li>Differentiate Half Adder and Full Adder.</li>
+
+<li>Explain Half Subtractor and Full Subtractor.</li>
+
+<li>What is Multiplexer? Explain its applications.</li>
+
+<li>Differentiate Multiplexer and Demultiplexer.</li>
+
+<li>Explain Encoder and Decoder.</li>
+
+</ol>
+
+<hr>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Revision</h3>
+
+<p>
+
+✔ Output depends only on present inputs.<br>
+
+✔ Half Adder → 2 Inputs.<br>
+
+✔ Full Adder → 3 Inputs.<br>
+
+✔ Half Subtractor → Difference + Borrow.<br>
+
+✔ MUX → Many Inputs, One Output.<br>
+
+✔ DEMUX → One Input, Many Outputs.<br>
+
+✔ Encoder compresses data.<br>
+
+✔ Decoder expands binary data.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 5 : SEQUENTIAL CIRCUITS -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>⏱️ Chapter 5 : Sequential Circuits</h2>
+
+<div class="highlight-box">
+
+<h3>📖 Introduction</h3>
+
+<p>
+Sequential Circuits are digital circuits whose output depends on both the
+present inputs and the previous state (stored data). Unlike combinational
+circuits, sequential circuits contain memory elements such as flip-flops.
+They are widely used in registers, counters, memory devices and digital
+control systems.
+</p>
+
+</div>
+
+<hr>
+
+<h2>📚 Definition</h2>
+
+<p>
+A Sequential Circuit is a digital circuit that stores previous information
+and produces output based on both current inputs and stored data. These
+circuits use clock signals for synchronization.
+</p>
+
+<hr>
+
+<h2>⭐ Features of Sequential Circuits</h2>
+
+<ul>
+
+<li>✔ Output depends on present and previous inputs.</li>
+
+<li>✔ Contains memory elements.</li>
+
+<li>✔ Uses clock pulses for operation.</li>
+
+<li>✔ Suitable for data storage.</li>
+
+<li>✔ Used in digital systems and processors.</li>
+
+</ul>
+
+<hr>
+
+<h2>🔄 Flip-Flops</h2>
+
+<p>
+A Flip-Flop is the basic memory element in digital electronics. It stores
+one binary bit (0 or 1) and changes its state according to the clock signal.
+</p>
+
+<table class="notes-table">
+
+<tr>
+<th>Flip-Flop</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>SR Flip-Flop</td>
+<td>Basic Set-Reset memory circuit.</td>
+</tr>
+
+<tr>
+<td>JK Flip-Flop</td>
+<td>Improved version of SR Flip-Flop.</td>
+</tr>
+
+<tr>
+<td>D Flip-Flop</td>
+<td>Stores one data bit.</td>
+</tr>
+
+<tr>
+<td>T Flip-Flop</td>
+<td>Toggles its state on each clock pulse.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🟢 SR Flip-Flop</h2>
+
+<p>
+The SR (Set-Reset) Flip-Flop is the simplest flip-flop. It has two inputs,
+Set (S) and Reset (R), and stores one bit of data.
+</p>
+
+<div class="note-box">
+
+<b>Functions:</b>
+
+<ul>
+
+<li>S = 1 → Set Output</li>
+
+<li>R = 1 → Reset Output</li>
+
+<li>S = 0 & R = 0 → No Change</li>
+
+<li>S = 1 & R = 1 → Invalid State</li>
+
+</ul>
+
+</div>
+
+<hr>
+
+<h2>🔵 JK Flip-Flop</h2>
+
+<p>
+The JK Flip-Flop removes the invalid state of the SR Flip-Flop. When both
+inputs are HIGH, the output toggles between 0 and 1.
+</p>
+
+<div class="note-box">
+
+<p><b>Special Feature:</b> No Invalid State</p>
+
+</div>
+
+<hr>
+
+<h2>🟡 D Flip-Flop</h2>
+
+<p>
+The D (Data) Flip-Flop stores one bit of information and transfers the input
+to the output on the active clock edge. It is widely used in registers and memory.
+</p>
+
+<hr>
+
+<h2>🟣 T Flip-Flop</h2>
+
+<p>
+The T (Toggle) Flip-Flop changes its output state whenever the clock pulse
+arrives. It is mainly used in counters.
+</p>
+
+<hr>
+
+<h2>💾 Registers</h2>
+
+<p>
+A Register is a group of flip-flops used to store binary data temporarily.
+Registers are important components of CPUs and digital systems.
+</p>
+
+<table class="notes-table">
+
+<tr>
+<th>Register Type</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td>Shift Register</td>
+<td>Shifts data left or right.</td>
+</tr>
+
+<tr>
+<td>Storage Register</td>
+<td>Stores binary information.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🔀 Shift Registers</h2>
+
+<p>
+Shift Registers are sequential circuits that shift binary data from one
+flip-flop to another using clock pulses.
+</p>
+
+<table class="notes-table">
+
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>SISO</td>
+<td>Serial In – Serial Out</td>
+</tr>
+
+<tr>
+<td>SIPO</td>
+<td>Serial In – Parallel Out</td>
+</tr>
+
+<tr>
+<td>PISO</td>
+<td>Parallel In – Serial Out</td>
+</tr>
+
+<tr>
+<td>PIPO</td>
+<td>Parallel In – Parallel Out</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>⏲ Counters</h2>
+
+<p>
+Counters are sequential circuits that count the number of clock pulses.
+They are widely used in timers, digital clocks and frequency counters.
+</p>
+
+<table class="notes-table">
+
+<tr>
+<th>Counter</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td>Asynchronous Counter</td>
+<td>Clock is applied only to the first flip-flop.</td>
+</tr>
+
+<tr>
+<td>Synchronous Counter</td>
+<td>Clock is applied to all flip-flops together.</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🌍 Applications of Sequential Circuits</h2>
+
+<ul>
+
+<li>✔ Digital Clocks</li>
+
+<li>✔ Traffic Light Controllers</li>
+
+<li>✔ Computer Memory</li>
+
+<li>✔ CPU Registers</li>
+
+<li>✔ Communication Systems</li>
+
+<li>✔ Digital Counters</li>
+
+<li>✔ Embedded Systems</li>
+
+</ul>
+
+<hr>
+
+<h2>⭐ Advantages</h2>
+
+<ul>
+
+<li>✔ Can store data.</li>
+
+<li>✔ High processing speed.</li>
+
+<li>✔ Reliable operation.</li>
+
+<li>✔ Used in modern digital devices.</li>
+
+<li>✔ Supports sequential operations.</li>
+
+</ul>
+
+<hr>
+
+<h2>❌ Disadvantages</h2>
+
+<ul>
+
+<li>❌ More complex than combinational circuits.</li>
+
+<li>❌ Requires clock synchronization.</li>
+
+<li>❌ Higher hardware requirements.</li>
+
+</ul>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>Define Sequential Circuit.</li>
+
+<li>Explain Flip-Flop.</li>
+
+<li>Differentiate SR and JK Flip-Flop.</li>
+
+<li>Explain D Flip-Flop.</li>
+
+<li>Explain T Flip-Flop.</li>
+
+<li>What is a Register?</li>
+
+<li>Explain Shift Registers.</li>
+
+<li>Differentiate Synchronous and Asynchronous Counters.</li>
+
+</ol>
+
+<hr>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Revision</h3>
+
+<p>
+
+✔ Sequential Circuits have memory.<br>
+
+✔ Flip-Flop stores 1 bit.<br>
+
+✔ JK Flip-Flop removes invalid state.<br>
+
+✔ D Flip-Flop stores data.<br>
+
+✔ T Flip-Flop toggles output.<br>
+
+✔ Registers store binary data.<br>
+
+✔ Counters count clock pulses.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 6 : MEMORY & DIGITAL ELECTRONICS -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>💾 Chapter 6 : Memory & Digital Electronics</h2>
+
+<div class="highlight-box">
+
+<h3>📖 Introduction</h3>
+
+<p>
+Memory is one of the most important components of a computer system. It stores
+data, instructions and processing results so that the CPU can access them whenever
+required. Digital Electronics is the branch of electronics that works with binary
+values (0 and 1). It forms the foundation of modern computers, mobile phones,
+communication systems and embedded devices.
+</p>
+
+</div>
+
+<hr>
+
+<h2>📚 Definition of Memory</h2>
+
+<p>
+Memory is an electronic storage device used to store data, instructions and
+programs either temporarily or permanently. It enables a computer to process,
+retrieve and manage information efficiently.
+</p>
+
+<hr>
+
+<h2>⭐ Features of Memory</h2>
+
+<ul>
+
+<li>✔ Stores data and instructions.</li>
+
+<li>✔ Provides fast access to information.</li>
+
+<li>✔ Supports temporary and permanent storage.</li>
+
+<li>✔ Essential for CPU operations.</li>
+
+<li>✔ Improves overall system performance.</li>
+
+</ul>
+
+<hr>
+
+<h2>🗂 Types of Memory</h2>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Memory Type</th>
+
+<th>Description</th>
+
+</tr>
+
+<tr>
+
+<td>Primary Memory</td>
+
+<td>Directly accessed by the CPU.</td>
+
+</tr>
+
+<tr>
+
+<td>Secondary Memory</td>
+
+<td>Used for permanent data storage.</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>⚡ RAM (Random Access Memory)</h2>
+
+<p>
+RAM is a volatile memory used to store data and programs currently being
+processed by the CPU. Its contents are erased when the power is switched off.
+</p>
+
+<div class="note-box">
+
+<b>Features of RAM</b>
+
+<ul>
+
+<li>✔ Temporary memory.</li>
+
+<li>✔ High speed.</li>
+
+<li>✔ Read and write operations.</li>
+
+<li>✔ Improves system performance.</li>
+
+</ul>
+
+</div>
+
+<hr>
+
+<h2>📀 ROM (Read Only Memory)</h2>
+
+<p>
+ROM is a non-volatile memory that permanently stores important system
+instructions. The data remains safe even after the computer is turned off.
+</p>
+
+<div class="note-box">
+
+<b>Features of ROM</b>
+
+<ul>
+
+<li>✔ Permanent storage.</li>
+
+<li>✔ Non-volatile.</li>
+
+<li>✔ Stores firmware and boot programs.</li>
+
+</ul>
+
+</div>
+
+<hr>
+
+<h2>🧩 Types of ROM</h2>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Type</th>
+
+<th>Description</th>
+
+</tr>
+
+<tr>
+
+<td>PROM</td>
+
+<td>Programmable Read Only Memory (programmed once).</td>
+
+</tr>
+
+<tr>
+
+<td>EPROM</td>
+
+<td>Erasable Programmable ROM (erased using UV light).</td>
+
+</tr>
+
+<tr>
+
+<td>EEPROM</td>
+
+<td>Electrically Erasable Programmable ROM.</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🖥 CPU (Central Processing Unit)</h2>
+
+<p>
+The CPU is known as the brain of the computer. It executes instructions,
+performs calculations and controls all computer operations.
+</p>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Component</th>
+
+<th>Function</th>
+
+</tr>
+
+<tr>
+
+<td>ALU</td>
+
+<td>Performs arithmetic and logical operations.</td>
+
+</tr>
+
+<tr>
+
+<td>Control Unit</td>
+
+<td>Controls the execution of instructions.</td>
+
+</tr>
+
+<tr>
+
+<td>Registers</td>
+
+<td>Temporarily store processing data.</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🔄 Digital System vs Analog System</h2>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Digital System</th>
+
+<th>Analog System</th>
+
+</tr>
+
+<tr>
+
+<td>Works with 0 and 1.</td>
+
+<td>Works with continuous signals.</td>
+
+</tr>
+
+<tr>
+
+<td>High accuracy.</td>
+
+<td>Lower accuracy.</td>
+
+</tr>
+
+<tr>
+
+<td>Less affected by noise.</td>
+
+<td>More affected by noise.</td>
+
+</tr>
+
+<tr>
+
+<td>Used in computers.</td>
+
+<td>Used in traditional electronic devices.</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🌍 Applications of Digital Electronics</h2>
+
+<ul>
+
+<li>✔ Computers and Laptops</li>
+
+<li>✔ Smartphones</li>
+
+<li>✔ Digital Watches</li>
+
+<li>✔ ATM Machines</li>
+
+<li>✔ Medical Equipment</li>
+
+<li>✔ Robotics</li>
+
+<li>✔ Communication Systems</li>
+
+<li>✔ Industrial Automation</li>
+
+</ul>
+
+<hr>
+
+<h2>⭐ Advantages of Digital Electronics</h2>
+
+<ul>
+
+<li>✔ High accuracy.</li>
+
+<li>✔ Fast processing speed.</li>
+
+<li>✔ Reliable performance.</li>
+
+<li>✔ Easy data storage.</li>
+
+<li>✔ Less affected by electrical noise.</li>
+
+</ul>
+
+<hr>
+
+<h2>❌ Disadvantages of Digital Electronics</h2>
+
+<ul>
+
+<li>❌ Higher initial cost.</li>
+
+<li>❌ Requires power supply.</li>
+
+<li>❌ Complex circuit design.</li>
+
+</ul>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>Define Memory.</li>
+
+<li>Differentiate RAM and ROM.</li>
+
+<li>Explain the types of ROM.</li>
+
+<li>What is CPU? Explain its components.</li>
+
+<li>Differentiate Digital and Analog Systems.</li>
+
+<li>Write the applications of Digital Electronics.</li>
+
+<li>Write the advantages and disadvantages of Digital Electronics.</li>
+
+</ol>
+
+<hr>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Revision</h3>
+
+<p>
+
+✔ RAM = Volatile Memory.<br>
+
+✔ ROM = Non-Volatile Memory.<br>
+
+✔ PROM → Program Once.<br>
+
+✔ EPROM → Erased by UV Light.<br>
+
+✔ EEPROM → Electrically Erasable.<br>
+
+✔ CPU = ALU + Control Unit + Registers.<br>
+
+✔ Digital Systems use Binary (0 & 1).<br>
+
+✔ Digital Electronics is used in computers, mobiles and embedded systems.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 6 : MEMORY & DIGITAL ELECTRONICS (PART 1) -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>💾 Chapter 6 : Memory & Digital Electronics</h2>
+
+<div class="highlight-box">
+
+<h3>📖 Introduction</h3>
+
+<p>
+Memory is an essential component of every computer system. It stores data,
+instructions and processing results so that the CPU can access them whenever
+required. Digital Electronics is a branch of electronics that works with
+binary digits (0 and 1). It forms the foundation of modern computers,
+smartphones, communication systems and embedded devices.
+</p>
+
+</div>
+
+<hr>
+
+<h2>📚 Definition of Memory</h2>
+
+<p>
+Memory is an electronic storage device used to store data, programs and
+instructions. It allows the computer to save, retrieve and process information
+efficiently. Memory can be temporary or permanent depending on its type.
+</p>
+
+<hr>
+
+<h2>⭐ Characteristics of Memory</h2>
+
+<ul>
+
+<li>✔ Stores data and instructions.</li>
+
+<li>✔ Provides fast data access.</li>
+
+<li>✔ Supports temporary and permanent storage.</li>
+
+<li>✔ Improves processing speed.</li>
+
+<li>✔ Essential for every computer system.</li>
+
+</ul>
+
+<hr>
+
+<h2>🗂 Classification of Memory</h2>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Memory Type</th>
+
+<th>Description</th>
+
+</tr>
+
+<tr>
+
+<td>Primary Memory</td>
+
+<td>Directly accessed by the CPU and used during processing.</td>
+
+</tr>
+
+<tr>
+
+<td>Secondary Memory</td>
+
+<td>Stores data permanently for future use.</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>⚡ Primary Memory</h2>
+
+<p>
+Primary Memory is also called Main Memory. It is directly connected to the CPU
+and stores the programs and data currently being processed. It provides very
+fast access to information.
+</p>
+
+<div class="note-box">
+
+<b>Types of Primary Memory</b>
+
+<ul>
+
+<li>RAM (Random Access Memory)</li>
+
+<li>ROM (Read Only Memory)</li>
+
+</ul>
+
+</div>
+
+<hr>
+
+<h2>🚀 RAM (Random Access Memory)</h2>
+
+<p>
+RAM is a volatile memory used to temporarily store data and instructions while
+a program is running. When the computer is switched off, all data stored in RAM
+is lost.
+</p>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Feature</th>
+
+<th>Description</th>
+
+</tr>
+
+<tr>
+
+<td>Nature</td>
+
+<td>Volatile Memory</td>
+
+</tr>
+
+<tr>
+
+<td>Speed</td>
+
+<td>Very Fast</td>
+
+</tr>
+
+<tr>
+
+<td>Operation</td>
+
+<td>Read and Write</td>
+
+</tr>
+
+<tr>
+
+<td>Storage</td>
+
+<td>Temporary</td>
+
+</tr>
+
+</table>
+
+<div class="note-box">
+
+<b>Advantages of RAM</b>
+
+<ul>
+
+<li>✔ High speed.</li>
+
+<li>✔ Improves computer performance.</li>
+
+<li>✔ Supports multitasking.</li>
+
+<li>✔ Easy data access.</li>
+
+</ul>
+
+</div>
+
+<hr>
+
+<h2>💿 ROM (Read Only Memory)</h2>
+
+<p>
+ROM is a non-volatile memory used to permanently store important instructions
+required to start the computer. Its contents remain safe even after the power
+is turned off.
+</p>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Feature</th>
+
+<th>Description</th>
+
+</tr>
+
+<tr>
+
+<td>Nature</td>
+
+<td>Non-Volatile</td>
+
+</tr>
+
+<tr>
+
+<td>Operation</td>
+
+<td>Mainly Read Only</td>
+
+</tr>
+
+<tr>
+
+<td>Storage</td>
+
+<td>Permanent</td>
+
+</tr>
+
+<tr>
+
+<td>Purpose</td>
+
+<td>Stores Boot Program</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🧩 Types of ROM</h2>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Type</th>
+
+<th>Description</th>
+
+</tr>
+
+<tr>
+
+<td>PROM</td>
+
+<td>Programmable Read Only Memory. Can be programmed only once.</td>
+
+</tr>
+
+<tr>
+
+<td>EPROM</td>
+
+<td>Erasable Programmable ROM. Can be erased using ultraviolet light.</td>
+
+</tr>
+
+<tr>
+
+<td>EEPROM</td>
+
+<td>Electrically Erasable Programmable ROM. Can be erased electrically many times.</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🔄 Difference Between RAM and ROM</h2>
+
+<table class="notes-table">
+
+<tr>
+
+<th>RAM</th>
+
+<th>ROM</th>
+
+</tr>
+
+<tr>
+
+<td>Volatile Memory</td>
+
+<td>Non-Volatile Memory</td>
+
+</tr>
+
+<tr>
+
+<td>Temporary Storage</td>
+
+<td>Permanent Storage</td>
+
+</tr>
+
+<tr>
+
+<td>Read & Write</td>
+
+<td>Mainly Read Only</td>
+
+</tr>
+
+<tr>
+
+<td>Stores Running Programs</td>
+
+<td>Stores Boot Instructions</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Summary</h3>
+
+<p>
+
+✔ Memory stores data and programs.<br>
+
+✔ Primary Memory = RAM + ROM.<br>
+
+✔ RAM is temporary and volatile.<br>
+
+✔ ROM is permanent and non-volatile.<br>
+
+✔ PROM, EPROM and EEPROM are types of ROM.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CHAPTER 6 : MEMORY & DIGITAL ELECTRONICS (PART 2) -->
+<!-- ===================================================== -->
+
+<div class="chapter">
+
+<h2>🖥 Central Processing Unit (CPU)</h2>
+
+<p>
+The Central Processing Unit (CPU) is known as the <b>Brain of the Computer</b>.
+It processes data, executes instructions and controls all operations performed
+by the computer. Every program and application depends on the CPU for execution.
+</p>
+
+<table class="notes-table">
+
+<tr>
+
+<th>CPU Component</th>
+
+<th>Function</th>
+
+</tr>
+
+<tr>
+
+<td>ALU (Arithmetic Logic Unit)</td>
+
+<td>Performs arithmetic calculations and logical operations.</td>
+
+</tr>
+
+<tr>
+
+<td>Control Unit (CU)</td>
+
+<td>Controls and coordinates all computer activities.</td>
+
+</tr>
+
+<tr>
+
+<td>Registers</td>
+
+<td>Temporarily store data and instructions during processing.</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>💽 Secondary Memory</h2>
+
+<p>
+Secondary Memory is used for permanent storage of data. Unlike RAM, the data
+stored in secondary memory remains safe even after the computer is switched off.
+It provides a large storage capacity for files, applications and multimedia.
+</p>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Storage Device</th>
+
+<th>Purpose</th>
+
+</tr>
+
+<tr>
+
+<td>Hard Disk (HDD)</td>
+
+<td>Stores operating system and user files.</td>
+
+</tr>
+
+<tr>
+
+<td>Solid State Drive (SSD)</td>
+
+<td>Provides faster data access than HDD.</td>
+
+</tr>
+
+<tr>
+
+<td>Pen Drive</td>
+
+<td>Portable storage device.</td>
+
+</tr>
+
+<tr>
+
+<td>CD / DVD</td>
+
+<td>Optical storage media.</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🔄 Digital System vs Analog System</h2>
+
+<p>
+Digital systems process information using binary values (0 and 1), while
+analog systems work with continuously changing signals. Modern computers
+mainly use digital technology because it is more reliable and accurate.
+</p>
+
+<table class="notes-table">
+
+<tr>
+
+<th>Digital System</th>
+
+<th>Analog System</th>
+
+</tr>
+
+<tr>
+
+<td>Uses binary data (0 & 1).</td>
+
+<td>Uses continuous signals.</td>
+
+</tr>
+
+<tr>
+
+<td>High accuracy.</td>
+
+<td>Lower accuracy.</td>
+
+</tr>
+
+<tr>
+
+<td>Less affected by noise.</td>
+
+<td>More affected by noise.</td>
+
+</tr>
+
+<tr>
+
+<td>Used in computers and mobiles.</td>
+
+<td>Used in traditional electronic devices.</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>🌍 Applications of Digital Electronics</h2>
+
+<ul>
+
+<li>✔ Computers and Laptops</li>
+
+<li>✔ Smartphones and Tablets</li>
+
+<li>✔ Digital Cameras</li>
+
+<li>✔ ATM Machines</li>
+
+<li>✔ Medical Equipment</li>
+
+<li>✔ Robotics and Automation</li>
+
+<li>✔ Communication Systems</li>
+
+<li>✔ Smart Home Devices</li>
+
+<li>✔ Industrial Control Systems</li>
+
+</ul>
+
+<hr>
+
+<h2>⭐ Advantages of Digital Electronics</h2>
+
+<ul>
+
+<li>✔ High processing speed.</li>
+
+<li>✔ High accuracy and reliability.</li>
+
+<li>✔ Easy data storage.</li>
+
+<li>✔ Less affected by electrical noise.</li>
+
+<li>✔ Supports modern digital communication.</li>
+
+<li>✔ Easy maintenance and upgrading.</li>
+
+</ul>
+
+<hr>
+
+<h2>❌ Disadvantages of Digital Electronics</h2>
+
+<ul>
+
+<li>❌ Requires continuous power supply.</li>
+
+<li>❌ More complex circuit design.</li>
+
+<li>❌ Initial implementation cost may be high.</li>
+
+<li>❌ Hardware failures may affect the entire system.</li>
+
+</ul>
+
+<hr>
+
+<h2>🎯 Important University Questions</h2>
+
+<ol>
+
+<li>What is Memory? Explain its types.</li>
+
+<li>Differentiate RAM and ROM.</li>
+
+<li>Explain PROM, EPROM and EEPROM.</li>
+
+<li>Describe the components of CPU.</li>
+
+<li>Differentiate Primary and Secondary Memory.</li>
+
+<li>Compare Digital and Analog Systems.</li>
+
+<li>Write the applications of Digital Electronics.</li>
+
+<li>Explain the advantages and disadvantages of Digital Electronics.</li>
+
+</ol>
+
+<hr>
+
+<div class="highlight-box">
+
+<h3>💡 Quick Revision</h3>
+
+<p>
+
+✔ CPU = Brain of the Computer.<br>
+
+✔ ALU performs arithmetic and logical operations.<br>
+
+✔ Control Unit manages all computer activities.<br>
+
+✔ Registers store temporary processing data.<br>
+
+✔ Secondary Memory stores data permanently.<br>
+
+✔ HDD, SSD, Pen Drive and DVD are secondary storage devices.<br>
+
+✔ Digital systems use binary (0 & 1).<br>
+
+✔ Digital Electronics is used in computers, mobiles, ATMs, robotics and communication systems.
+
+</p>
+
+</div>
+
+</div>

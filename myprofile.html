@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Profile | BCAHub</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="profile.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ===========================
+HEADER
+=========================== -->
+
+<header class="profile-header">
+
+<a href="profile.html" class="back-btn">
+← Back
+</a>
+
+<h1>👤 My Profile</h1>
+
+<p>Manage your BCAHub account</p>
+
+</header>
+
+<!-- ===========================
+PROFILE CARD
+=========================== -->
+
+<section class="profile-container">
+
+<div class="profile-card">
+
+<div class="profile-image-box">
+
+<img
+id="profileImage"
+src="assets/images/default-user.png"
+alt="Profile">
+
+<label for="imageInput" class="camera-btn">
+📷
+</label>
+
+<input
+type="file"
+id="imageInput"
+accept="image/*"
+hidden>
+
+</div>
+
+<h2 id="profileName">
+Pari Pal
+</h2>
+
+<p id="profileCourse">
+🎓 BCA AI Student
+</p>
+
+<p id="profileSemester">
+📚 Semester 2
+</p>
+
+<p id="profileCollege">
+🏫 Invertis University
+</p>
+
+<p id="profileLocation">
+📍 Uttar Pradesh
+</p>
+
+<button
+class="edit-btn"
+onclick="openPopup()">
+
+✏ Edit Profile
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ===========================
+PERSONAL INFO
+=========================== -->
+
+<section class="profile-section">
+
+<h2>
+
+👤 Personal Information
+
+</h2>
+
+<div class="profile-grid">
+
+<div class="profile-box">
+
+<h3>Full Name</h3>
+
+<p id="fullName">
+Pari Pal
+</p>
+
+</div>
+
+<div class="profile-box">
+
+<h3>Email</h3>
+
+<p id="email">
+Not Added
+</p>
+
+</div>
+
+<div class="profile-box">
+
+<h3>Phone</h3>
+
+<p id="phone">
+Not Added
+</p>
+
+</div>
+
+<div class="profile-box">
+
+<h3>Location</h3>
+
+<p id="location">
+Uttar Pradesh
+</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- ===========================
+ACADEMIC DETAILS
+=========================== -->
+
+<section class="profile-section">
+
+<h2>🎓 Academic Details</h2>
+
+<div class="profile-grid">
+
+<div class="profile-box">
+<h3>University</h3>
+<p id="university">Invertis University</p>
+</div>
+
+<div class="profile-box">
+<h3>Course</h3>
+<p id="course">BCA AI</p>
+</div>
+
+<div class="profile-box">
+<h3>Current Semester</h3>
+<p id="semester">Semester 2</p>
+</div>
+
+<div class="profile-box">
+<h3>Graduation Year</h3>
+<p id="graduation">2028</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+SOCIAL LINKS
+=========================== -->
+
+<section class="profile-section">
+
+<h2>🌐 Social Profiles</h2>
+
+<div class="profile-grid">
+
+<div class="profile-box">
+<h3>💻 GitHub</h3>
+<p id="github">Not Connected</p>
+</div>
+
+<div class="profile-box">
+<h3>💼 LinkedIn</h3>
+<p id="linkedin">Not Connected</p>
+</div>
+
+<div class="profile-box">
+<h3>🌍 Portfolio</h3>
+<p>Coming Soon</p>
+</div>
+
+<div class="profile-box">
+<h3>📜 Certificates</h3>
+<p>Coming Soon</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+LEARNING STATISTICS
+=========================== -->
+
+<section class="profile-section">
+
+<h2>📊 Learning Statistics</h2>
+
+<div class="profile-grid">
+
+<div class="profile-box">
+<h3>📚 Subjects</h3>
+<p>1 / 36</p>
+</div>
+
+<div class="profile-box">
+<h3>📖 Notes Read</h3>
+<p>5</p>
+</div>
+
+<div class="profile-box">
+<h3>🔥 Streak</h3>
+<p>1 Day</p>
+</div>
+
+<div class="profile-box">
+<h3>⭐ Roadmaps</h3>
+<p>2 Explored</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+ACHIEVEMENTS
+=========================== -->
+
+<section class="profile-section">
+
+<h2>🏆 Achievements</h2>
+
+<div class="profile-grid">
+
+<div class="profile-box">
+<h3>🎉 First Login</h3>
+<p>Unlocked</p>
+</div>
+
+<div class="profile-box">
+<h3>📘 First Subject</h3>
+<p>Completed</p>
+</div>
+
+<div class="profile-box">
+<h3>🚀 Explorer</h3>
+<p>Roadmap Visited</p>
+</div>
+
+<div class="profile-box">
+<h3>🎯 Next Goal</h3>
+<p>Complete Semester 1</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+QUICK ACTIONS
+=========================== -->
+
+<section class="profile-section">
+
+<h2>⚡ Quick Actions</h2>
+
+<div class="profile-grid">
+
+<a href="index.html" class="action-card">
+🏠
+<span>Home</span>
+</a>
+
+<a href="notes.html" class="action-card">
+📚
+<span>Notes</span>
+</a>
+
+<a href="roadmap.html" class="action-card">
+🗺️
+<span>Roadmap</span>
+</a>
+
+<a href="videos.html" class="action-card">
+🎥
+<span>Videos</span>
+</a>
+
+</div>
+
+</section>
+<!-- ===========================
+EDIT PROFILE POPUP
+=========================== -->
+
+<div id="editPopup" class="popup">
+
+    <div class="popup-content">
+
+        <h2>Edit Profile</h2>
+
+        <input type="text" id="nameInput" placeholder="Full Name">
+
+        <input type="text" id="courseInput" placeholder="Course">
+
+        <input type="text" id="semesterInput" placeholder="Semester">
+
+        <input type="text" id="collegeInput" placeholder="College">
+
+        <input type="text" id="locationInput" placeholder="Location">
+
+        <input type="email" id="emailInput" placeholder="Email">
+
+        <input type="text" id="phoneInput" placeholder="Phone Number">
+
+        <input type="text" id="githubInput" placeholder="GitHub Link">
+
+        <input type="text" id="linkedinInput" placeholder="LinkedIn Link">
+
+        <div class="popup-buttons">
+
+            <button onclick="saveProfile()">💾 Save</button>
+
+            <button onclick="closePopup()" class="cancel-btn">Cancel</button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ===========================
+FOOTER
+=========================== -->
+
+<footer class="profile-footer">
+
+    <h2>BCAHub</h2>
+
+    <p>Your Complete Learning Partner for BCA Students.</p>
+
+    <p class="footer-copy">
+        © 2026 BCAHub. All Rights Reserved.
+    </p>
+
+</footer>
+
+</div>
+
+<!-- Profile JavaScript -->
+
+<script src="profile.js"></script>
+
+</body>
+</html>

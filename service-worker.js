@@ -1,38 +1,21 @@
-const CACHE_NAME = "bcahub-v1";
+const CACHE_NAME = "bcahub-v2";
 
 const urlsToCache = [
-  "./",
-  "./index.html",
-  "./style.css",
-  "./script.js",
-  "./notes.html",
-  "./videos.html",
-  "./courses.html",
-  "./roadmap.html",
-  "./profile.html",
-  "./assets/images/logo.png"
+  "/BCA-PrepPro/",
+  "/BCA-PrepPro/index.html",
+  "/BCA-PrepPro/style.css",
+  "/BCA-PrepPro/script.js",
+  "/BCA-PrepPro/assets/images/logo.png"
 ];
 
 self.addEventListener("install", event => {
-
   event.waitUntil(
-
-    caches.open(CACHE_NAME)
-
-      .then(cache => cache.addAll(urlsToCache))
-
+    caches.open(CACHE_NAME).then(cache => cache.addAll(urlsToCache))
   );
-
 });
 
 self.addEventListener("fetch", event => {
-
   event.respondWith(
-
-    caches.match(event.request)
-
-      .then(response => response || fetch(event.request))
-
+    caches.match(event.request).then(response => response || fetch(event.request))
   );
-
 });

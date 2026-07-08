@@ -1,0 +1,17 @@
+.profile-container{
+    margin-left:15px;
+}
+
+.profile-circle{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    object-fit:cover;
+    cursor:pointer;
+    border:2px solid white;
+}
+.profile-icon{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}

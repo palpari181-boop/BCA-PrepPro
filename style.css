@@ -213,6 +213,12 @@ transition:0.3s;
 color:#FFD700;
 }
 
+.nav-actions{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
 /* ===== FOOTER ===== */
 
 .footer{
@@ -1016,17 +1022,32 @@ color:white;
 @media (max-width:768px){
 
 .navbar{
-flex-direction:column;
-align-items:center;
-padding:15px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    padding:15px;
 }
 
 .nav-links{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:12px;
-margin-top:15px;
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+    margin-top:15px;
+}
+
+.profile-container{
+    margin-left:10px;
+}
+
+.profile-dropdown{
+    right:0;
+    top:50px;
+    width:180px;
+    z-index:9999;
 }
 
 .hero-dashboard{
@@ -1066,6 +1087,10 @@ font-size:13px;
 .footer-links{
 flex-direction:column;
 gap:10px;
+}
+
+.nav-actions{
+    margin-top:10px;
 }
 
 }
@@ -2246,82 +2271,6 @@ transform:translateY(0);
 
 }
 
-.popup{
-
-display:none;
-
-position:fixed;
-
-top:0;
-
-left:0;
-
-width:100%;
-
-height:100%;
-
-background:rgba(0,0,0,.5);
-
-justify-content:center;
-
-align-items:center;
-
-z-index:999;
-
-}
-
-.popup-content{
-
-background:#fff;
-
-padding:30px;
-
-border-radius:20px;
-
-width:90%;
-
-max-width:420px;
-
-text-align:center;
-
-}
-
-.popup-content input{
-
-width:100%;
-
-padding:12px;
-
-margin:10px 0;
-
-border:1px solid #ddd;
-
-border-radius:10px;
-
-font-size:16px;
-
-}
-
-.popup-content button{
-
-padding:12px 25px;
-
-margin:10px;
-
-border:none;
-
-border-radius:10px;
-
-cursor:pointer;
-
-background:#4F46E5;
-
-color:white;
-
-font-weight:600;
-
-}
-
 /* ===========================
    Save Subject Button
 =========================== */
@@ -2365,197 +2314,30 @@ font-weight:600;
     transform: translateY(-2px);
 
 }
-
-/* ==========================================
-   MOBILE RESPONSIVE
-========================================== */
-
-@media (max-width:768px){
-
-/* Navbar */
-
-.navbar{
-
-    flex-direction:column;
-
-    padding:15px;
-
-    gap:15px;
-
-}
-
-.logo{
-
-    margin-bottom:10px;
-
-}
-
-.nav-links{
-
-    display:flex;
-
-    flex-wrap:wrap;
-
-    justify-content:center;
-
-    gap:12px;
-
-}
-
-.nav-links a{
-
-    font-size:15px;
-
-}
-
-/* Hero */
-
-.hero{
-
-    flex-direction:column;
-
-    text-align:center;
-
-    padding:40px 20px;
-
-}
-
-.hero-content{
-
-    max-width:100%;
-
-}
-
-.hero-image{
-
-    margin-top:30px;
-
-}
-
-.hero-image img{
-
-    width:100%;
-
-    max-width:350px;
-
-}
-
-/* Cards */
-
-.chapter-grid{
-
-    grid-template-columns:1fr;
-
-}
-
-.chapter-card{
-
-    width:100%;
-
-}
-
-/* Section */
-
-.chapter-section{
-
-    padding:20px;
-
-}
-
-.section-header h2{
-
-    text-align:center;
-
-    font-size:28px;
-
-}
-
-/* Footer */
-
-.footer-links{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:12px;
-
-}
-
-.footer{
-
-    text-align:center;
-
-}
-
-}
-/* =============================
-   Responsive Fix
-============================= */
-
-@media screen and (max-width:768px){
-
-.chapter-section{
-    margin:20px 15px;
-}
-
-.chapter-grid{
-    display:grid !important;
-    grid-template-columns:1fr !important;
-    gap:15px;
-}
-
-.chapter-card{
-    width:100% !important;
-    max-width:100% !important;
-    padding:20px;
-    box-sizing:border-box;
-}
-
-.action-card{
-    width:100%;
-    display:block;
-}
-
-}
 .profile-container{
-    position:relative;
-    margin-left:10px;
+    margin-left:15px;
 }
 
-.profile-img{
+.profile-circle{
     width:42px;
     height:42px;
     border-radius:50%;
-    cursor:pointer;
     object-fit:cover;
+    cursor:pointer;
+    border:2px solid white;
+}
+.profile-icon{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
 }
 
-.profile-dropdown{
-    display:none;
-    position:absolute;
-    right:0;
-    top:50px;
-    width:180px;
-    background:white;
-    border-radius:10px;
-    padding:10px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.2);
-    z-index:1000;
-}
 
-.profile-dropdown a{
-    display:block;
-    padding:10px;
-    text-decoration:none;
-    color:#333;
-}
 
-.profile-dropdown a:hover{
-    background:#f2f2f2;
-    border-radius:6px;
-}
 
-.profile-dropdown.active{
-    display:block;
-}
+
+
+
+
+
+

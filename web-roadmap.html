@@ -1,29 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills Roadmap</title>
 
-<title>Web Development Roadmap | BCAHub</title>
-<link rel="icon" type="image/png" href="assets/images/logo.png">
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#4c95e4;   /* Light Blue */
+    margin:0;
+    padding:20px;
+}
 
-<link rel="stylesheet" href="style.css">
+h1{
+    text-align:center;
+    color:#f3f3f3;
+    margin-bottom:30px;
+}
+
+/* 2 Cards in One Row */
+.video-container{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.video-section{
+    background:#ffffff;
+    padding:15px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,.08);
+}
+
+.video-section h2{
+    font-size:18px;
+    text-align:center;
+    color:#1e3a8a;
+    margin-bottom:12px;
+}
+
+iframe{
+    width:100%;
+    height:220px;   /* Chhota video */
+    border:none;
+    border-radius:10px;
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+    .video-container{
+        grid-template-columns:1fr;
+    }
+
+    iframe{
+        height:200px;
+    }
+}
+</style>
 
 </head>
-
 <body>
-
-<!-- Navbar -->
-
 <nav class="navbar">
-
-<div class="logo">
-    <img src="assets/images/logo.png" alt="BCAHub Logo">
-    <span>BCAHub</span>
-</div>
 
 <div class="nav-links">
 
@@ -40,131 +80,87 @@
 <a href="profile.html">Profile</a>
 
 </div>
-
-<button id="theme-toggle" class="theme-btn">
-🌙
-</button>
-
 </nav>
 
-<!-- Breadcrumb -->
+<h1>💻 Web Development Roadmap</h1>
+<div class="video-container">
+   
+<div class="video-section">
+    <h2>🍃 MongoDB</h2>
 
-<div class="breadcrumb">
-
-<a href="index.html">🏠 Home</a>
-
-<span>></span>
-
-<a href="roadmap.html">🗺️ Roadmap</a>
-
-<span>></span>
-
-<span class="active">💻 Web Development Roadmap</span>
-
+    <iframe
+        width="100%"
+        height="220"
+        src="https://www.youtube.com/embed/M1dKYQ7GsTg?si=9QpeVoCWR6UVQi1e"
+        title="MongoDB Full Course"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+    </iframe>
 </div>
 
-<div class="chapter-section">
+<div class="video-section">
+    <h2>📄 HTML</h2>
 
-<div class="section-header">
-
-<h2>💻 Web Development Roadmap</h2>
-
+    <iframe
+        width="100%"
+        height="220"
+        src="https://www.youtube.com/embed/GkZN_-HMCJ8?si=_GQl4Kt4Dpn22SJk"
+        title="HTML Full Course"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+    </iframe>
 </div>
 
-<div class="chapter-grid">
+<div class="video-section">
+    <h2>🅱️ Bootstrap</h2>
 
-<div class="chapter-card">
-
-<div class="chapter-number">01</div>
-
-<h3>HTML5</h3>
-
-<p>Learn page structure, forms, tables and semantic tags.</p>
-
+    <iframe
+        width="100%"
+        height="220"
+        src="https://www.youtube.com/embed/vpAJ0s5S2t0?si=pEByGSAC88wmXqhC"
+        title="Bootstrap Full Course"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+    </iframe>
 </div>
 
-<div class="chapter-card">
 
-<div class="chapter-number">02</div>
+<div class="video-section">
+    <h2>⚛️ React.js</h2>
 
-<h3>CSS3</h3>
-
-<p>Master Flexbox, Grid, Responsive Design and Animations.</p>
-
+    <iframe
+        width="100%"
+        height="220"
+        src="https://www.youtube.com/embed/ZaC6oCIpjR0?si=HTiay6OFF3DRnc_2"
+        title="React.js Full Course"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+    </iframe>
 </div>
 
-<div class="chapter-card">
+<div class="video-section">
+    <h2>🟢 Node.js</h2>
 
-<div class="chapter-number">03</div>
-
-<h3>JavaScript</h3>
-
-<p>Understand ES6, DOM, Events, APIs and asynchronous programming.</p>
-
+    <iframe
+        width="100%"
+        height="220"
+        src="https://www.youtube.com/embed/BLl32FvcdVM?si=nUD8cZzjgpkI72ea"
+        title="Node.js Full Course"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+    </iframe>
 </div>
-
-<div class="chapter-card">
-
-<div class="chapter-number">04</div>
-
-<h3>React.js</h3>
-
-<p>Build modern user interfaces using components and hooks.</p>
-
 </div>
-
-<div class="chapter-card">
-
-<div class="chapter-number">05</div>
-
-<h3>Node.js & Express</h3>
-
-<p>Create REST APIs and backend applications.</p>
-
-</div>
-
-<div class="chapter-card">
-
-<div class="chapter-number">06</div>
-
-<h3>MongoDB & GitHub</h3>
-
-<p>Learn database integration, Git and deploy full stack projects.</p>
-
-</div>
-
-</div>
-
-</div>
-
-<footer class="footer">
-
-<h2>🎓 BCAHub</h2>
-
-<p>Your Complete Learning Partner for BCA Students.</p>
-
-<div class="footer-links">
-
-<a href="index.html">Home</a>
-
-<a href="notes.html">Notes</a>
-
-<a href="videos.html">Videos</a>
-
-<a href="courses.html">Courses</a>
-
-<a href="roadmap.html">Roadmap</a>
-
-</div>
-
-<p class="copyright">
-© 2026 BCAHub. All Rights Reserved.
-</p>
-
-</footer>
-
-<script src="script.js"></script>
 
 </body>
-
 </html>

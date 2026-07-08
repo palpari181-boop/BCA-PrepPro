@@ -1,29 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills Roadmap</title>
 
-<title>Semester Wise Roadmap | BCAHub</title>
-<link rel="icon" type="image/png" href="assets/images/logo.png">
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#4c95e4;   /* Light Blue */
+    margin:0;
+    padding:20px;
+}
 
-<link rel="stylesheet" href="style.css">
+h1{
+    text-align:center;
+    color:#f3f3f3;
+    margin-bottom:30px;
+}
+
+/* 2 Cards in One Row */
+.video-container{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.video-section{
+    background:#ffffff;
+    padding:15px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,.08);
+}
+
+.video-section h2{
+    font-size:18px;
+    text-align:center;
+    color:#1e3a8a;
+    margin-bottom:12px;
+}
+
+iframe{
+    width:100%;
+    height:220px;   /* Chhota video */
+    border:none;
+    border-radius:10px;
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+    .video-container{
+        grid-template-columns:1fr;
+    }
+
+    iframe{
+        height:200px;
+    }
+}
+</style>
 
 </head>
-
 <body>
-
-<!-- Navbar -->
-
 <nav class="navbar">
-
-<div class="logo">
-    <img src="assets/images/logo.png" alt="BCAHub Logo">
-    <span>BCAHub</span>
-</div>
 
 <div class="nav-links">
 
@@ -40,131 +80,77 @@
 <a href="profile.html">Profile</a>
 
 </div>
-
-<button id="theme-toggle" class="theme-btn">
-🌙
-</button>
-
 </nav>
 
-<!-- Breadcrumb -->
+<h1>🧭 BCA Semester Journey</h1>
+<div class="video-container">
+   
+<div class="video-section">
 
-<div class="breadcrumb">
+    <h2>💻 Computer Fundamentals - Semester 1</h2>
 
-<a href="index.html">🏠 Home</a>
-
-<span>></span>
-
-<a href="roadmap.html">🗺️ Roadmap</a>
-
-<span>></span>
-
-<span class="active">📚 Semester Wise Roadmap</span>
-
-</div>
-
-<div class="chapter-section">
-
-<div class="section-header">
-
-<h2>📚 Semester Wise BCA Roadmap</h2>
+    <iframe
+        width="100%"
+        height="300"
+        src="https://www.youtube.com/embed/RLeRipmm154?si=itDZqYsD12yLPy4I"
+        title="Computer Fundamentals Semester 1"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+    </iframe>
 
 </div>
 
-<div class="chapter-grid">
+<div class="video-section">
 
-<div class="chapter-card">
+    <h2>🎓 First Year Roadmap</h2>
 
-<div class="chapter-number">01</div>
-
-<h3>Semester 1</h3>
-
-<p>Computer Fundamentals, Mathematics, Programming Basics and Communication Skills.</p>
-
-</div>
-
-<div class="chapter-card">
-
-<div class="chapter-number">02</div>
-
-<h3>Semester 2</h3>
-
-<p>C Programming, Data Structures, Digital Electronics and Environmental Studies.</p>
+    <iframe
+        width="100%"
+        height="300"
+        src="https://www.youtube.com/embed/dhvpllcxdAI?si=hHnz2ixbtShGvLGU"
+        title="First Year Roadmap"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+    </iframe>
 
 </div>
 
-<div class="chapter-card">
+<div class="video-section">
 
-<div class="chapter-number">03</div>
+    <h2>📘 First Year Study Roadmap</h2>
 
-<h3>Semester 3</h3>
-
-<p>DBMS, Java Programming, Operating System and Computer Organization.</p>
-
-</div>
-
-<div class="chapter-card">
-
-<div class="chapter-number">04</div>
-
-<h3>Semester 4</h3>
-
-<p>Web Development, Python, Software Engineering and Computer Networks.</p>
+    <iframe
+        width="100%"
+        height="300"
+        src="https://www.youtube.com/embed/R8OZY3isCLs?si=LDQxjY0Zq5EVHJkF"
+        title="First Year Study Roadmap"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+    </iframe>
 
 </div>
 
-<div class="chapter-card">
+<div class="video-section">
+    <h2>⚙️ Git & GitHub</h2>
 
-<div class="chapter-number">05</div>
-
-<h3>Semester 5</h3>
-
-<p>Cloud Computing, AI Basics, Cyber Security and Project Development.</p>
-
+    <iframe
+        width="100%"
+        height="300"
+        src="https://www.youtube.com/embed/Ez8F0nW6S-w?si=NTXrsE5-gVs-W_gL"
+        title="Git & GitHub"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+    </iframe>
 </div>
-
-<div class="chapter-card">
-
-<div class="chapter-number">06</div>
-
-<h3>Semester 6</h3>
-
-<p>Major Project, Internship, Placement Preparation and Career Planning.</p>
-
 </div>
-
-</div>
-
-</div>
-
-<footer class="footer">
-
-<h2>🎓 BCAHub</h2>
-
-<p>Your Complete Learning Partner for BCA Students.</p>
-
-<div class="footer-links">
-
-<a href="index.html">Home</a>
-
-<a href="notes.html">Notes</a>
-
-<a href="videos.html">Videos</a>
-
-<a href="courses.html">Courses</a>
-
-<a href="roadmap.html">Roadmap</a>
-
-</div>
-
-<p class="copyright">
-© 2026 BCAHub. All Rights Reserved.
-</p>
-
-</footer>
-
-<script src="script.js"></script>
 
 </body>
-
 </html>

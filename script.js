@@ -289,4 +289,19 @@ function toggleProfile(){
 function logout(){
     alert("Logout Successfully");
 }
+document.addEventListener("DOMContentLoaded", function(){
+
+    const navProfile = document.getElementById("navProfile");
+
+    if(navProfile){
+
+        const savedImage = localStorage.getItem("profileImage");
+
+        if(savedImage){
+            navProfile.src = savedImage;
+        }
+
+    }
+
+});
 

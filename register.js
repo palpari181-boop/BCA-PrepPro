@@ -1,6 +1,9 @@
+import { auth } from "./firebase-config.js";
+import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+
 const form = document.getElementById("registerForm");
 
-form.addEventListener("submit", function(e){
+form.addEventListener("submit", async function (e) {
 
     e.preventDefault();
 
@@ -12,7 +15,7 @@ form.addEventListener("submit", function(e){
 
     const confirmPassword = document.getElementById("confirmPassword").value;
 
-    if(password !== confirmPassword){
+    if (password !== confirmPassword) {
 
         alert("Passwords do not match!");
 
@@ -20,20 +23,18 @@ form.addEventListener("submit", function(e){
 
     }
 
-    const user = {
+    try {
 
-        username,
+        await createUserWithEmailAndPassword(auth, email, password);
 
-        email,
+        alert("Registration Successful 🎉");
 
-        password
+        window.location.href = "login.html";
 
-    };
+    } catch (error) {
 
-    localStorage.setItem("user", JSON.stringify(user));
+        alert(error.message);
 
-    alert("Registration Successful 🎉");
-
-    window.location.href = "login.html";
+    }
 
 });
